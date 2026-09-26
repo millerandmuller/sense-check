@@ -24,7 +24,11 @@
         "readings/renders/PHerc0125_z11462_level2.png",
         "readings/renders/PHerc0125_z15630_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0125_z7294.png",
+        "readings/vc3d_screenshots/PHerc0125_z11462.png",
+        "readings/vc3d_screenshots/PHerc0125_z15630.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -54,7 +58,11 @@
         "readings/renders/PHerc0191_z10439_level2.png",
         "readings/renders/PHerc0191_z14235_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0191_z6643.png",
+        "readings/vc3d_screenshots/PHerc0191_z10439.png",
+        "readings/vc3d_screenshots/PHerc0191_z14235.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -84,7 +92,11 @@
         "readings/renders/PHerc0211_z10679_level2.png",
         "readings/renders/PHerc0211_z14562_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0211_z6796.png",
+        "readings/vc3d_screenshots/PHerc0211_z10679.png",
+        "readings/vc3d_screenshots/PHerc0211_z14562.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -114,7 +126,11 @@
         "readings/renders/PHerc0257_z10380_level2.png",
         "readings/renders/PHerc0257_z14154_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0257_z6605.png",
+        "readings/vc3d_screenshots/PHerc0257_z10380.png",
+        "readings/vc3d_screenshots/PHerc0257_z14154.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -144,7 +160,11 @@
         "readings/renders/PHerc0268_z8162_level3.png",
         "readings/renders/PHerc0268_z11130_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0268_z5194.png",
+        "readings/vc3d_screenshots/PHerc0268_z8162.png",
+        "readings/vc3d_screenshots/PHerc0268_z11130.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -174,7 +194,11 @@
         "readings/renders/PHerc0358_z8109_level2.png",
         "readings/renders/PHerc0358_z11058_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0358_z5160.png",
+        "readings/vc3d_screenshots/PHerc0358_z8109.png",
+        "readings/vc3d_screenshots/PHerc0358_z11058.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -204,7 +228,11 @@
         "readings/renders/PHerc0800_z13367_level3.png",
         "readings/renders/PHerc0800_z18228_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0800_z8506.png",
+        "readings/vc3d_screenshots/PHerc0800_z13367.png",
+        "readings/vc3d_screenshots/PHerc0800_z18228.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -234,7 +262,11 @@
         "readings/renders/PHerc0813_z9348_level2.png",
         "readings/renders/PHerc0813_z12747_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0813_z5949.png",
+        "readings/vc3d_screenshots/PHerc0813_z9348.png",
+        "readings/vc3d_screenshots/PHerc0813_z12747.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -264,7 +296,11 @@
         "readings/renders/PHerc0826_z9306_level2.png",
         "readings/renders/PHerc0826_z12690_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0826_z5922.png",
+        "readings/vc3d_screenshots/PHerc0826_z9306.png",
+        "readings/vc3d_screenshots/PHerc0826_z12690.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -294,7 +330,11 @@
         "readings/renders/PHerc0175A_z7014_level3.png",
         "readings/renders/PHerc0175A_z9564_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0175A_z4463.png",
+        "readings/vc3d_screenshots/PHerc0175A_z7014.png",
+        "readings/vc3d_screenshots/PHerc0175A_z9564.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -324,7 +364,11 @@
         "readings/renders/PHerc0175B_z8747_level3.png",
         "readings/renders/PHerc0175B_z11928_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0175B_z5566.png",
+        "readings/vc3d_screenshots/PHerc0175B_z8747.png",
+        "readings/vc3d_screenshots/PHerc0175B_z11928.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -354,7 +398,11 @@
         "readings/renders/PHerc0306B_z8747_level3.png",
         "readings/renders/PHerc0306B_z11928_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0306B_z5566.png",
+        "readings/vc3d_screenshots/PHerc0306B_z8747.png",
+        "readings/vc3d_screenshots/PHerc0306B_z11928.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -384,7 +432,11 @@
         "readings/renders/PHerc0343_z9900_level2.png",
         "readings/renders/PHerc0343_z13500_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0343_z6300.png",
+        "readings/vc3d_screenshots/PHerc0343_z9900.png",
+        "readings/vc3d_screenshots/PHerc0343_z13500.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -414,7 +466,11 @@
         "readings/renders/PHerc0483A_z8747_level3.png",
         "readings/renders/PHerc0483A_z11928_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0483A_z5566.png",
+        "readings/vc3d_screenshots/PHerc0483A_z8747.png",
+        "readings/vc3d_screenshots/PHerc0483A_z11928.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -444,7 +500,11 @@
         "readings/renders/PHerc0483B_z6534_level2.png",
         "readings/renders/PHerc0483B_z8910_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0483B_z4158.png",
+        "readings/vc3d_screenshots/PHerc0483B_z6534.png",
+        "readings/vc3d_screenshots/PHerc0483B_z8910.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -474,7 +534,11 @@
         "readings/renders/PHerc0490A_z6437_level3.png",
         "readings/renders/PHerc0490A_z8778_level3.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0490A_z4096.png",
+        "readings/vc3d_screenshots/PHerc0490A_z6437.png",
+        "readings/vc3d_screenshots/PHerc0490A_z8778.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -504,7 +568,11 @@
         "readings/renders/PHerc0490B_z5856_level2.png",
         "readings/renders/PHerc0490B_z7986_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0490B_z3727.png",
+        "readings/vc3d_screenshots/PHerc0490B_z5856.png",
+        "readings/vc3d_screenshots/PHerc0490B_z7986.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -534,7 +602,11 @@
         "readings/renders/PHerc0846A_z7711_level2.png",
         "readings/renders/PHerc0846A_z10515_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0846A_z4907.png",
+        "readings/vc3d_screenshots/PHerc0846A_z7711.png",
+        "readings/vc3d_screenshots/PHerc0846A_z10515.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -564,7 +636,11 @@
         "readings/renders/PHerc1203_z10439_level2.png",
         "readings/renders/PHerc1203_z14235_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc1203_z6643.png",
+        "readings/vc3d_screenshots/PHerc1203_z10439.png",
+        "readings/vc3d_screenshots/PHerc1203_z14235.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -594,7 +670,11 @@
         "readings/renders/PHerc1218_z12786_level2.png",
         "readings/renders/PHerc1218_z17436_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc1218_z8137.png",
+        "readings/vc3d_screenshots/PHerc1218_z12786.png",
+        "readings/vc3d_screenshots/PHerc1218_z17436.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -624,7 +704,11 @@
         "readings/renders/PHerc1447_z13365_level2.png",
         "readings/renders/PHerc1447_z18225_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc1447_z8505.png",
+        "readings/vc3d_screenshots/PHerc1447_z13365.png",
+        "readings/vc3d_screenshots/PHerc1447_z18225.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -654,7 +738,11 @@
         "readings/renders/PHerc1545_z11530_level2.png",
         "readings/renders/PHerc1545_z15723_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc1545_z7337.png",
+        "readings/vc3d_screenshots/PHerc1545_z11530.png",
+        "readings/vc3d_screenshots/PHerc1545_z15723.png"
+      ]
     },
     "agree": null,
     "note": null
@@ -684,7 +772,11 @@
         "readings/renders/PHerc0846B_z7660_level2.png",
         "readings/renders/PHerc0846B_z10446_level2.png"
       ],
-      "vc3d_screenshots": []
+      "vc3d_screenshots": [
+        "readings/vc3d_screenshots/PHerc0846B_z4875.png",
+        "readings/vc3d_screenshots/PHerc0846B_z7660.png",
+        "readings/vc3d_screenshots/PHerc0846B_z10446.png"
+      ]
     },
     "agree": null,
     "note": null

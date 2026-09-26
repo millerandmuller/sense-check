@@ -65,6 +65,23 @@ If a default-kinds open of PHerc0800 survives while PHerc0211 crashes the
 same way, the umbilicus entry is implicated as the actual trigger inside
 `resolveLasagnaForVolume`, not the lasagna descriptor shape itself.
 
+## Resolution
+
+Root cause confirmed independently: villa PR #1225 (merged 2026-08-17) fixes
+an exception-handling bug where `resolveLasagnaForVolume` throws as
+designed, but `lld`-linked macOS executables lose the unwind info needed for
+the surrounding `catch` to run, so the throw always escalates to
+`std::terminate`/`SIGABRT`. The installed "stable" build (`fc25b4d`,
+2026-07-31) predates the fix; the "latest" release (`6e3816c`,
+2026-09-25) carries it. The earlier "umbilicus entry" hypothesis (PHerc0826/
+0211/0125 have one, PHerc0800 doesn't) was retired once the catalog
+descriptors were compared and found structurally identical between 0800 and
+0826 -- the difference was the build, not the data.
+
+After switching `.mcp.json` to the `latest` build and client (protocol 2),
+all 23 volumes opened and screenshotted cleanly across the full F2 batch,
+zero bridge errors.
+
 ## What this is not
 
 This is not a claim that villa's or VC3D's code is wrong, and no VC3D code
