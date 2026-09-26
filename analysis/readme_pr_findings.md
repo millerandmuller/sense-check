@@ -108,15 +108,24 @@ got a sense: `PHerc1203` (ACW, its only evidence, since the catalog cannot
 derive one) and `PHerc0813` (ACW, low confidence) -- which disagrees with
 PHerc0813's catalog-derived prediction of CW.
 
-**Implication, stated as an observation:** the August entry's own
-CW-vs-ACW overlay-fit comparison (fit the spiral both ways, compare which
-is coherent) looks like the actual discriminator for these scrolls, not a
-single-slice visual read at the umbilicus -- consistent with why villa's
-own rule falls back to "read off the CT data by a person in VC3D, or from
-an already-fitted spiral" (spiral-fitting/README.md) rather than a slice
-inspection. PHerc0813 (clearest core, measured umbilicus, published
-tracks, and the one disagreement) is the discriminator case this build is
-carrying into the A1b re-fit.
+**Update after running the comparison (A1/A1b, see `analysis/pherc0826/` and
+`analysis/pherc0813/`):** a single-slice visual read clearly does not
+determine the sense on these scrolls (above), but the CW-vs-ACW overlay-fit
+comparison this build tried as the presumed discriminator did not resolve
+it either. Both PHerc0826 (catalog-ACW vs. explicit CW) and PHerc0813
+(catalog-CW vs. explicit ACW) were re-fit both ways -- tracks-only, 1500
+steps, patches/outer-shell disabled -- and on both scrolls the two fits are
+visually indistinguishable and near-tied on `satisfied_tracks_fraction`,
+with no consistent winner (catalog wins on PHerc0826 by 0.07pp; the
+contradicting sense wins on PHerc0813 by 0.22pp, the opposite direction).
+`spiral_outward_sense` is genuinely consumed in villa's fitting code
+(`transforms.py`), so this is not a no-op config value; a single
+from-scratch reduced fit over one z-window per hypothesis appears to be
+under-constrained to separate the two senses either geometrically or by
+this metric. See the project notes 2026-09-26 for the full comparison and
+the options being weighed (longer fits, re-enabling outer-shell/patches
+terms, a wider z-window) before either scroll's sense can be claimed
+resolved by this method.
 
 **Not established:** whether a different reader, a different z-level
 choice, or VC3D's own interactive rotation (rather than a fixed axial

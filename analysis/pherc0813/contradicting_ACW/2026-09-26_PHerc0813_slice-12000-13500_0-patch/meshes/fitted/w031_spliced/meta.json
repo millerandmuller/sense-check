@@ -1,0 +1,27 @@
+{
+    "scale": [
+        0.05,
+        0.05
+    ],
+    "bbox": [
+        [
+            2719.776123046875,
+            2890.986328125,
+            12000.2900390625
+        ],
+        [
+            3954.781494140625,
+            4382.236328125,
+            13499.6845703125
+        ]
+    ],
+    "area_vx2": 4769200,
+    "area_cm2": 4.180062822448,
+    "format": "tifxyz",
+    "type": "seg",
+    "uuid": "w031_spliced",
+    "source": "fit_spiral fitted_spliced",
+    "grid_orientation": {
+        "z_direction_is_top_to_bottom": null
+    }
+}
