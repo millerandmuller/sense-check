@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 from typing import Any, Optional
 
-from catalog_client import FULL_CATALOG_URL, fetch_catalog
+from catalog_client import FULL_CATALOG_URL, fetch_catalog, spiral_outward_sense_for
 
 SCHEMA_VERSION = 1
 
@@ -34,13 +34,6 @@ def find_volume(catalog: dict[str, Any], scroll: str, volume: str) -> dict[str, 
         raise SystemExit(
             f"error: volume {volume!r} not found for {scroll!r}; available: {available}")
     return v
-
-
-def spiral_outward_sense_for(z_direction_is_top_to_bottom: Optional[bool],
-                              left_handed_coordinates: Optional[bool]) -> Optional[str]:
-    if z_direction_is_top_to_bottom is None or left_handed_coordinates is None:
-        return None
-    return "ACW" if z_direction_is_top_to_bottom != left_handed_coordinates else "CW"
 
 
 def build_spec(scroll: str, volume_id: str, props: dict[str, Any],

@@ -1,6 +1,6 @@
 # Catalog orientation — 23 First Letters eligible volumes
 
-Catalog: `metadata.json`, ETag `7b86f3272d4ffa1085fafb4e3e6383bf`, Last-Modified `Wed, 23 Sep 2026 15:22:11 GMT`, fetched 2026-09-26T18:07:55+00:00.
+Catalog: `metadata.json`, ETag `7b86f3272d4ffa1085fafb4e3e6383bf`, Last-Modified `Wed, 23 Sep 2026 15:22:11 GMT`, fetched 2026-09-26T19:32:05+00:00.
 
 Coverage across the full catalog: **41 of 71** volumes carry both orientation keys. Within the 23 eligible: **18 derivable, 5 UNDERIVABLE**.
 

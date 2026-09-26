@@ -21,48 +21,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from catalog_client import FULL_CATALOG_URL, MINIFIED_CATALOG_URL, fetch_catalog, fetch_raw
-
-# The 23 First Letters eligible volumes.
-# 18 have spiral tracks; the other 5 (PHerc1203, PHerc1218, PHerc1447,
-# PHerc1545, PHerc0846B) have none and enter catalog-and-render only, but
-# the orientation derivation below applies to all 23 the same way.
-ELIGIBLE_SAMPLES = [
-    "PHerc0125", "PHerc0191", "PHerc0211", "PHerc0257", "PHerc0268", "PHerc0358",
-    "PHerc0800", "PHerc0813", "PHerc0826", "PHerc0175A", "PHerc0175B", "PHerc0306B",
-    "PHerc0343", "PHerc0483A", "PHerc0483B", "PHerc0490A", "PHerc0490B", "PHerc0846A",
-    "PHerc1203", "PHerc1218", "PHerc1447", "PHerc1545", "PHerc0846B",
-]
-
-# The two eligible scan protocols for First Letters volumes. A handful of
-# samples carry an extra, non-eligible high-resolution scan (2.403um/77keV)
-# alongside the eligible one; pick_eligible_volume excludes those.
-ELIGIBLE_PROTOCOLS = {(9.362, 113.0), (8.640, 116.0)}
-
-
-def spiral_outward_sense_for(z_direction_is_top_to_bottom: Optional[bool],
-                              left_handed_coordinates: Optional[bool]) -> Optional[str]:
-    """Catalog convention per villa's own rule. Returns None (UNDERIVABLE)
-    when either catalog key is missing."""
-    if z_direction_is_top_to_bottom is None or left_handed_coordinates is None:
-        return None
-    return "ACW" if z_direction_is_top_to_bottom != left_handed_coordinates else "CW"
-
-
-def pick_eligible_volume(sample: dict[str, Any]) -> tuple[Optional[str], Optional[dict]]:
-    """Return (volume_id, volume) for the First-Letters-eligible scan of a
-    sample. Most samples have exactly one volume; a few carry an additional
-    non-eligible high-resolution scan, excluded here by protocol."""
-    volumes = sample.get("volumes", {})
-    if len(volumes) == 1:
-        ((vid, v),) = volumes.items()
-        return vid, v
-    for vid, v in volumes.items():
-        p = v.get("properties", {})
-        protocol = (round(p.get("pixel_size_um", 0.0), 3), p.get("energy_keV"))
-        if protocol in ELIGIBLE_PROTOCOLS:
-            return vid, v
-    return None, None
+from catalog_client import (
+    ELIGIBLE_SAMPLES,
+    FULL_CATALOG_URL,
+    MINIFIED_CATALOG_URL,
+    fetch_catalog,
+    fetch_raw,
+    pick_eligible_volume,
+    spiral_outward_sense_for,
+)
 
 
 @dataclass

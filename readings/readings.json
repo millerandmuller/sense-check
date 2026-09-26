@@ -1,0 +1,692 @@
+[
+  {
+    "scroll": "PHerc0125",
+    "volume": "20250821151825",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": null,
+      "left_handed_coordinates": false,
+      "derived_sense": null
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        7294,
+        11462,
+        15630
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0125_z7294_level2.png",
+        "readings/renders/PHerc0125_z11462_level2.png",
+        "readings/renders/PHerc0125_z15630_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0191",
+    "volume": "20250821151635",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        6643,
+        10439,
+        14235
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0191_z6643_level2.png",
+        "readings/renders/PHerc0191_z10439_level2.png",
+        "readings/renders/PHerc0191_z14235_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0211",
+    "volume": "20250821151803",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        6796,
+        10679,
+        14562
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0211_z6796_level2.png",
+        "readings/renders/PHerc0211_z10679_level2.png",
+        "readings/renders/PHerc0211_z14562_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0257",
+    "volume": "20250821151750",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        6605,
+        10380,
+        14154
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0257_z6605_level2.png",
+        "readings/renders/PHerc0257_z10380_level2.png",
+        "readings/renders/PHerc0257_z14154_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0268",
+    "volume": "20251110183117",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5194,
+        8162,
+        11130
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0268_z5194_level3.png",
+        "readings/renders/PHerc0268_z8162_level3.png",
+        "readings/renders/PHerc0268_z11130_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0358",
+    "volume": "20250821151737",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5160,
+        8109,
+        11058
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0358_z5160_level2.png",
+        "readings/renders/PHerc0358_z8109_level2.png",
+        "readings/renders/PHerc0358_z11058_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0800",
+    "volume": "20250521135224",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        8506,
+        13367,
+        18228
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0800_z8506_level3.png",
+        "readings/renders/PHerc0800_z13367_level3.png",
+        "readings/renders/PHerc0800_z18228_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0813",
+    "volume": "20250821151723",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5949,
+        9348,
+        12747
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0813_z5949_level2.png",
+        "readings/renders/PHerc0813_z9348_level2.png",
+        "readings/renders/PHerc0813_z12747_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0826",
+    "volume": "20250821151701",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5922,
+        9306,
+        12690
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0826_z5922_level2.png",
+        "readings/renders/PHerc0826_z9306_level2.png",
+        "readings/renders/PHerc0826_z12690_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0175A",
+    "volume": "20250521115057",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        4463,
+        7014,
+        9564
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0175A_z4463_level3.png",
+        "readings/renders/PHerc0175A_z7014_level3.png",
+        "readings/renders/PHerc0175A_z9564_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0175B",
+    "volume": "20250521125822",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5566,
+        8747,
+        11928
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0175B_z5566_level3.png",
+        "readings/renders/PHerc0175B_z8747_level3.png",
+        "readings/renders/PHerc0175B_z11928_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0306B",
+    "volume": "20250521133212",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5566,
+        8747,
+        11928
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0306B_z5566_level3.png",
+        "readings/renders/PHerc0306B_z8747_level3.png",
+        "readings/renders/PHerc0306B_z11928_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0343",
+    "volume": "20250521140437",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        6300,
+        9900,
+        13500
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0343_z6300_level2.png",
+        "readings/renders/PHerc0343_z9900_level2.png",
+        "readings/renders/PHerc0343_z13500_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0483A",
+    "volume": "20250521140913",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        5566,
+        8747,
+        11928
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0483A_z5566_level3.png",
+        "readings/renders/PHerc0483A_z8747_level3.png",
+        "readings/renders/PHerc0483A_z11928_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0483B",
+    "volume": "20251124083638",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        4158,
+        6534,
+        8910
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0483B_z4158_level2.png",
+        "readings/renders/PHerc0483B_z6534_level2.png",
+        "readings/renders/PHerc0483B_z8910_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0490A",
+    "volume": "20250521151210",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": null,
+      "left_handed_coordinates": false,
+      "derived_sense": null
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        4096,
+        6437,
+        8778
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0490A_z4096_level3.png",
+        "readings/renders/PHerc0490A_z6437_level3.png",
+        "readings/renders/PHerc0490A_z8778_level3.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0490B",
+    "volume": "20250521151215",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": null,
+      "left_handed_coordinates": false,
+      "derived_sense": null
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        3727,
+        5856,
+        7986
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0490B_z3727_level2.png",
+        "readings/renders/PHerc0490B_z5856_level2.png",
+        "readings/renders/PHerc0490B_z7986_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0846A",
+    "volume": "20250728152254",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": null,
+      "left_handed_coordinates": false,
+      "derived_sense": null
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        4907,
+        7711,
+        10515
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0846A_z4907_level2.png",
+        "readings/renders/PHerc0846A_z7711_level2.png",
+        "readings/renders/PHerc0846A_z10515_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc1203",
+    "volume": "20250820131727",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": null,
+      "left_handed_coordinates": false,
+      "derived_sense": null
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        6643,
+        10439,
+        14235
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc1203_z6643_level2.png",
+        "readings/renders/PHerc1203_z10439_level2.png",
+        "readings/renders/PHerc1203_z14235_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc1218",
+    "volume": "20250521120456",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        8137,
+        12786,
+        17436
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc1218_z8137_level2.png",
+        "readings/renders/PHerc1218_z12786_level2.png",
+        "readings/renders/PHerc1218_z17436_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc1447",
+    "volume": "20250521151220",
+    "um": 8.64,
+    "keV": 116.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        8505,
+        13365,
+        18225
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc1447_z8505_level2.png",
+        "readings/renders/PHerc1447_z13365_level2.png",
+        "readings/renders/PHerc1447_z18225_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc1545",
+    "volume": "20250821151648",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": true,
+      "left_handed_coordinates": false,
+      "derived_sense": "ACW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        7337,
+        11530,
+        15723
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc1545_z7337_level2.png",
+        "readings/renders/PHerc1545_z11530_level2.png",
+        "readings/renders/PHerc1545_z15723_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  },
+  {
+    "scroll": "PHerc0846B",
+    "volume": "20250804142305",
+    "um": 9.362,
+    "keV": 113.0,
+    "catalog": {
+      "z_direction_is_top_to_bottom": false,
+      "left_handed_coordinates": false,
+      "derived_sense": "CW"
+    },
+    "ct_reading": {
+      "sense": null,
+      "confidence": null,
+      "reader": null,
+      "z_levels": [
+        4875,
+        7660,
+        10446
+      ],
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "renders": [
+        "readings/renders/PHerc0846B_z4875_level2.png",
+        "readings/renders/PHerc0846B_z7660_level2.png",
+        "readings/renders/PHerc0846B_z10446_level2.png"
+      ],
+      "vc3d_screenshots": []
+    },
+    "agree": null,
+    "note": null
+  }
+]
