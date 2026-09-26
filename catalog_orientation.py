@@ -15,17 +15,13 @@ from __future__ import annotations
 
 import argparse
 import csv
-import gzip
-import json
 import sys
-import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-FULL_CATALOG_URL = "https://vesuvius-challenge-open-data.s3.amazonaws.com/metadata.json"
-MINIFIED_CATALOG_URL = "https://vesuvius-challenge-open-data.s3.amazonaws.com/metadata.min.json"
+from catalog_client import FULL_CATALOG_URL, MINIFIED_CATALOG_URL, fetch_catalog, fetch_raw
 
 # The 23 First Letters eligible volumes.
 # 18 have spiral tracks; the other 5 (PHerc1203, PHerc1218, PHerc1447,
@@ -51,18 +47,6 @@ def spiral_outward_sense_for(z_direction_is_top_to_bottom: Optional[bool],
     if z_direction_is_top_to_bottom is None or left_handed_coordinates is None:
         return None
     return "ACW" if z_direction_is_top_to_bottom != left_handed_coordinates else "CW"
-
-
-def fetch(url: str) -> bytes:
-    with urllib.request.urlopen(url) as resp:  # noqa: S310 - fixed https S3 URL
-        raw = resp.read()
-        etag = resp.headers.get("ETag", "").strip('"')
-        last_modified = resp.headers.get("Last-Modified", "")
-    try:
-        raw = gzip.decompress(raw)
-    except OSError:
-        pass  # already plain JSON
-    return raw, etag, last_modified
 
 
 def pick_eligible_volume(sample: dict[str, Any]) -> tuple[Optional[str], Optional[dict]]:
@@ -189,8 +173,7 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"Fetching full catalog from {args.catalog_url} ...", file=sys.stderr)
-    raw, etag, last_modified = fetch(args.catalog_url)
-    catalog = json.loads(raw)
+    catalog, etag, last_modified = fetch_catalog(args.catalog_url)
 
     rows = build_rows(catalog)
     total_vols, covered_vols = full_catalog_coverage(catalog)
@@ -199,7 +182,7 @@ def main() -> int:
     write_markdown(rows, out_dir / "orientation.md", total_vols, covered_vols, etag, last_modified)
 
     print(f"Fetching minified catalog from {args.minified_url} ...", file=sys.stderr)
-    minified_raw, _, _ = fetch(args.minified_url)
+    minified_raw, _, _ = fetch_raw(args.minified_url)
     minified_lacks_keys = prove_minified_catalog_lacks_keys(minified_raw)
 
     derivable = sum(1 for r in rows if r.derived_sense is not None)
