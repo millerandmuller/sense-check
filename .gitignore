@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+.ipynb_checkpoints/
+
+# Downloaded catalog (fetched by catalog_orientation.py, not committed)
+catalog/metadata.json
+catalog/metadata.json.gz
