@@ -48,12 +48,22 @@ lasagna-resolution code throwing while trying to resolve it -- reproduced
 2/2. This also retroactively explains the first crash: the describe call
 alone had already probably triggered the same lazy resolution once.
 
-**Fix applied for the rest of F2's screenshot pass:** every subsequent
-`vc3d_open_catalog_sample` call for all 23 volumes passes
-`resources: {"kinds": []}` to attach only each sample's raw volume and
-explicitly exclude `normal_grids`/`lasagna`/`prediction` representations,
-none of which F2's screenshots need. This is a workaround in how this
-session drives the bridge, not a VC3D or villa code change.
+**Fix attempted, did not work:** `vc3d_open_catalog_sample("PHerc0826",
+resources={"kinds": []}, wait=true)` -- explicitly asking to attach only
+the raw volume -- crashed VC3D again, identical stack,
+`VC3D-2026-09-26-145720.ips` (14:57:20). So `resolveLasagnaForVolume` runs
+regardless of the client's requested `kinds` filter; VC3D appears to always
+probe for a lasagna representation when opening a catalog sample, and that
+probe itself throws for PHerc0826, independent of what gets attached.
+The bug is in opening PHerc0826 specifically, not in what a client asks
+for.
+
+**Working hypothesis (Lutfiya, being tested):** PHerc0826, PHerc0211, and
+PHerc0125 each have a catalog umbilicus entry that PHerc0800 lacks, despite
+0800 and 0826 having structurally identical lasagna descriptors otherwise.
+If a default-kinds open of PHerc0800 survives while PHerc0211 crashes the
+same way, the umbilicus entry is implicated as the actual trigger inside
+`resolveLasagnaForVolume`, not the lasagna descriptor shape itself.
 
 ## What this is not
 
