@@ -5,6 +5,9 @@ each volume from the 12 mm crops (the 4 mm crops are supporting detail).
 The catalog's predicted sense is deliberately not shown here -- it lives
 only in readings.json, so this reading isn't anchored by it.
 
+
+> **Reader:** Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
+
 Order: the 5 volumes the catalog cannot derive a sense for (no cross-check
 available for these) come first, then the 18 derivable volumes.
 
@@ -35,10 +38,10 @@ z=15630
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core lies inside a dense stack of near-parallel sheets at all three z (7294, 11462, 15630); no innermost termination or spiral centre visible at 12 mm or 4 mm. The #1736-style estimate landed in the thickest part of the pack, not at a core.
 
 ---
 
@@ -69,10 +72,10 @@ z=14233
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** ACW
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 14233
+**Note:** Core cavity visible only at z=14233 (measured umbilicus). Innermost sheet tail enters the cavity from the right (y~350) and ends left of the mark; followed outward it runs right, up, left, down on screen = anticlockwise in the crop convention. z=6642 and z=10437 show a flattened, elongated core with no readable turn. Low confidence: the inner termination is ambiguous against loose fragments in the cavity.
 
 ---
 
@@ -103,10 +106,10 @@ z=8774
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core sits in a compressed sheet pack at all three z (4094, 6434, 8774); z=6434 is a blurred fold region, z=8774 shows converging sheets with a small round void but no spiral termination. No core visible at 12 mm.
 
 ---
 
@@ -137,10 +140,10 @@ z=7986
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core lies at a fold/crease between sheet packs (z=3727 a dark gap between two packs, z=5856 a chevron fold, z=7986 a swirl of crushed sheets with no continuous innermost wrap). No readable turn.
 
 ---
 
@@ -171,10 +174,10 @@ z=10514
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core lies inside a sheet pack (z=4907 oblique stack, z=7710 a fold apex, z=10514 a fractured region). No spiral centre visible at 12 mm or 4 mm.
 
 ---
 
@@ -205,10 +208,10 @@ z=14233
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 10437
+**Note:** Measured umbilicus on target: z=6642 shows a core cavity filled with debris, z=10437 a whorl of curled inner sheets around the mark, z=14233 a stack. At 4 mm the z=10437 core is a bundle of crumpled fragments with no single innermost wrap to follow one turn; a rotational sense cannot be read reliably from a slice. Core visible: yes (z=6642, z=10437).
 
 ---
 
@@ -239,10 +242,10 @@ z=14562
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core off-target: z=6796 sits at a fold apex, z=10679 below a dome of arched sheets (the arch at y~150-300 may be the true inner wrap, the mark is inside a flat stack), z=14562 in a sheet pack beside a dark gap. Core visible: no at the mark; possible dome at z=10679 above it.
 
 ---
 
@@ -273,10 +276,10 @@ z=14154
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 10380
+**Note:** Measured umbilicus on target: z=10380 shows clean concentric elongated wraps around the mark, the best core in the set. At 4 mm the innermost material is crumpled fragments, not one continuous wrap, so the direction of the first turn is not determinable by eye. z=6605 crushed, z=14154 a stack with a debris-filled seam. Core visible: yes (z=10380). Best candidate for the overlay-fit discriminator after 0826 and 0125.
 
 ---
 
@@ -307,10 +310,10 @@ z=11125
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Measured umbilicus; z=5192 crushed pack with a dark seam, z=8158 a small crumpled cavity right of the mark, z=11125 a chaotic crumple zone. No continuous innermost wrap at any level.
 
 ---
 
@@ -341,10 +344,10 @@ z=11058
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 11058
+**Note:** Measured umbilicus on target: z=11058 shows a debris-filled core cavity enclosed by the innermost wrap (4 mm crop); z=5160 an elongated debris seam. Core visible: yes. No free inner end visible, so the turn direction is not readable from the slice.
 
 ---
 
@@ -375,10 +378,10 @@ z=18224
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Measured umbilicus; z=8504 and z=13364 are dense curved stacks with no cavity, z=18224 a crumpled fold. Core not resolvable at 12 mm.
 
 ---
 
@@ -409,10 +412,10 @@ z=12745
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** ACW
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 12745
+**Note:** Measured umbilicus on target: z=12745 is the clearest core in the set, an elongated teardrop of concentric wraps with the mark inside the innermost loop (4 mm crop). z=5948 a dark triangular void with converging sheets, z=9346 vertical sheets. Reading: following what appears to be the innermost free tail (right side of the loop, x~345 y~300 in the 4 mm crop) up, then left across the top, then down the left side gives anticlockwise on screen. Low confidence: the tail may be a fragment. BEST candidate for the overlay-fit discriminator: clean core, measured umbilicus, tracks published, catalog-derivable.
 
 ---
 
@@ -443,10 +446,10 @@ z=12690
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 5922
+**Note:** Measured umbilicus on target: z=5922 and z=9306 show a debris-filled core cavity with a void opening to the lower-left (4 mm crop); z=12690 a flattened seam. Core visible: yes. No continuous innermost wrap with a free end at any level, so the sense is not readable by eye. The August CW/ACW overlay comparison remains the only discriminator; re-fit at f4570bf pending (A1).
 
 ---
 
@@ -477,10 +480,10 @@ z=9561
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 4462
+**Note:** Estimated core OFF-TARGET by ~2.5 mm: a clear spiral centre is visible at ~(190,260) in the z=4462 12 mm crop and at ~(200,300) at z=7011, left of the mark; z=9561 a whorl of crumpled sheets around (330,450). Core visible: yes, beside the mark. Sense not readable at 12 mm; a 4 mm crop centred on the true core at z=4462 would likely resolve it. Second-best overlay-fit candidate.
 
 ---
 
@@ -511,10 +514,10 @@ z=11923
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core in a sheet pack (z=5564), a blurred fold (z=8743), a fractured block (z=11923). No core visible.
 
 ---
 
@@ -545,10 +548,10 @@ z=11924
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core at a fold apex (z=5564), among loose fragments beside a thick curved sheet (z=8744), at a crease (z=11924). No core visible.
 
 ---
 
@@ -579,10 +582,10 @@ z=13498
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 13498
+**Note:** Estimated core OFF-TARGET: z=9899 shows concentric wraps around a crumpled centre at ~(450,450) and z=13498 a clean spiral core with a hooked innermost sheet at ~(520,250), both right of the mark by ~2-3 mm; z=6299 a dense pack. Core visible: yes, beside the mark. Sense not readable at 12 mm; 4 mm crop at the true core needed.
 
 ---
 
@@ -613,10 +616,10 @@ z=11924
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core in a sheet pack at all three z; a small whorl is visible at upper-right (~500,200) in z=5564, off the mark by ~3 mm. Core: possibly, off-mark. Sense not readable.
 
 ---
 
@@ -647,10 +650,10 @@ z=8910
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core at a fold (z=4158), a hairpin between two packs (z=6534), a pack (z=8910). No core visible.
 
 ---
 
@@ -681,10 +684,10 @@ z=17435
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 17435
+**Note:** Measured umbilicus on target: z=17435 shows a debris-filled cavity enclosed by concentric wraps with a dark seam entering from the left; z=12786 a small elongated debris cavity on the mark; z=8136 a seam. Core visible: yes. The seam at z=17435 marks where the innermost wrap separates, but the direction of the first turn is not determinable by eye. Good overlay-fit candidate (no published tracks, so lower priority).
 
 ---
 
@@ -715,10 +718,10 @@ z=18223
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 13363
+**Note:** Measured umbilicus; z=13363 shows a clear spiral core with a hooked innermost sheet at ~(200,420), LEFT of the mark by ~3 mm (the measured umbilicus is off at this z); z=8504 and z=18223 are packs. Core visible: yes, beside the mark. Sense not readable at 12 mm; 4 mm crop at the true core needed.
 
 ---
 
@@ -749,10 +752,10 @@ z=15721
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** low
+**Z-level trusted:** 7336
+**Note:** Measured umbilicus on target: z=7336 shows concentric wraps around the mark with a curled innermost sheet; z=11529 flattened, z=15721 crumpled. Core visible: yes. Curl direction not determinable by eye at 12 mm.
 
 ---
 
@@ -783,9 +786,9 @@ z=10444
 
 </details>
 
-**Sense (CW / ACW / unsure):**
-**Confidence (high / medium / low):**
-**Z-level trusted:**
-**Note:**
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
+**Z-level trusted:** none
+**Note:** Estimated core in a pack; a large crumpled swirl is visible at upper-right (~450,200) in z=4874, off the mark by ~2.5 mm, and a hairpin fold at z=7659. Core: possibly, off-mark, crumpled. Sense not readable.
 
 ---

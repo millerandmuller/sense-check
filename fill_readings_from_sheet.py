@@ -23,6 +23,7 @@ from pathlib import Path
 
 VALID_SENSES = {"CW", "ACW", "UNSURE"}
 VALID_CONFIDENCE = {"HIGH", "MEDIUM", "LOW"}
+NOT_APPLICABLE = {"N/A", "NA", "NONE", "-", ""}
 
 SECTION_RE = re.compile(r"^## (?P<sample>\S+) — volume (?P<volume>\S+) — umbilicus: (?P<source>\S+)$",
                          re.MULTILINE)
@@ -32,6 +33,7 @@ FIELD_RE = re.compile(
     r"\*\*Z-level trusted:\*\*\s*(?P<trusted_z>.*?)\s*\n"
     r"\*\*Note:\*\*\s*(?P<note>.*?)\s*\n"
 )
+READER_DISCLOSURE_RE = re.compile(r"^>\s*\*\*Reader:\*\*\s*(?P<disclosure>.+)$", re.MULTILINE)
 
 
 def parse_sheet(text: str) -> dict[str, dict]:
@@ -62,17 +64,26 @@ def normalize_confidence(raw: str) -> str:
     return raw.strip().upper()
 
 
+def parse_reader_disclosure(text: str) -> str:
+    m = READER_DISCLOSURE_RE.search(text)
+    if m is None:
+        raise SystemExit("error: no '> **Reader:** ...' disclosure line found at the top of the sheet")
+    return m.group("disclosure").strip()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                       formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--sheet", default="readings/READING_SHEET.md")
     parser.add_argument("--readings-json", default="readings/readings.json")
-    parser.add_argument("--reader", default="LM",
-                         help="Reader initials for every row")
+    parser.add_argument("--reader", default=None,
+                         help="Override the reader disclosure; default parses it from the "
+                              "sheet's own '> **Reader:** ...' line")
     args = parser.parse_args()
 
     sheet_text = Path(args.sheet).read_text()
     parsed = parse_sheet(sheet_text)
+    reader = args.reader or parse_reader_disclosure(sheet_text)
 
     readings_path = Path(args.readings_json)
     records = json.loads(readings_path.read_text())
@@ -92,10 +103,11 @@ def main() -> int:
         sense = normalize_sense(entry["sense_raw"])
         if sense not in VALID_SENSES:
             bad_sense.append((sample, entry["sense_raw"]))
-        if entry["confidence_raw"]:
-            conf = normalize_confidence(entry["confidence_raw"])
+        conf_raw = entry["confidence_raw"]
+        if conf_raw and normalize_confidence(conf_raw) not in NOT_APPLICABLE:
+            conf = normalize_confidence(conf_raw)
             if conf not in VALID_CONFIDENCE:
-                bad_confidence.append((sample, entry["confidence_raw"]))
+                bad_confidence.append((sample, conf_raw))
     if bad_sense:
         print("REFUSING TO PUBLISH: sense must be CW, ACW, or unsure:")
         for s, v in bad_sense:
@@ -113,12 +125,17 @@ def main() -> int:
         entry = parsed[sample]
         sense = normalize_sense(entry["sense_raw"])
         sense_out = {"CW": "CW", "ACW": "ACW", "UNSURE": "unsure"}[sense]
-        confidence_out = entry["confidence_raw"].strip().lower() or None
+        conf_raw = entry["confidence_raw"].strip()
+        confidence_out = None if (not conf_raw or normalize_confidence(conf_raw) in NOT_APPLICABLE) \
+            else conf_raw.lower()
+        trusted_z_raw = entry["trusted_z"].strip()
+        trusted_z_out = None if (not trusted_z_raw or trusted_z_raw.upper() in NOT_APPLICABLE
+                                  or trusted_z_raw.lower() == "none") else trusted_z_raw
 
         r["ct_reading"]["sense"] = sense_out
         r["ct_reading"]["confidence"] = confidence_out
-        r["ct_reading"]["reader"] = args.reader
-        r["ct_reading"]["trusted_z_level"] = entry["trusted_z"] or None
+        r["ct_reading"]["reader"] = reader
+        r["ct_reading"]["trusted_z_level"] = trusted_z_out
         r["note"] = entry["note"] or None
 
         predicted = r["catalog"]["predicted_visual_sense"]
@@ -133,6 +150,7 @@ def main() -> int:
                 n_disagree += 1
 
     readings_path.write_text(json.dumps(records, indent=2) + "\n")
+    print(f"Reader: {reader}")
     print(f"Wrote {readings_path}: 23/23 readings filled. "
           f"Agreement vs. predicted_visual_sense: {n_agree} agree, {n_disagree} disagree, "
           f"{n_na} not applicable (underivable or unsure).")

@@ -1,8 +1,9 @@
 # Findings for the villa README PR and issue
 
-Two observations from this build, stated as observations with no verdict --
-neither is a claim that villa's code is wrong. Kept here so F4 (README PR)
-and F5 (issue) can cite them with evidence rather than re-deriving them.
+Four observations from this build, stated as observations with no verdict --
+none is a claim that villa's code, or anyone's tool, is wrong. Kept here so
+F4 (README PR) and F5 (issue) can cite them with evidence rather than
+re-deriving them.
 
 ## Finding A: re-opening an already-opened catalog sample renders blank
 
@@ -66,25 +67,58 @@ about how the sense should be read near the ends of a volume versus its
 middle. Both are stated as observations for a maintainer to weigh in on,
 not as a claim that either transforms.py or spiral_sense.py is wrong.
 
-## Anticipated, to confirm once the human readings are in: the #1736 estimator can land inside the sheet pack, not at the true core
+## Finding C: the #1736 estimator lands 2-3mm off the visible core on at least 3 of the 12 estimated-umbilicus volumes
 
-**Not yet a finding -- a specific prediction being recorded before reading,
-so it isn't a post-hoc rationalization if it happens.** `estimate_umbilicus.py`
-(villa PR #1736, closed but not merged) takes the point of maximum
-distance-to-boundary in the largest connected sheet-mask component as the
-core. On a scroll crushed enough that the windings press together, that
-point can fall inside the winding pack itself rather than at the true
-central core, giving a plausible-looking but wrong center.
+**This was a pre-registered prediction, now confirmed by the reading pass**
+(the prediction, made before reading, is preserved below for the record).
+`estimate_umbilicus.py` (villa PR #1736, closed but not merged) takes the
+point of maximum distance-to-boundary in the largest connected sheet-mask
+component as the core. On a scroll crushed enough that the windings press
+together, or where the true core sits off that maximum, the estimate can
+land beside the real center rather than on it.
 
-**Example to watch:** `PHerc0125` (a 2025-2026, tracks-only volume with no
-published umbilicus), z=11462 --
-`readings/renders/PHerc0125_z11462_umbilicus_L1_12mm.png`. The estimated
-umbilicus crosshair does not sit at an obviously converging center; the
-surrounding fiber pattern looks locally dense and directionless rather than
-showing clean radial convergence.
+**Observed, with a visible correct core beside the estimate:**
+- `PHerc0175A`, z=4462: a clear spiral centre is visible off-target by
+  ~2.5mm (`readings/renders/PHerc0175A_z4462_umbilicus_L1_12mm.png`).
+- `PHerc0343`, z=9899 and z=13498: a crumpled centre and a clean spiral core
+  with a hooked innermost sheet, both ~2-3mm right of the mark
+  (`readings/renders/PHerc0343_z13498_umbilicus_L1_12mm.png`).
+- `PHerc0846B`, z=4874: a large crumpled swirl visible ~2.5mm off the mark
+  (`readings/renders/PHerc0846B_z4874_umbilicus_L1_12mm.png`).
 
-If the reading pass comes back with several "unsure, core not resolvable
-at this scale" among the 12 estimated-umbilicus volumes, that is the
-predicted outcome landing, not a gap in this build's method -- worth a
-line in the README PR (F4) about the estimator's known limitation on
-crushed scrolls, citing this image.
+Distinct from the other 8 estimated-umbilicus volumes (PHerc0125, 0490A,
+0490B, 0846A, 0175B, 0306B, 0483A, 0483B), where no core was visible at all
+near the estimate, on-target or not -- those may be genuinely crushed past
+what a single slice can resolve, rather than a mislocated estimate.
+
+**Not established:** whether the ~2-3mm offset pattern generalizes beyond
+these three, or what in the sheet-mask geometry predicts it.
+
+## Finding D: on these eligible scrolls, a single-slice visual read does not usually determine the sense
+
+**Observed:** Of the 23 volumes read (one reader, blind to the catalog
+prediction, from the 12mm/4mm umbilicus crops only -- see `readings/READING_SHEET.md`
+disclosure and `table/orientation.md`), 21 came back "unsure." The common
+reasons, by volume: the core is filled with debris rather than showing a
+free inner terminus (e.g. PHerc0826, PHerc1218, PHerc1545), the innermost
+material is crumpled fragments rather than one continuous wrap (PHerc0191,
+PHerc0257, PHerc0358), or no core is visible at all near the umbilicus
+(most of the 12 estimated-umbilicus volumes; see Finding C). Only 2 volumes
+got a sense: `PHerc1203` (ACW, its only evidence, since the catalog cannot
+derive one) and `PHerc0813` (ACW, low confidence) -- which disagrees with
+PHerc0813's catalog-derived prediction of CW.
+
+**Implication, stated as an observation:** the August entry's own
+CW-vs-ACW overlay-fit comparison (fit the spiral both ways, compare which
+is coherent) looks like the actual discriminator for these scrolls, not a
+single-slice visual read at the umbilicus -- consistent with why villa's
+own rule falls back to "read off the CT data by a person in VC3D, or from
+an already-fitted spiral" (spiral-fitting/README.md) rather than a slice
+inspection. PHerc0813 (clearest core, measured umbilicus, published
+tracks, and the one disagreement) is the discriminator case this build is
+carrying into the A1b re-fit.
+
+**Not established:** whether a different reader, a different z-level
+choice, or VC3D's own interactive rotation (rather than a fixed axial
+slice) would resolve more of the 21 unsure cases; this build only tested
+fixed-axial-slice, single-reader reading.
