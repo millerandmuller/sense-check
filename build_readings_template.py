@@ -2,14 +2,16 @@
 """Assemble readings/readings.json from the catalog and the rendered images,
 leaving the human fields (sense, confidence, reader) blank.
 
-Matches the record shape from the project plan:
+Matches the record shape from the project plan, extended with the
+umbilicus-centered reading crops, the umbilicus source, and the theoretical
+predicted visual sense:
 
     {"scroll": ..., "volume": ..., "um": ..., "keV": ...,
      "catalog": {"z_direction_is_top_to_bottom": ..., "left_handed_coordinates": ...,
-                 "derived_sense": ...},
+                 "derived_sense": ..., "predicted_visual_sense": ...},
      "ct_reading": {"sense": null, "confidence": null, "reader": null,
-                     "z_levels": [...], "convention": "...",
-                     "renders": [...], "vc3d_screenshots": [...]},
+                     "z_levels": [...], "convention": "...", "umbilicus_source": ...,
+                     "renders": [...], "umbilicus_crops": [...], "vc3d_screenshots": [...]},
      "agree": null, "note": null}
 
 Re-run after new renders or VC3D screenshots land; it only fills fields it
@@ -36,16 +38,20 @@ from catalog_client import (
     pick_eligible_volume,
     spiral_outward_sense_for,
 )
+from predicted_sense import VISUAL_CONVENTION_NOTE, predicted_visual_sense
+from umbilicus_data import load_umbilicus
 
 CONVENTION = (
     "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll "
     "shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom "
     "and left_handed_coordinates. Raw pixel axes are the August entry's own "
     "convention (native array orientation, row=y col=x, no flip, viewed looking "
-    "along +z) -- villa does not document pixel axes for a raw CT slice."
+    "along +z) -- villa does not document pixel axes for a raw CT slice. "
+    + VISUAL_CONVENTION_NOTE
 )
 
 RENDER_RE = re.compile(r"^(?P<sample>.+)_z(?P<z>\d+)_level\d+\.png$")
+CROP_RE = re.compile(r"^(?P<sample>.+)_z(?P<z>\d+)_umbilicus_L\d+_[\d.]+mm\.png$")
 SCREENSHOT_RE = re.compile(r"^(?P<sample>.+)_z(?P<z>\d+)\.png$")
 
 
@@ -67,6 +73,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                       formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--renders-dir", default="readings/renders")
+    parser.add_argument("--crops-dir", default="readings/renders")
     parser.add_argument("--screenshots-dir", default="readings/vc3d_screenshots")
     parser.add_argument("--out", default="readings/readings.json")
     parser.add_argument("--catalog-url", default=FULL_CATALOG_URL)
@@ -79,6 +86,7 @@ def main() -> int:
             existing[rec["scroll"]] = rec
 
     renders = collect_images(Path(args.renders_dir), RENDER_RE)
+    crops = collect_images(Path(args.crops_dir), CROP_RE)
     screenshots = collect_images(Path(args.screenshots_dir), SCREENSHOT_RE)
 
     print(f"Fetching catalog from {args.catalog_url} ...")
@@ -96,8 +104,13 @@ def main() -> int:
         prior = existing.get(sample_id, {})
         prior_reading = prior.get("ct_reading", {})
         z_levels = sorted({z for z, _ in renders.get(sample_id, [])} |
+                           {z for z, _ in crops.get(sample_id, [])} |
                            {z for z, _ in screenshots.get(sample_id, [])}) or \
             prior_reading.get("z_levels", [])
+
+        umbilicus = load_umbilicus(sample_id)
+        umbilicus_source = ("estimated" if umbilicus.is_estimated else "measured") \
+            if umbilicus is not None else None
 
         record = {
             "scroll": sample_id,
@@ -108,6 +121,7 @@ def main() -> int:
                 "z_direction_is_top_to_bottom": z_top,
                 "left_handed_coordinates": left_handed,
                 "derived_sense": derived_sense,
+                "predicted_visual_sense": predicted_visual_sense(derived_sense),
             },
             "ct_reading": {
                 "sense": prior_reading.get("sense"),
@@ -115,7 +129,9 @@ def main() -> int:
                 "reader": prior_reading.get("reader"),
                 "z_levels": z_levels,
                 "convention": CONVENTION,
+                "umbilicus_source": umbilicus_source,
                 "renders": [path for _, path in renders.get(sample_id, [])],
+                "umbilicus_crops": [path for _, path in crops.get(sample_id, [])],
                 "vc3d_screenshots": [path for _, path in screenshots.get(sample_id, [])],
             },
             "agree": prior.get("agree"),
@@ -127,11 +143,15 @@ def main() -> int:
     out_path.write_text(json.dumps(records, indent=2) + "\n")
 
     with_renders = sum(1 for r in records if r["ct_reading"]["renders"])
+    with_crops = sum(1 for r in records if r["ct_reading"]["umbilicus_crops"])
     with_screenshots = sum(1 for r in records if r["ct_reading"]["vc3d_screenshots"])
     with_reading = sum(1 for r in records if r["ct_reading"]["sense"])
+    measured = sum(1 for r in records if r["ct_reading"]["umbilicus_source"] == "measured")
+    estimated = sum(1 for r in records if r["ct_reading"]["umbilicus_source"] == "estimated")
     print(f"Wrote {out_path}: {len(records)} volumes, "
-          f"{with_renders} with renders, {with_screenshots} with VC3D screenshots, "
-          f"{with_reading} with a human reading.")
+          f"{with_renders} with wide renders, {with_crops} with umbilicus crops, "
+          f"{with_screenshots} with VC3D screenshots, {with_reading} with a human reading. "
+          f"Umbilicus: {measured} measured, {estimated} estimated.")
     return 0
 
 

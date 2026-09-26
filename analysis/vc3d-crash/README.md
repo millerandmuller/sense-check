@@ -82,6 +82,33 @@ After switching `.mcp.json` to the `latest` build and client (protocol 2),
 all 23 volumes opened and screenshotted cleanly across the full F2 batch,
 zero bridge errors.
 
+## Separate finding: re-opening an already-opened catalog sample renders blank
+
+Not a crash -- the bridge stays up (pings fine throughout) -- but re-opening
+a catalog sample already opened earlier in the same VC3D session produces a
+viewport that reports success (`"opened": true`, correct scale label, correct
+crosshair position at high zoom) yet shows no volume content, at any zoom
+level including the exact default (scale 0.05) that rendered it correctly
+the first time. Reproduced on two different samples (PHerc0826, PHerc0813).
+
+The `open_catalog_sample` response is the tell: a first-time open reports
+`"attached": {"volumes": 1, ...}` (or more for a default-kinds open); a
+repeat open of the same sample reports `"attached": {"volumes": 0, ...}`
+with a message `"Skipped <volume> (ome-zarr): already attached"` -- the
+bridge believes the resource is still attached from the earlier session and
+skips re-attaching it, but whatever GPU-side resource backed that texture
+appears to have been evicted when a later sample was opened (only one
+volume is resident at a time), leaving a dangling reference.
+
+Explicit re-selection (`vc3d_select_volume` on the same, already-current
+volume) does not fix it. This session did not find a workaround short of a
+full VC3D relaunch, and did not want to ask for a fourth relaunch just to
+verify one. Practical consequence: F2's 69 VC3D screenshots (committed
+earlier, default zoom) cannot be cheaply redone at a tighter, umbilicus-
+centered zoom in the same running session -- the zoomed reading crops
+(`render_umbilicus_crops.py`, matplotlib, reads the S3 zarr directly rather
+than through VC3D) serve that purpose instead.
+
 ## What this is not
 
 This is not a claim that villa's or VC3D's code is wrong, and no VC3D code

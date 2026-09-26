@@ -7,7 +7,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": null,
       "left_handed_coordinates": false,
-      "derived_sense": null
+      "derived_sense": null,
+      "predicted_visual_sense": null
     },
     "ct_reading": {
       "sense": null,
@@ -18,11 +19,20 @@
         11462,
         15630
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0125_z7294_level2.png",
         "readings/renders/PHerc0125_z11462_level2.png",
         "readings/renders/PHerc0125_z15630_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0125_z7294_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0125_z7294_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0125_z11462_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0125_z11462_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0125_z15630_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0125_z15630_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0125_z7294.png",
@@ -41,22 +51,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        6642,
         6643,
+        10437,
         10439,
+        14233,
         14235
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0191_z6643_level2.png",
         "readings/renders/PHerc0191_z10439_level2.png",
         "readings/renders/PHerc0191_z14235_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0191_z6642_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0191_z6642_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0191_z10437_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0191_z10437_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0191_z14233_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0191_z14233_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0191_z6643.png",
@@ -75,7 +98,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
@@ -86,11 +110,20 @@
         10679,
         14562
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0211_z6796_level2.png",
         "readings/renders/PHerc0211_z10679_level2.png",
         "readings/renders/PHerc0211_z14562_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0211_z6796_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0211_z6796_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0211_z10679_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0211_z10679_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0211_z14562_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0211_z14562_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0211_z6796.png",
@@ -109,7 +142,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
@@ -120,11 +154,20 @@
         10380,
         14154
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0257_z6605_level2.png",
         "readings/renders/PHerc0257_z10380_level2.png",
         "readings/renders/PHerc0257_z14154_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0257_z6605_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0257_z6605_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0257_z10380_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0257_z10380_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0257_z14154_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0257_z14154_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0257_z6605.png",
@@ -143,22 +186,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        5192,
         5194,
+        8158,
         8162,
+        11125,
         11130
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0268_z5194_level3.png",
         "readings/renders/PHerc0268_z8162_level3.png",
         "readings/renders/PHerc0268_z11130_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0268_z5192_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0268_z5192_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0268_z8158_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0268_z8158_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0268_z11125_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0268_z11125_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0268_z5194.png",
@@ -177,7 +233,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
@@ -188,11 +245,20 @@
         8109,
         11058
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0358_z5160_level2.png",
         "readings/renders/PHerc0358_z8109_level2.png",
         "readings/renders/PHerc0358_z11058_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0358_z5160_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0358_z5160_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0358_z8109_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0358_z8109_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0358_z11058_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0358_z11058_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0358_z5160.png",
@@ -211,22 +277,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        8504,
         8506,
+        13364,
         13367,
+        18224,
         18228
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0800_z8506_level3.png",
         "readings/renders/PHerc0800_z13367_level3.png",
         "readings/renders/PHerc0800_z18228_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0800_z8504_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0800_z8504_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0800_z13364_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0800_z13364_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0800_z18224_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0800_z18224_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0800_z8506.png",
@@ -245,22 +324,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        5948,
         5949,
+        9346,
         9348,
+        12745,
         12747
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0813_z5949_level2.png",
         "readings/renders/PHerc0813_z9348_level2.png",
         "readings/renders/PHerc0813_z12747_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0813_z5948_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0813_z5948_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0813_z9346_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0813_z9346_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0813_z12745_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0813_z5949.png",
@@ -279,7 +371,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
@@ -290,11 +383,20 @@
         9306,
         12690
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc0826_z5922_level2.png",
         "readings/renders/PHerc0826_z9306_level2.png",
         "readings/renders/PHerc0826_z12690_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0826_z5922_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0826_z5922_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0826_z9306_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0826_z9306_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0826_z12690_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0826_z12690_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0826_z5922.png",
@@ -313,22 +415,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        4462,
         4463,
+        7011,
         7014,
+        9561,
         9564
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0175A_z4463_level3.png",
         "readings/renders/PHerc0175A_z7014_level3.png",
         "readings/renders/PHerc0175A_z9564_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0175A_z4462_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0175A_z4462_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0175A_z7011_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0175A_z7011_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0175A_z9561_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0175A_z9561_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0175A_z4463.png",
@@ -347,22 +462,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        5564,
         5566,
+        8743,
         8747,
+        11923,
         11928
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0175B_z5566_level3.png",
         "readings/renders/PHerc0175B_z8747_level3.png",
         "readings/renders/PHerc0175B_z11928_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0175B_z5564_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0175B_z5564_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0175B_z8743_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0175B_z8743_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0175B_z11923_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0175B_z11923_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0175B_z5566.png",
@@ -381,22 +509,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        5564,
         5566,
+        8744,
         8747,
+        11924,
         11928
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0306B_z5566_level3.png",
         "readings/renders/PHerc0306B_z8747_level3.png",
         "readings/renders/PHerc0306B_z11928_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0306B_z5564_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0306B_z5564_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0306B_z8744_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0306B_z8744_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0306B_z11924_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0306B_z11924_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0306B_z5566.png",
@@ -415,22 +556,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        6299,
         6300,
+        9899,
         9900,
+        13498,
         13500
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0343_z6300_level2.png",
         "readings/renders/PHerc0343_z9900_level2.png",
         "readings/renders/PHerc0343_z13500_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0343_z6299_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0343_z6299_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0343_z9899_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0343_z9899_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0343_z13498_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0343_z13498_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0343_z6300.png",
@@ -449,22 +603,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        5564,
         5566,
+        8744,
         8747,
+        11924,
         11928
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0483A_z5566_level3.png",
         "readings/renders/PHerc0483A_z8747_level3.png",
         "readings/renders/PHerc0483A_z11928_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0483A_z5564_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0483A_z5564_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0483A_z8744_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0483A_z8744_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0483A_z11924_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0483A_z11924_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0483A_z5566.png",
@@ -483,7 +650,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
@@ -494,11 +662,20 @@
         6534,
         8910
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0483B_z4158_level2.png",
         "readings/renders/PHerc0483B_z6534_level2.png",
         "readings/renders/PHerc0483B_z8910_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0483B_z4158_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0483B_z4158_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0483B_z6534_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0483B_z6534_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0483B_z8910_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0483B_z8910_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0483B_z4158.png",
@@ -517,22 +694,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": null,
       "left_handed_coordinates": false,
-      "derived_sense": null
+      "derived_sense": null,
+      "predicted_visual_sense": null
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        4094,
         4096,
+        6434,
         6437,
+        8774,
         8778
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0490A_z4096_level3.png",
         "readings/renders/PHerc0490A_z6437_level3.png",
         "readings/renders/PHerc0490A_z8778_level3.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0490A_z4094_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0490A_z4094_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0490A_z6434_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0490A_z6434_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0490A_z8774_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0490A_z8774_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0490A_z4096.png",
@@ -551,7 +741,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": null,
       "left_handed_coordinates": false,
-      "derived_sense": null
+      "derived_sense": null,
+      "predicted_visual_sense": null
     },
     "ct_reading": {
       "sense": null,
@@ -562,11 +753,20 @@
         5856,
         7986
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0490B_z3727_level2.png",
         "readings/renders/PHerc0490B_z5856_level2.png",
         "readings/renders/PHerc0490B_z7986_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0490B_z3727_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0490B_z3727_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0490B_z5856_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0490B_z5856_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0490B_z7986_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0490B_z7986_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0490B_z3727.png",
@@ -585,7 +785,8 @@
     "catalog": {
       "z_direction_is_top_to_bottom": null,
       "left_handed_coordinates": false,
-      "derived_sense": null
+      "derived_sense": null,
+      "predicted_visual_sense": null
     },
     "ct_reading": {
       "sense": null,
@@ -593,14 +794,25 @@
       "reader": null,
       "z_levels": [
         4907,
+        7710,
         7711,
+        10514,
         10515
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0846A_z4907_level2.png",
         "readings/renders/PHerc0846A_z7711_level2.png",
         "readings/renders/PHerc0846A_z10515_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0846A_z4907_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0846A_z4907_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0846A_z7710_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0846A_z7710_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0846A_z10514_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0846A_z10514_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0846A_z4907.png",
@@ -619,22 +831,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": null,
       "left_handed_coordinates": false,
-      "derived_sense": null
+      "derived_sense": null,
+      "predicted_visual_sense": null
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        6642,
         6643,
+        10437,
         10439,
+        14233,
         14235
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc1203_z6643_level2.png",
         "readings/renders/PHerc1203_z10439_level2.png",
         "readings/renders/PHerc1203_z14235_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc1203_z6642_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1203_z6642_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1203_z10437_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1203_z10437_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1203_z14233_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1203_z14233_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc1203_z6643.png",
@@ -653,22 +878,34 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        8136,
         8137,
         12786,
+        17435,
         17436
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc1218_z8137_level2.png",
         "readings/renders/PHerc1218_z12786_level2.png",
         "readings/renders/PHerc1218_z17436_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc1218_z8136_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1218_z8136_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1218_z12786_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1218_z12786_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1218_z17435_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1218_z17435_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc1218_z8137.png",
@@ -687,22 +924,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        8504,
         8505,
+        13363,
         13365,
+        18223,
         18225
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc1447_z8505_level2.png",
         "readings/renders/PHerc1447_z13365_level2.png",
         "readings/renders/PHerc1447_z18225_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc1447_z8504_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1447_z8504_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1447_z13363_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1447_z13363_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1447_z18223_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1447_z18223_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc1447_z8505.png",
@@ -721,22 +971,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": true,
       "left_handed_coordinates": false,
-      "derived_sense": "ACW"
+      "derived_sense": "ACW",
+      "predicted_visual_sense": "ACW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        7336,
         7337,
+        11529,
         11530,
+        15721,
         15723
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "measured",
       "renders": [
         "readings/renders/PHerc1545_z7337_level2.png",
         "readings/renders/PHerc1545_z11530_level2.png",
         "readings/renders/PHerc1545_z15723_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc1545_z7336_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1545_z7336_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1545_z11529_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1545_z11529_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc1545_z15721_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc1545_z15721_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc1545_z7337.png",
@@ -755,22 +1018,35 @@
     "catalog": {
       "z_direction_is_top_to_bottom": false,
       "left_handed_coordinates": false,
-      "derived_sense": "CW"
+      "derived_sense": "CW",
+      "predicted_visual_sense": "CW"
     },
     "ct_reading": {
       "sense": null,
       "confidence": null,
       "reader": null,
       "z_levels": [
+        4874,
         4875,
+        7659,
         7660,
+        10444,
         10446
       ],
-      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice.",
+      "convention": "villa spiral-fitting/README.md (f4570bf): every catalog-conventional scroll shows the same spiral seen from its top, fixed by z_direction_is_top_to_bottom and left_handed_coordinates. Raw pixel axes are the August entry's own convention (native array orientation, row=y col=x, no flip, viewed looking along +z) -- villa does not document pixel axes for a raw CT slice. Predicted visual sense assumes slice-space (villa transforms.py, surface_orientation.py) is pixel-identical to this render/screenshot's own axes (row=y down, col=x right, viewed along +z) -- inferred, not villa-confirmed; see predicted_sense.py docstring for the derivation and an inconclusive empirical spot-check.",
+      "umbilicus_source": "estimated",
       "renders": [
         "readings/renders/PHerc0846B_z4875_level2.png",
         "readings/renders/PHerc0846B_z7660_level2.png",
         "readings/renders/PHerc0846B_z10446_level2.png"
+      ],
+      "umbilicus_crops": [
+        "readings/renders/PHerc0846B_z4874_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0846B_z4874_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0846B_z7659_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0846B_z7659_umbilicus_L1_12mm.png",
+        "readings/renders/PHerc0846B_z10444_umbilicus_L0_4mm.png",
+        "readings/renders/PHerc0846B_z10444_umbilicus_L1_12mm.png"
       ],
       "vc3d_screenshots": [
         "readings/vc3d_screenshots/PHerc0846B_z4875.png",

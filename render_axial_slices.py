@@ -25,10 +25,8 @@ system packages:
 from __future__ import annotations
 
 import argparse
-import json
 import warnings
 from pathlib import Path
-from typing import Optional
 
 warnings.filterwarnings("ignore")
 
@@ -36,13 +34,11 @@ import matplotlib  # noqa: E402
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
-import s3fs  # noqa: E402
-import zarr  # noqa: E402
 
-from catalog_client import ELIGIBLE_SAMPLES, FULL_CATALOG_URL, fetch_catalog, pick_eligible_volume  # noqa: E402
+from catalog_client import ELIGIBLE_SAMPLES, FULL_CATALOG_URL, fetch_catalog  # noqa: E402
+from umbilicus_data import interpolate, load_umbilicus  # noqa: E402
+from volume_access import find_volume_path, open_group  # noqa: E402
 
-BUCKET = "vesuvius-challenge-open-data"
-UMBILICUS_DIR = Path(__file__).parent / "umbilicus"
 TARGET_IN_PLANE_PX = 2200  # aim the pyramid level choice at roughly this size
 
 CONVENTION_TEXT = (
@@ -53,26 +49,6 @@ CONVENTION_TEXT = (
     "row=y col=x, no flip, viewed looking along +z) -- villa does not document "
     "pixel axes for a raw CT slice, only for exported grids."
 )
-
-
-def find_volume_path(catalog: dict, sample_id: str) -> tuple[str, dict]:
-    sample = catalog["samples"].get(sample_id)
-    if sample is None:
-        raise SystemExit(f"error: sample {sample_id!r} not found in catalog")
-    vid, v = pick_eligible_volume(sample)
-    if vid is None:
-        raise SystemExit(f"error: no eligible-protocol volume found for {sample_id!r}")
-    data = v.get("data", [])
-    path = next((d["origins"][0]["path"] for d in data if d.get("type") == "ome-zarr"), None)
-    if path is None:
-        raise SystemExit(f"error: no ome-zarr data entry for {sample_id}/{vid}")
-    return path.rstrip("/"), v
-
-
-def open_group(zarr_path: str):
-    fs = s3fs.S3FileSystem(anon=True)
-    store = zarr.storage.FsspecStore(fs, path=f"{BUCKET}/{zarr_path}")
-    return zarr.open_group(store=store, mode="r")
 
 
 def pick_level(group) -> tuple[str, int]:
@@ -98,32 +74,6 @@ def target_z_fullres(shape_z: int) -> list[int]:
     return [round(shape_z * f) for f in (0.35, 0.55, 0.75)]
 
 
-def load_umbilicus(sample_id: str) -> Optional[list[dict]]:
-    path = UMBILICUS_DIR / f"{sample_id}_umbilicus.json"
-    if not path.exists():
-        return None
-    doc = json.loads(path.read_text())
-    return sorted(doc["control_points"], key=lambda p: p["z"])
-
-
-def interpolate_umbilicus(points: list[dict], z_target: int) -> tuple[float, float]:
-    zs = [p["z"] for p in points]
-    if z_target <= zs[0]:
-        p = points[0]
-        return p["x"], p["y"]
-    if z_target >= zs[-1]:
-        p = points[-1]
-        return p["x"], p["y"]
-    for i in range(len(points) - 1):
-        z0, z1 = points[i]["z"], points[i + 1]["z"]
-        if z0 <= z_target <= z1:
-            t = (z_target - z0) / (z1 - z0) if z1 != z0 else 0.0
-            x = points[i]["x"] + t * (points[i + 1]["x"] - points[i]["x"])
-            y = points[i]["y"] + t * (points[i + 1]["y"] - points[i]["y"])
-            return x, y
-    raise RuntimeError(f"z={z_target} not bracketed (range {zs[0]}-{zs[-1]})")
-
-
 def render_sample(sample_id: str, catalog: dict, out_dir: Path) -> list[str]:
     zarr_path, volume = find_volume_path(catalog, sample_id)
     volume_id = volume["id"]
@@ -134,8 +84,7 @@ def render_sample(sample_id: str, catalog: dict, out_dir: Path) -> list[str]:
     shape_z = arr.shape[0]
     print(f"  level {level} shape={arr.shape} scale={scale}x")
 
-    umbilicus_points = load_umbilicus(sample_id)
-    has_umbilicus = umbilicus_points is not None
+    umbilicus = load_umbilicus(sample_id)
 
     saved = []
     for z_full in target_z_fullres(shape_z * scale):
@@ -149,16 +98,19 @@ def render_sample(sample_id: str, catalog: dict, out_dir: Path) -> list[str]:
         fig, ax = plt.subplots(figsize=(9, 10.5), dpi=150)
         ax.imshow(disp, cmap="gray", origin="upper")
 
-        if has_umbilicus:
-            ux_full, uy_full = interpolate_umbilicus(umbilicus_points, z_full)
+        if umbilicus is not None:
+            ux_full, uy_full = interpolate(umbilicus.points, z_full)
             ux, uy = ux_full / scale, uy_full / scale
-            ax.plot(ux, uy, marker="+", color="red", markersize=22, markeredgewidth=2.5)
-            ax.plot(ux, uy, marker="o", color="red", markersize=10,
+            label = "umbilicus (estimated, interpolated)" if umbilicus.is_estimated \
+                else "umbilicus (interpolated)"
+            color = "orange" if umbilicus.is_estimated else "red"
+            ax.plot(ux, uy, marker="+", color=color, markersize=22, markeredgewidth=2.5)
+            ax.plot(ux, uy, marker="o", color=color, markersize=10,
                      markerfacecolor="none", markeredgewidth=2)
             ax.annotate(
-                f"umbilicus (interpolated)\nz_full={z_full}  x={ux_full:.0f} y={uy_full:.0f}",
-                xy=(ux, uy), xytext=(ux + 60, uy - 60), color="red", fontsize=9,
-                arrowprops=dict(arrowstyle="->", color="red"),
+                f"{label}\nz_full={z_full}  x={ux_full:.0f} y={uy_full:.0f}",
+                xy=(ux, uy), xytext=(ux + 60, uy - 60), color=color, fontsize=9,
+                arrowprops=dict(arrowstyle="->", color=color),
             )
         else:
             ax.text(0.02, 0.98, "umbilicus: not available for this volume (see umbilicus/NOTICE.md)",
