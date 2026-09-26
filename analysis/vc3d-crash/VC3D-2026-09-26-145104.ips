@@ -1,0 +1,1835 @@
+{"app_name":"VC3D","timestamp":"2026-09-26 14:51:04.00 -0500","app_version":"1.0.0","slice_uuid":"4c4c44b5-5555-3144-a130-5e82a32f3d8a","build_version":"fc25b4d-2026-07-31","platform":1,"bundleID":"org.scrollprize.VC3D","share_with_app_devs":0,"is_first_party":0,"bug_type":"309","os_version":"macOS 26.5 (25F71)","roots_installed":0,"name":"VC3D","incident_id":"A4493CFA-D1C9-4DD4-BAAB-D2E7FAB89E8F"}
+{
+  "uptime" : 24000,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "Mac16,1",
+  "coalitionID" : 710,
+  "osVersion" : {
+    "train" : "macOS 26.5",
+    "build" : "25F71",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2026-09-26 14:51:01.1841 -0500",
+  "codeSigningMonitor" : 2,
+  "incident" : "A4493CFA-D1C9-4DD4-BAAB-D2E7FAB89E8F",
+  "pid" : 23895,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "procLaunch" : "2026-09-26 14:46:42.4684 -0500",
+  "procStartAbsTime" : 575862861338,
+  "procExitAbsTime" : 582071966826,
+  "procName" : "VC3D",
+  "procPath" : "\/Applications\/VC3D.app\/Contents\/MacOS\/VC3D",
+  "bundleInfo" : {"CFBundleShortVersionString":"1.0.0","CFBundleVersion":"fc25b4d-2026-07-31","CFBundleIdentifier":"org.scrollprize.VC3D"},
+  "storeInfo" : {"deviceIdentifierForVendor":"00000000-0000-0000-0000-000000000000","thirdParty":true},
+  "parentProc" : "Python",
+  "parentPid" : 23890,
+  "coalitionName" : "com.example.build-session",
+  "crashReporterKey" : "00000000-0000-0000-0000-000000000000",
+  "appleIntelligenceStatus" : {"state":"unavailable","reasons":["notOptedIn","assetIsNotReady"]},
+  "developerMode" : 1,
+  "responsiblePid" : 654,
+  "responsibleProc" : "Electron",
+  "codeSigningID" : "org.scrollprize.VC3D",
+  "codeSigningTeamID" : "",
+  "codeSigningFlags" : 570425857,
+  "codeSigningValidationCategory" : 10,
+  "codeSigningTrustLevel" : 4294967295,
+  "codeSigningAuxiliaryInfo" : 0,
+  "instructionByteStream" : {"beforePC":"fyMD1f17v6n9AwCRCuD\/l78DAJH9e8Go\/w9f1sADX9YQKYDSARAA1A==","atPC":"AwEAVH8jA9X9e7+p\/QMAkf\/f\/5e\/AwCR\/XvBqP8PX9bAA1\/WcAqA0g=="},
+  "bootSessionUUID" : "EC9488B7-B8C9-4A07-B694-D527F26EE1FA",
+  "wakeTime" : 16831,
+  "sleepWakeUUID" : "00000000-0000-0000-0000-000000000000",
+  "sip" : "enabled",
+  "exception" : {"codes":"0x0000000000000000, 0x0000000000000000","rawCodes":[0,0],"type":"EXC_CRASH","signal":"SIGABRT"},
+  "termination" : {"flags":0,"code":6,"namespace":"SIGNAL","indicator":"Abort trap: 6","byProc":"VC3D","byPid":23895},
+  "asi" : {"libsystem_c.dylib":["abort() called"]},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":477537,"threadState":{"x":[{"value":0},{"value":0},{"value":0},{"value":0},{"value":6615682408},{"value":6096925856},{"value":103},{"value":18446726482597246976},{"value":2168035558487871985},{"value":2168035562487418737},{"value":2},{"value":4294967293},{"value":0},{"value":0},{"value":0},{"value":0},{"value":328},{"value":8452812800},{"value":0},{"value":6},{"value":259},{"value":8429494112,"symbolLocation":224,"symbol":"_main_thread"},{"value":32336582272},{"value":32503737280},{"value":32485960672},{"value":32505134992},{"value":32493385824},{"value":8429493888,"symbolLocation":0,"symbol":"_main_thread"},{"value":3}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6615980248},"cpsr":{"value":1073741824},"fp":{"value":6096925712},"sp":{"value":6096925680},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6615737832,"matchesCrashFrame":1},"far":{"value":0}},"queue":"com.apple.main-thread","frames":[{"imageOffset":38376,"symbol":"__pthread_kill","symbolLocation":8,"imageIndex":180},{"imageOffset":26840,"symbol":"pthread_kill","symbolLocation":296,"imageIndex":181},{"imageOffset":493124,"symbol":"abort","symbolLocation":148,"imageIndex":182},{"imageOffset":91948,"symbol":"__abort_message","symbolLocation":132,"imageIndex":183},{"imageOffset":13680,"symbol":"demangling_terminate_handler()","symbolLocation":272,"imageIndex":183},{"imageOffset":149668,"symbol":"_objc_terminate()","symbolLocation":172,"imageIndex":184},{"imageOffset":79708,"symbol":"std::__terminate(void (*)())","symbolLocation":16,"imageIndex":183},{"imageOffset":89060,"symbol":"__cxxabiv1::failed_throw(__cxxabiv1::__cxa_exception*)","symbolLocation":88,"imageIndex":183},{"imageOffset":8348,"symbol":"__cxa_throw","symbolLocation":92,"imageIndex":183},{"imageOffset":1965876,"symbol":"vc3d::opendata::resolveLasagnaForVolume(VolumePkg const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)","symbolLocation":312,"imageIndex":0},{"imageOffset":459420,"imageIndex":0},{"imageOffset":453260,"imageIndex":0},{"imageOffset":435624,"imageIndex":0},{"imageOffset":758224,"imageIndex":0},{"imageOffset":998908,"imageIndex":24},{"imageOffset":257880,"symbol":"CState::setVpkg(std::__1::shared_ptr<VolumePkg>)","symbolLocation":152,"imageIndex":0},{"imageOffset":4032136,"imageIndex":0},{"imageOffset":998908,"imageIndex":24},{"imageOffset":2453284,"symbol":"QFutureWatcherBase::event(QEvent*)","symbolLocation":28,"imageIndex":24},{"imageOffset":51924,"symbol":"QApplicationPrivate::notify_helper(QObject*, QEvent*)","symbolLocation":336,"imageIndex":21},{"imageOffset":56148,"symbol":"QApplication::notify(QObject*, QEvent*)","symbolLocation":468,"imageIndex":21},{"imageOffset":656328,"symbol":"QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*)","symbolLocation":628,"imageIndex":24},{"imageOffset":92788,"imageIndex":170},{"imageOffset":97580,"imageIndex":170},{"imageOffset":515888,"symbol":"__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__","symbolLocation":28,"imageIndex":185},{"imageOffset":515780,"symbol":"__CFRunLoopDoSource0","symbolLocation":172,"imageIndex":185},{"imageOffset":515120,"symbol":"__CFRunLoopDoSources0","symbolLocation":232,"imageIndex":185},{"imageOffset":510036,"symbol":"__CFRunLoopRun","symbolLocation":820,"imageIndex":185},{"imageOffset":1372612,"symbol":"_CFRunLoopRunSpecificWithOptions","symbolLocation":532,"imageIndex":185},{"imageOffset":775520,"symbol":"RunCurrentEventLoopInMode","symbolLocation":320,"imageIndex":186},{"imageOffset":788668,"symbol":"ReceiveNextEventCommon","symbolLocation":488,"imageIndex":186},{"imageOffset":2400588,"symbol":"_BlockUntilNextEventMatchingListInMode","symbolLocation":48,"imageIndex":186},{"imageOffset":7230300,"symbol":"_DPSBlockUntilNextEventMatchingListInMode","symbolLocation":228,"imageIndex":187},{"imageOffset":233604,"symbol":"_DPSNextEvent","symbolLocation":576,"imageIndex":187},{"imageOffset":12380336,"symbol":"-[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]","symbolLocation":688,"imageIndex":187},{"imageOffset":12379580,"symbol":"-[NSApplication(NSEventRouting) nextEventMatchingMask:untilDate:inMode:dequeue:]","symbolLocation":72,"imageIndex":187},{"imageOffset":180540,"symbol":"-[NSApplication run]","symbolLocation":368,"imageIndex":187},{"imageOffset":87384,"imageIndex":170},{"imageOffset":691588,"symbol":"QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":588,"imageIndex":24},{"imageOffset":653276,"symbol":"QCoreApplication::exec()","symbolLocation":228,"imageIndex":24},{"imageOffset":242568,"symbol":"main","symbolLocation":10576,"imageIndex":0},{"imageOffset":130560,"symbol":"start","symbolLocation":6992,"imageIndex":188}]},{"id":477565,"name":"com.apple.NSEventThread","threadState":{"x":[{"value":268451845},{"value":21592279046},{"value":8589934592},{"value":101167954657280},{"value":0},{"value":101167954657280},{"value":2},{"value":4294967295},{"value":0},{"value":17179869184},{"value":0},{"value":2},{"value":0},{"value":0},{"value":23555},{"value":0},{"value":18446744073709551569},{"value":8452814608},{"value":0},{"value":4294967295},{"value":2},{"value":101167954657280},{"value":0},{"value":101167954657280},{"value":21592279046},{"value":6099214472},{"value":8589934592},{"value":18446744073709550527},{"value":4412409862}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6615778676},"cpsr":{"value":0},"fp":{"value":6099214320},"sp":{"value":6099214240},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6615702580},"far":{"value":0}},"frames":[{"imageOffset":3124,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":180},{"imageOffset":79220,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":180},{"imageOffset":39360,"symbol":"mach_msg_overwrite","symbolLocation":480,"imageIndex":180},{"imageOffset":4032,"symbol":"mach_msg","symbolLocation":24,"imageIndex":180},{"imageOffset":516312,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":185},{"imageOffset":510404,"symbol":"__CFRunLoopRun","symbolLocation":1188,"imageIndex":185},{"imageOffset":1372612,"symbol":"_CFRunLoopRunSpecificWithOptions","symbolLocation":532,"imageIndex":185},{"imageOffset":1420412,"symbol":"_NSEventThread","symbolLocation":184,"imageIndex":187},{"imageOffset":27736,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":181},{"imageOffset":7196,"symbol":"thread_start","symbolLocation":8,"imageIndex":181}]},{"id":477608,"name":"com.apple.CFSocket.private","threadState":{"x":[{"value":4},{"value":0},{"value":55499197648},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":6100938976},{"value":0},{"value":18792911080},{"value":15},{"value":0},{"value":32516458736},{"value":72057602467554705,"symbolLocation":72057594037927937,"symbol":"OBJC_CLASS_$___NSCFArray"},{"value":8429626768,"symbolLocation":0,"symbol":"OBJC_CLASS_$___NSCFArray"},{"value":93},{"value":8452817008},{"value":0},{"value":32509815440},{"value":8384839680,"symbolLocation":960,"symbol":"__last_exception_os_log_pack__"},{"value":8384841112,"symbolLocation":0,"symbol":"__CFActiveSocketsLock"},{"value":55499197648},{"value":32359743488},{"value":32},{"value":0},{"value":55499197728},{"value":32487362736},{"value":32487362784}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6616909768},"cpsr":{"value":1610612736},"fp":{"value":6100938688},"sp":{"value":6100904912},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6615748224},"far":{"value":0}},"frames":[{"imageOffset":48768,"symbol":"__select","symbolLocation":8,"imageIndex":180},{"imageOffset":669640,"symbol":"__CFSocketManager","symbolLocation":708,"imageIndex":185},{"imageOffset":27736,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":181},{"imageOffset":7196,"symbol":"thread_start","symbolLocation":8,"imageIndex":181}]},{"id":481125,"frames":[],"threadState":{"x":[{"value":6098071552},{"value":52819},{"value":6097534976},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":0},"fp":{"value":0},"sp":{"value":6098071552},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6615960584},"far":{"value":0}}},{"id":482580,"name":"Thread (pooled)","threadState":{"x":[{"value":260},{"value":0},{"value":0},{"value":0},{"value":0},{"value":160},{"value":29},{"value":999999000},{"value":6097497464},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8452812728},{"value":0},{"value":32617943808},{"value":32617943872},{"value":6097498336},{"value":999999000},{"value":29},{"value":0},{"value":257},{"value":512},{"value":1},{"value":32488503040}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6615982376},"cpsr":{"value":1610612736},"fp":{"value":6097497584},"sp":{"value":6097497440},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6615717132},"far":{"value":0}},"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":180},{"imageOffset":28968,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":181},{"imageOffset":2436420,"imageIndex":24},{"imageOffset":2436080,"symbol":"QWaitCondition::wait(QMutex*, QDeadlineTimer)","symbolLocation":108,"imageIndex":24},{"imageOffset":1699556,"imageIndex":24},{"imageOffset":2400240,"imageIndex":24},{"imageOffset":27736,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":181},{"imageOffset":7196,"symbol":"thread_start","symbolLocation":8,"imageIndex":181}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4369940480,
+    "CFBundleShortVersionString" : "1.0.0",
+    "CFBundleIdentifier" : "org.scrollprize.VC3D",
+    "size" : 7847936,
+    "uuid" : "4c4c44b5-5555-3144-a130-5e82a32f3d8a",
+    "path" : "\/Applications\/VC3D.app\/Contents\/MacOS\/VC3D",
+    "name" : "VC3D",
+    "CFBundleVersion" : "fc25b4d-2026-07-31"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4381425664,
+    "size" : 819200,
+    "uuid" : "80eb6e68-64c2-3dc2-a0d5-8447fb6b8b74",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libvc_atlas.dylib",
+    "name" : "libvc_atlas.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4382605312,
+    "size" : 622592,
+    "uuid" : "bd00b4e5-d428-330d-aa9a-016f8f779da5",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libvc_lasagna.dylib",
+    "name" : "libvc_lasagna.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4383588352,
+    "size" : 737280,
+    "uuid" : "976de19e-a243-39c5-b078-2cd4096d4942",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libvc_tracer.dylib",
+    "name" : "libvc_tracer.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4379361280,
+    "size" : 344064,
+    "uuid" : "612f6ac1-1c72-324c-8969-a765d44f6243",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libvc_flattening.dylib",
+    "name" : "libvc_flattening.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4388405248,
+    "size" : 3506176,
+    "uuid" : "c0cb9a8e-de0e-3df5-82f8-a36d8f2e5f7f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libceres.4.dylib",
+    "name" : "libceres.4.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4378968064,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtConcurrent",
+    "size" : 16384,
+    "uuid" : "6f599913-ddf3-396f-a3ae-652f503ee4a2",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtConcurrent.framework\/Versions\/A\/QtConcurrent",
+    "name" : "QtConcurrent",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386340864,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtNetwork",
+    "size" : 1277952,
+    "uuid" : "ff6154a8-ca4b-36b5-a885-442ac72eec21",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtNetwork.framework\/Versions\/A\/QtNetwork",
+    "name" : "QtNetwork",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4379181056,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtOpenGLWidgets",
+    "size" : 49152,
+    "uuid" : "0d014770-511e-3c88-9606-8981962b1213",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtOpenGLWidgets.framework\/Versions\/A\/QtOpenGLWidgets",
+    "name" : "QtOpenGLWidgets",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4392157184,
+    "size" : 770048,
+    "uuid" : "e41a50c5-2196-33f8-b475-d48af15880e7",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_ximgproc.413.dylib",
+    "name" : "libopencv_ximgproc.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4384653312,
+    "size" : 589824,
+    "uuid" : "60865221-7c6a-3c4d-a7d2-83e28375d382",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libblosc.1.dylib",
+    "name" : "libblosc.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4464459776,
+    "size" : 1703936,
+    "uuid" : "d7652ffa-08bc-3a85-ad3a-771a5cc09984",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libvc_core.dylib",
+    "name" : "libvc_core.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4380753920,
+    "size" : 425984,
+    "uuid" : "430ba2a6-c003-3d05-b16e-052e5371b726",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libtiff.6.dylib",
+    "name" : "libtiff.6.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4462002176,
+    "size" : 409600,
+    "uuid" : "299a8e79-a825-3e94-8e02-ebfcd7e82474",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libutils.dylib",
+    "name" : "libutils.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4462641152,
+    "size" : 704512,
+    "uuid" : "d8570b5d-8060-3cec-8b4b-ab404f34456f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libcurl.4.dylib",
+    "name" : "libcurl.4.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4463476736,
+    "size" : 557056,
+    "uuid" : "dacb053d-f62b-353f-a767-ed728bea6a42",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libzstd.1.dylib",
+    "name" : "libzstd.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4380426240,
+    "size" : 131072,
+    "uuid" : "c3d46d2e-7535-352f-887c-49eca396fb23",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/liblz4.1.dylib",
+    "name" : "liblz4.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4379049984,
+    "size" : 16384,
+    "uuid" : "7bad820b-b0cb-32fe-a089-a742abcff232",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libutils_c3d_codec.dylib",
+    "name" : "libutils_c3d_codec.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4381261824,
+    "size" : 98304,
+    "uuid" : "8e603bfb-a511-3b8a-a0ec-9c6ed64b714c",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libc3d.dylib",
+    "name" : "libc3d.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4385554432,
+    "size" : 131072,
+    "uuid" : "d8b6f366-2d52-3ee3-a1ea-ca8c08e40285",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libglog.2.dylib",
+    "name" : "libglog.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4385325056,
+    "size" : 81920,
+    "uuid" : "223aa0d9-6df7-36c9-9b84-bdb57bbf945b",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libgflags.2.3.dylib",
+    "name" : "libgflags.2.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4473028608,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtWidgets",
+    "size" : 4669440,
+    "uuid" : "384764f2-95d3-31b3-8341-7171b544a60f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtWidgets.framework\/Versions\/A\/QtWidgets",
+    "name" : "QtWidgets",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4467556352,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtOpenGL",
+    "size" : 425984,
+    "uuid" : "6373cfaa-6ed3-3cec-b6e8-96d66f8f67d7",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtOpenGL.framework\/Versions\/A\/QtOpenGL",
+    "name" : "QtOpenGL",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4486496256,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtGui",
+    "size" : 5980160,
+    "uuid" : "e081f692-3002-36fd-95af-74d6ab9f9d31",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtGui.framework\/Versions\/A\/QtGui",
+    "name" : "QtGui",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4493885440,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtCore",
+    "size" : 4849664,
+    "uuid" : "46554155-2b5f-3713-ac52-195f1a6beb36",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtCore.framework\/Versions\/A\/QtCore",
+    "name" : "QtCore",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4466917376,
+    "size" : 344064,
+    "uuid" : "3afebe5c-98cb-34cf-a517-1ccb05a1c226",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_imgcodecs.413.dylib",
+    "name" : "libopencv_imgcodecs.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4468195328,
+    "size" : 327680,
+    "uuid" : "3268c4b8-86e9-3d3f-a572-9703129f0513",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_video.413.dylib",
+    "name" : "libopencv_video.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4470210560,
+    "size" : 1392640,
+    "uuid" : "2ef8f999-d788-3f08-a211-0f28145c2e69",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_calib3d.413.dylib",
+    "name" : "libopencv_calib3d.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4482695168,
+    "size" : 3063808,
+    "uuid" : "4ec4487c-4107-3bdd-8a07-30b39c7c9e5c",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_dnn.413.dylib",
+    "name" : "libopencv_dnn.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4469227520,
+    "size" : 442368,
+    "uuid" : "4a888f87-897c-3189-b5f2-3819e267f458",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_features2d.413.dylib",
+    "name" : "libopencv_features2d.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4499685376,
+    "size" : 3162112,
+    "uuid" : "f7e5db7e-dcb9-3c1a-acf4-e78aa17a29b6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_imgproc.413.dylib",
+    "name" : "libopencv_imgproc.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4388044800,
+    "size" : 229376,
+    "uuid" : "12d93e5b-d7a0-3814-9929-46772ec4cbac",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_flann.413.dylib",
+    "name" : "libopencv_flann.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4503732224,
+    "size" : 2146304,
+    "uuid" : "141e1e3b-a1fc-33b2-a64c-3fbeb469c62a",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopencv_core.413.dylib",
+    "name" : "libopencv_core.413.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4468637696,
+    "size" : 393216,
+    "uuid" : "72835662-4f1f-33a6-8260-b6dffe5a06a7",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libjpeg.8.dylib",
+    "name" : "libjpeg.8.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4464132096,
+    "size" : 262144,
+    "uuid" : "125736f7-37e7-3884-8f27-b6e94e711760",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libwebp.7.dylib",
+    "name" : "libwebp.7.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4380246016,
+    "size" : 32768,
+    "uuid" : "fe78d744-8517-3724-a827-9bbf058f020b",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libwebpmux.3.dylib",
+    "name" : "libwebpmux.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4380327936,
+    "size" : 16384,
+    "uuid" : "8f1ff548-ec66-34ea-b797-f10a04ace3b4",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libwebpdemux.2.dylib",
+    "name" : "libwebpdemux.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386078720,
+    "size" : 147456,
+    "uuid" : "ab22ce59-433a-32e1-95be-a0ce698b2ba3",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libpng16.16.dylib",
+    "name" : "libpng16.16.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4471783424,
+    "size" : 262144,
+    "uuid" : "e4193d91-9682-3486-b1fc-18bfbc55008b",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopenjp2.7.dylib",
+    "name" : "libopenjp2.7.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4479156224,
+    "size" : 507904,
+    "uuid" : "e490d3bf-3207-3d7d-892f-bfe27fcaee7a",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libOpenEXR-3_4.33.dylib",
+    "name" : "libOpenEXR-3_4.33.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4380606464,
+    "size" : 16384,
+    "uuid" : "c4871dfd-07be-3309-baa6-50d6be6a36e6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libIlmThread-3_4.33.dylib",
+    "name" : "libIlmThread-3_4.33.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4480057344,
+    "size" : 131072,
+    "uuid" : "b0b9bfa8-b282-30e1-8fce-149343547efe",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libIex-3_4.33.dylib",
+    "name" : "libIex-3_4.33.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4472127488,
+    "size" : 245760,
+    "uuid" : "1e310902-cad0-31aa-b1ed-cce461cbb047",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libOpenEXRCore-3_4.33.dylib",
+    "name" : "libOpenEXRCore-3_4.33.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4480630784,
+    "size" : 294912,
+    "uuid" : "228bf3cc-2b12-3ac9-9c3c-581cbafbf57f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libImath-3_2.30.dylib",
+    "name" : "libImath-3_2.30.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4526817280,
+    "size" : 19873792,
+    "uuid" : "0135ed14-ac12-33d1-9987-5d8e007b7fcb",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopenblas.0.dylib",
+    "name" : "libopenblas.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4480991232,
+    "size" : 98304,
+    "uuid" : "5b2b0e23-5e4f-3153-8899-c645dd244708",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libtbb.12.dylib",
+    "name" : "libtbb.12.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4508090368,
+    "size" : 1638400,
+    "uuid" : "a48247f5-db4a-320e-afe3-aae11b7d0a5a",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libgfortran.5.dylib",
+    "name" : "libgfortran.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4481974272,
+    "size" : 491520,
+    "uuid" : "a6eb6b84-bd5a-30a4-a3f8-44c0b236f8e5",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libomp.dylib",
+    "name" : "libomp.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4481286144,
+    "size" : 262144,
+    "uuid" : "ea7edfb0-cb4a-30f0-99a4-644d8fda3fcd",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libquadmath.0.dylib",
+    "name" : "libquadmath.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4467392512,
+    "size" : 98304,
+    "uuid" : "2461fe9d-b54e-3e2b-ad0a-1b2ea34b43a1",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libgcc_s.1.1.dylib",
+    "name" : "libgcc_s.1.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4385947648,
+    "size" : 16384,
+    "uuid" : "c9262a37-4290-3a1c-b9fa-793d0404d712",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libsharpyuv.0.dylib",
+    "name" : "libsharpyuv.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4469997568,
+    "size" : 131072,
+    "uuid" : "57936b02-c7c3-3f09-b4c2-9cc839371091",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/liblzma.5.dylib",
+    "name" : "liblzma.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4469817344,
+    "size" : 49152,
+    "uuid" : "4b498124-7b5f-3f7d-a0b7-2fa7aa533664",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libdeflate.0.dylib",
+    "name" : "libdeflate.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4506271744,
+    "size" : 212992,
+    "uuid" : "6536b717-6636-3212-8d4c-960c2e6202ee",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopenjph.0.30.dylib",
+    "name" : "libopenjph.0.30.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4512169984,
+    "size" : 1605632,
+    "uuid" : "183f6ed3-182d-30d3-b5f9-cbef4a2ef781",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libprotobuf.35.1.0.dylib",
+    "name" : "libprotobuf.35.1.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4481597440,
+    "size" : 65536,
+    "uuid" : "2f2bc7ec-4911-32d1-a90a-ac3e532ee8ed",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_check_op.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_check_op.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4481712128,
+    "size" : 65536,
+    "uuid" : "9b5f687e-5145-3766-a062-b62dfb956ef0",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_die_if_null.2601.0.0.dylib",
+    "name" : "libabsl_die_if_null.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4380688384,
+    "size" : 16384,
+    "uuid" : "18bde9c8-c9a0-3143-9412-39ece9701cd6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_conditions.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_conditions.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4481826816,
+    "size" : 65536,
+    "uuid" : "44385616-1c5c-3aba-824f-e41ea27b4ee6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_message.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_message.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4379131904,
+    "size" : 16384,
+    "uuid" : "9bfd2cd1-3de3-3010-8264-29baf3cd4b9f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_nullguard.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_nullguard.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4469096448,
+    "size" : 32768,
+    "uuid" : "92e7bf07-9222-3cfe-8624-f0420ebb34ee",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_examine_stack.2601.0.0.dylib",
+    "name" : "libabsl_examine_stack.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4385865728,
+    "size" : 32768,
+    "uuid" : "28646d55-0315-32c5-9d91-5d0a7a0d6598",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_format.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_format.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4385488896,
+    "size" : 16384,
+    "uuid" : "563e864c-d269-34de-84ee-472ec011779c",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_structured_proto.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_structured_proto.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4486348800,
+    "size" : 49152,
+    "uuid" : "ebce5f62-c0bd-3998-b7c8-01ae4350fa68",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_log_sink_set.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_log_sink_set.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4486234112,
+    "size" : 32768,
+    "uuid" : "43922c07-b0d1-3b46-9154-d0060724d6be",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_sink.2601.0.0.dylib",
+    "name" : "libabsl_log_sink.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4506599424,
+    "size" : 32768,
+    "uuid" : "1a872185-ec79-3a47-b39e-2cdfaa736d69",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_entry.2601.0.0.dylib",
+    "name" : "libabsl_log_entry.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4469932032,
+    "size" : 16384,
+    "uuid" : "888ed48b-ee92-3a42-8bff-c445de24b8a8",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_proto.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_proto.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4506796032,
+    "size" : 65536,
+    "uuid" : "d215b641-a30e-3cf7-9209-4e2b87f1dc4d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_internal.2601.0.0.dylib",
+    "name" : "libabsl_flags_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4506927104,
+    "size" : 32768,
+    "uuid" : "c904e9e3-f056-3bd3-8df0-3f0a96e64711",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_marshalling.2601.0.0.dylib",
+    "name" : "libabsl_flags_marshalling.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507156480,
+    "size" : 81920,
+    "uuid" : "42b2e917-2882-319b-83ae-1703c580b165",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_reflection.2601.0.0.dylib",
+    "name" : "libabsl_flags_reflection.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507025408,
+    "size" : 49152,
+    "uuid" : "2e1827a2-e3f5-3d33-b06d-5f609e4482a3",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_config.2601.0.0.dylib",
+    "name" : "libabsl_flags_config.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507303936,
+    "size" : 49152,
+    "uuid" : "63d943a5-65f4-3301-9b54-9c3dff7af27f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_program_name.2601.0.0.dylib",
+    "name" : "libabsl_flags_program_name.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4379312128,
+    "size" : 16384,
+    "uuid" : "dc196cba-3fdd-3628-a232-1b3cd1cac21d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_private_handle_accessor.2601.0.0.dylib",
+    "name" : "libabsl_flags_private_handle_accessor.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4506681344,
+    "size" : 16384,
+    "uuid" : "c515394a-7bf0-3fdd-b3e5-d1e0270821bb",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_commandlineflag.2601.0.0.dylib",
+    "name" : "libabsl_flags_commandlineflag.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507418624,
+    "size" : 16384,
+    "uuid" : "3ba38c92-c353-366a-b1f2-3dd42a0c3584",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_flags_commandlineflag_internal.2601.0.0.dylib",
+    "name" : "libabsl_flags_commandlineflag_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507582464,
+    "size" : 49152,
+    "uuid" : "19665b24-d0b4-33bb-9211-ff8ed1f7cb40",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_initialize.2601.0.0.dylib",
+    "name" : "libabsl_log_initialize.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507680768,
+    "size" : 32768,
+    "uuid" : "5955d3c1-3ced-32be-9d62-47324b4f8db3",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_globals.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_globals.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507893760,
+    "size" : 49152,
+    "uuid" : "72bbf456-d6bb-3647-8979-1c0e038357bd",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_globals.2601.0.0.dylib",
+    "name" : "libabsl_log_globals.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507779072,
+    "size" : 49152,
+    "uuid" : "186b9b3f-0d1f-3be3-a532-ad7b8cd91f87",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_vlog_config_internal.2601.0.0.dylib",
+    "name" : "libabsl_vlog_config_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4507484160,
+    "size" : 16384,
+    "uuid" : "3a37473a-2329-3ed7-94d5-84ac42c90435",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_internal_fnmatch.2601.0.0.dylib",
+    "name" : "libabsl_log_internal_fnmatch.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510040064,
+    "size" : 65536,
+    "uuid" : "7329b95d-e7ee-3bc4-9830-0ddd73ca6b50",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_raw_hash_set.2601.0.0.dylib",
+    "name" : "libabsl_raw_hash_set.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510171136,
+    "size" : 49152,
+    "uuid" : "20bdf41d-be16-36e3-a005-10e616b37fbd",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_hashtablez_sampler.2601.0.0.dylib",
+    "name" : "libabsl_hashtablez_sampler.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4508008448,
+    "size" : 32768,
+    "uuid" : "f23eb31d-aef0-3de5-859a-f4e28e926019",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_distributions.2601.0.0.dylib",
+    "name" : "libabsl_random_distributions.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510285824,
+    "size" : 49152,
+    "uuid" : "3989f52a-20cc-30cc-bccb-97fa240a3ef6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_seed_sequences.2601.0.0.dylib",
+    "name" : "libabsl_random_seed_sequences.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510384128,
+    "size" : 49152,
+    "uuid" : "30f41f43-948d-36a1-9868-a74c2a69be7d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_entropy_pool.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_entropy_pool.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4509908992,
+    "size" : 16384,
+    "uuid" : "0e749073-5726-3f2d-8984-951e9c3dff80",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_randen.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_randen.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510498816,
+    "size" : 16384,
+    "uuid" : "63e96b01-8781-372e-8cad-1ddb4743d9e9",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_randen_hwaes.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_randen_hwaes.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510580736,
+    "size" : 16384,
+    "uuid" : "3cedeff3-bd9a-3d77-965c-1b82eff1aa18",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_randen_hwaes_impl.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_randen_hwaes_impl.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510646272,
+    "size" : 16384,
+    "uuid" : "eeb46493-df45-3693-b178-1b5bb062056e",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_randen_slow.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_randen_slow.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386029568,
+    "size" : 16384,
+    "uuid" : "4ccd5699-be3d-372c-937a-60e626253225",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_platform.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_platform.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510711808,
+    "size" : 16384,
+    "uuid" : "d31fe1d9-ac9e-306c-8268-ae5bf1874e1e",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_internal_seed_material.2601.0.0.dylib",
+    "name" : "libabsl_random_internal_seed_material.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510793728,
+    "size" : 16384,
+    "uuid" : "77803389-0aba-31c3-a4c9-7d9360ff9c1f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_random_seed_gen_exception.2601.0.0.dylib",
+    "name" : "libabsl_random_seed_gen_exception.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510973952,
+    "size" : 65536,
+    "uuid" : "b8736262-8cab-3f2a-965b-8607e6a69b97",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_statusor.2601.0.0.dylib",
+    "name" : "libabsl_statusor.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511236096,
+    "size" : 65536,
+    "uuid" : "34615f30-4315-37d6-8f4b-39f5b7eb66cf",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_status.2601.0.0.dylib",
+    "name" : "libabsl_status.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511547392,
+    "size" : 98304,
+    "uuid" : "e5c8daef-0b5c-355f-b595-d726a97e20d0",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_cord.2601.0.0.dylib",
+    "name" : "libabsl_cord.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511088640,
+    "size" : 49152,
+    "uuid" : "658eac48-40e5-3a8c-ab9f-3e0e698642a6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_cordz_info.2601.0.0.dylib",
+    "name" : "libabsl_cordz_info.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511383552,
+    "size" : 65536,
+    "uuid" : "83cbda0b-c193-3b29-8ee8-595fc7671254",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_cord_internal.2601.0.0.dylib",
+    "name" : "libabsl_cord_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4510859264,
+    "size" : 16384,
+    "uuid" : "f160f623-cf27-3ccd-a805-7cd461bc0a00",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_cordz_functions.2601.0.0.dylib",
+    "name" : "libabsl_cordz_functions.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511711232,
+    "size" : 16384,
+    "uuid" : "3f7cf090-eceb-3020-8649-5acb4aa6f5d9",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_exponential_biased.2601.0.0.dylib",
+    "name" : "libabsl_exponential_biased.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511891456,
+    "size" : 49152,
+    "uuid" : "7c99a5bf-09d7-37f0-a4ab-49a4f33be5de",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_cordz_handle.2601.0.0.dylib",
+    "name" : "libabsl_cordz_handle.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4511793152,
+    "size" : 32768,
+    "uuid" : "bcf74645-dcb6-3689-8dfb-7d66b187f16c",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_crc_cord_state.2601.0.0.dylib",
+    "name" : "libabsl_crc_cord_state.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4514430976,
+    "size" : 32768,
+    "uuid" : "a7e1e43d-bdcd-34d9-ab2b-36ae3f526399",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_crc32c.2601.0.0.dylib",
+    "name" : "libabsl_crc32c.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4514529280,
+    "size" : 65536,
+    "uuid" : "73223937-7f8c-30ff-a93e-834b52906033",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_crc_internal.2601.0.0.dylib",
+    "name" : "libabsl_crc_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4512006144,
+    "size" : 16384,
+    "uuid" : "95139361-49f9-34ce-95cf-79e746b8aa8e",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_crc_cpu_detect.2601.0.0.dylib",
+    "name" : "libabsl_crc_cpu_detect.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386291712,
+    "size" : 16384,
+    "uuid" : "1f6d14d9-e184-3c90-be77-6377397584f4",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_leak_check.2601.0.0.dylib",
+    "name" : "libabsl_leak_check.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4512088064,
+    "size" : 16384,
+    "uuid" : "cc6d18be-b534-3e41-9dea-e1a3b55281a2",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_strerror.2601.0.0.dylib",
+    "name" : "libabsl_strerror.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4514791424,
+    "size" : 65536,
+    "uuid" : "849e0b00-81ff-3977-969f-99aea83694ee",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_str_format_internal.2601.0.0.dylib",
+    "name" : "libabsl_str_format_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515069952,
+    "size" : 65536,
+    "uuid" : "b92767d1-4cf1-3217-89a1-643957e07071",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_synchronization.2601.0.0.dylib",
+    "name" : "libabsl_synchronization.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4514922496,
+    "size" : 32768,
+    "uuid" : "25caea37-58c1-327b-bcee-3832b9cb0bcb",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_stacktrace.2601.0.0.dylib",
+    "name" : "libabsl_stacktrace.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515217408,
+    "size" : 32768,
+    "uuid" : "85353bb4-eef0-3eee-94f0-f50b8dfa1324",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_borrowed_fixup_buffer.2601.0.0.dylib",
+    "name" : "libabsl_borrowed_fixup_buffer.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4514660352,
+    "size" : 16384,
+    "uuid" : "c8bcc288-8552-3ae4-a4d1-65b7b16dfec7",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_hash.2601.0.0.dylib",
+    "name" : "libabsl_hash.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4388356096,
+    "size" : 16384,
+    "uuid" : "d185c089-c515-39bc-8e7b-1b307676993e",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_city.2601.0.0.dylib",
+    "name" : "libabsl_city.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515414016,
+    "size" : 32768,
+    "uuid" : "d8f06e1a-3ae2-35ab-b9e8-6b9b6f0554a6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_symbolize.2601.0.0.dylib",
+    "name" : "libabsl_symbolize.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4472979456,
+    "size" : 16384,
+    "uuid" : "15193a09-8e29-355e-979a-f3ccfdd94f81",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_debugging_internal.2601.0.0.dylib",
+    "name" : "libabsl_debugging_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515495936,
+    "size" : 32768,
+    "uuid" : "6bcf84ba-8e27-35d7-8b95-c39d97494534",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_demangle_internal.2601.0.0.dylib",
+    "name" : "libabsl_demangle_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515577856,
+    "size" : 32768,
+    "uuid" : "872d0491-363a-328e-a4a7-531d048c9ef5",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_demangle_rust.2601.0.0.dylib",
+    "name" : "libabsl_demangle_rust.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4514725888,
+    "size" : 16384,
+    "uuid" : "01b1df10-2123-3d07-a64f-51a3c07cab48",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_decode_rust_punycode.2601.0.0.dylib",
+    "name" : "libabsl_decode_rust_punycode.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4506746880,
+    "size" : 16384,
+    "uuid" : "2160b4e8-50e8-32de-b4c0-1d237dd1c2d0",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_utf8_for_code_point.2601.0.0.dylib",
+    "name" : "libabsl_utf8_for_code_point.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515659776,
+    "size" : 32768,
+    "uuid" : "6ac976fa-7d67-32be-93db-93a3e5985a4b",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_graphcycles_internal.2601.0.0.dylib",
+    "name" : "libabsl_graphcycles_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515758080,
+    "size" : 32768,
+    "uuid" : "0140095d-6e12-3ff8-bb67-502f6c7c0b8e",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_kernel_timeout_internal.2601.0.0.dylib",
+    "name" : "libabsl_kernel_timeout_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515840000,
+    "size" : 16384,
+    "uuid" : "9fad9d0e-699b-3fb3-9933-4d6365a00602",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_malloc_internal.2601.0.0.dylib",
+    "name" : "libabsl_malloc_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4509990912,
+    "size" : 16384,
+    "uuid" : "4ba025a4-7a65-3a4e-90e9-77ccacc64541",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_tracing_internal.2601.0.0.dylib",
+    "name" : "libabsl_tracing_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516036608,
+    "size" : 49152,
+    "uuid" : "1b35688d-8867-3da3-b1c6-c3e0f5e3d427",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_time.2601.0.0.dylib",
+    "name" : "libabsl_time.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4515921920,
+    "size" : 16384,
+    "uuid" : "cdc80034-e9a4-35d1-af65-5a18a49efabc",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_civil_time.2601.0.0.dylib",
+    "name" : "libabsl_civil_time.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516298752,
+    "size" : 65536,
+    "uuid" : "33d5d2fd-1b31-3579-9e87-372ab7bdc9fc",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_time_zone.2601.0.0.dylib",
+    "name" : "libabsl_time_zone.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516151296,
+    "size" : 16384,
+    "uuid" : "561252fa-bdb1-3c49-a7a0-b462bec8d670",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libutf8_validity.35.1.0.dylib",
+    "name" : "libutf8_validity.35.1.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516610048,
+    "size" : 98304,
+    "uuid" : "34ae706c-ec79-3a33-987e-048048081fa9",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_strings.2601.0.0.dylib",
+    "name" : "libabsl_strings.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516216832,
+    "size" : 16384,
+    "uuid" : "ccfa84b9-667b-3817-b747-9673b6ca8f85",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_int128.2601.0.0.dylib",
+    "name" : "libabsl_int128.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516446208,
+    "size" : 16384,
+    "uuid" : "cd2dbaee-3766-363e-94e0-75da73751c4d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_strings_internal.2601.0.0.dylib",
+    "name" : "libabsl_strings_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516511744,
+    "size" : 16384,
+    "uuid" : "8c653d91-757c-3df4-b194-306508e682a4",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_base.2601.0.0.dylib",
+    "name" : "libabsl_base.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516773888,
+    "size" : 16384,
+    "uuid" : "ec42e16a-9a9e-35f8-83da-62856ffe0fc3",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_spinlock_wait.2601.0.0.dylib",
+    "name" : "libabsl_spinlock_wait.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516855808,
+    "size" : 16384,
+    "uuid" : "46cb9108-fa4f-32c6-b619-08a48b010d28",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_throw_delegate.2601.0.0.dylib",
+    "name" : "libabsl_throw_delegate.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4516921344,
+    "size" : 16384,
+    "uuid" : "d8c7b98f-f2ff-3dc9-ad6b-b139196003ce",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_raw_logging_internal.2601.0.0.dylib",
+    "name" : "libabsl_raw_logging_internal.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517003264,
+    "size" : 16384,
+    "uuid" : "6420413f-888b-34a0-8a2d-ff7eb1fbcb82",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libabsl_log_severity.2601.0.0.dylib",
+    "name" : "libabsl_log_severity.2601.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4565090304,
+    "size" : 15892480,
+    "uuid" : "fcc7dde8-a5d0-3fc0-bd6e-3d97f66d1183",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libopenvino.2621.dylib",
+    "name" : "libopenvino.2621.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517281792,
+    "size" : 114688,
+    "uuid" : "a1e8647e-59cb-3b21-b060-f921fe5683a4",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libpugixml.1.dylib",
+    "name" : "libpugixml.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517494784,
+    "size" : 114688,
+    "uuid" : "7235c911-d03f-3e2b-8ea8-2507a79531b3",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libnghttp3.9.dylib",
+    "name" : "libnghttp3.9.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517068800,
+    "size" : 32768,
+    "uuid" : "28b2eb2c-31e6-3d96-950a-68344c7d1dfe",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libngtcp2_crypto_ossl.0.dylib",
+    "name" : "libngtcp2_crypto_ossl.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4518002688,
+    "size" : 245760,
+    "uuid" : "e19613a0-5121-3499-bb4e-e8dd9df261c6",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libngtcp2.16.dylib",
+    "name" : "libngtcp2.16.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4518330368,
+    "size" : 114688,
+    "uuid" : "6a3b67c8-2ec7-3e05-8df0-72662aa62d22",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libnghttp2.14.dylib",
+    "name" : "libnghttp2.14.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4518526976,
+    "size" : 196608,
+    "uuid" : "fbc6fc7b-1cfc-30c4-bcdb-e9dd25dbb392",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libssh2.1.dylib",
+    "name" : "libssh2.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517806080,
+    "size" : 81920,
+    "uuid" : "6eaf7b28-a8cc-320c-9994-0618e551bc3d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libpsl.5.dylib",
+    "name" : "libpsl.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4519690240,
+    "size" : 606208,
+    "uuid" : "9bcd1e53-2cc0-3f12-9b58-a4c619a1cead",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libssl.3.dylib",
+    "name" : "libssl.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4547428352,
+    "size" : 3424256,
+    "uuid" : "bdb15996-04fb-3066-8811-2fe6c8ae45ce",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libcrypto.3.dylib",
+    "name" : "libcrypto.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517675008,
+    "size" : 49152,
+    "uuid" : "43eb690d-1071-35e5-a6b2-9a5005643ea0",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libbrotlidec.1.dylib",
+    "name" : "libbrotlidec.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4518985728,
+    "size" : 131072,
+    "uuid" : "7f8ceda3-e294-3ee4-bc9d-e2e619fbaaed",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libbrotlicommon.1.dylib",
+    "name" : "libbrotlicommon.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4521934848,
+    "size" : 1228800,
+    "uuid" : "94394200-5879-3fe6-a126-308f407d007f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libcholmod.5.dylib",
+    "name" : "libcholmod.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4520574976,
+    "size" : 212992,
+    "uuid" : "8b128434-87c2-3135-a368-fabfee9cc7ea",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libspqr.4.dylib",
+    "name" : "libspqr.4.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4520902656,
+    "size" : 278528,
+    "uuid" : "5726570f-22cf-33a1-a9f3-dc849d331b71",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libmetis.dylib",
+    "name" : "libmetis.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4518805504,
+    "size" : 49152,
+    "uuid" : "4112b2f2-7398-34fe-b96f-4bb0a3928b1a",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libamd.3.dylib",
+    "name" : "libamd.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517167104,
+    "size" : 32768,
+    "uuid" : "01a3d577-d6f2-3373-9af6-c714c8a3ecf8",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libcamd.3.dylib",
+    "name" : "libcamd.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4518903808,
+    "size" : 32768,
+    "uuid" : "f649b8b8-6154-3c7a-863f-66ba7cd8f9c1",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libccolamd.3.dylib",
+    "name" : "libccolamd.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4519165952,
+    "size" : 32768,
+    "uuid" : "63ed75e8-31bf-3088-b62c-f9496f3191a0",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libcolamd.3.dylib",
+    "name" : "libcolamd.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4519247872,
+    "size" : 16384,
+    "uuid" : "5093e258-f247-3547-a764-b8c9a1a8e85c",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libsuitesparseconfig.7.dylib",
+    "name" : "libsuitesparseconfig.7.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4552015872,
+    "size" : 1785856,
+    "uuid" : "a9e79767-5aed-36c6-86be-c429489b3ed4",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libicui18n.78.dylib",
+    "name" : "libicui18n.78.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4525015040,
+    "size" : 1310720,
+    "uuid" : "d44af2b7-2539-3107-865f-97e3f9d4c779",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libicuuc.78.dylib",
+    "name" : "libicuuc.78.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4616159232,
+    "size" : 33112064,
+    "uuid" : "49727ab2-b15d-300c-9552-20b09e560e90",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libicudata.78.dylib",
+    "name" : "libicudata.78.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4554719232,
+    "size" : 1048576,
+    "uuid" : "ea9921ff-c316-3340-8e29-0eaa43d78abe",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libglib-2.0.0.dylib",
+    "name" : "libglib-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4519428096,
+    "size" : 49152,
+    "uuid" : "783457bd-de5e-3f5d-ac39-e84316558704",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libdouble-conversion.3.dylib",
+    "name" : "libdouble-conversion.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4519542784,
+    "size" : 32768,
+    "uuid" : "c4431360-2960-3e50-b699-3691771ade27",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libb2.1.dylib",
+    "name" : "libb2.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4523311104,
+    "size" : 458752,
+    "uuid" : "b1707004-b58b-3354-b180-07ab5e016dbf",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libpcre2-16.0.dylib",
+    "name" : "libpcre2-16.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4517937152,
+    "size" : 16384,
+    "uuid" : "b3359a2a-fe55-3dd3-9487-066ade2ddd94",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libgthread-2.0.0.dylib",
+    "name" : "libgthread-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4521541632,
+    "size" : 163840,
+    "uuid" : "ec7405ad-c6dd-353f-ac21-a1553d22f30d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libintl.8.dylib",
+    "name" : "libintl.8.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4524392448,
+    "size" : 491520,
+    "uuid" : "37021bca-5fb9-3cc2-81e5-ce48ff1c6a92",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libpcre2-8.0.dylib",
+    "name" : "libpcre2-8.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4556668928,
+    "CFBundleShortVersionString" : "6.11",
+    "CFBundleIdentifier" : "org.qt-project.QtDBus",
+    "size" : 540672,
+    "uuid" : "2aace05b-88f5-3bf2-969a-0538ac6166c0",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/QtDBus.framework\/Versions\/A\/QtDBus",
+    "name" : "QtDBus",
+    "CFBundleVersion" : "6.11.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4558274560,
+    "size" : 786432,
+    "uuid" : "2ec2b27f-fd89-3916-8207-7c8196ea154d",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libharfbuzz.0.dylib",
+    "name" : "libharfbuzz.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4521312256,
+    "size" : 49152,
+    "uuid" : "896a82d1-ceb1-3303-af00-b9271ea95b71",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libmd4c.0.dylib",
+    "name" : "libmd4c.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4557373440,
+    "size" : 507904,
+    "uuid" : "a195c931-81e1-314e-a0c6-3c03f934e0aa",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libfreetype.6.dylib",
+    "name" : "libfreetype.6.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4555964416,
+    "size" : 196608,
+    "uuid" : "fb8085dc-9746-335c-90d0-429dfe91dd60",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libdbus-1.3.dylib",
+    "name" : "libdbus-1.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4521771008,
+    "size" : 81920,
+    "uuid" : "869b6ae6-f82b-3fe7-904d-d1ae97255561",
+    "path" : "\/Applications\/VC3D.app\/Contents\/Frameworks\/libgraphite2.3.dylib",
+    "name" : "libgraphite2.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4589043712,
+    "size" : 720896,
+    "uuid" : "2375dfcf-b04b-34a1-8e27-f0452ced1ed4",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/platforms\/libqcocoa.dylib",
+    "name" : "libqcocoa.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4526735360,
+    "size" : 49152,
+    "uuid" : "ca58aa96-b997-3a6d-9132-19d49be4b3e9",
+    "path" : "\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4564811776,
+    "size" : 147456,
+    "uuid" : "6070e416-464b-3669-98f9-00a5e1ae7953",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/styles\/libqmacstyle.dylib",
+    "name" : "libqmacstyle.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 5392580608,
+    "CFBundleShortVersionString" : "351.2",
+    "CFBundleIdentifier" : "com.apple.AGXMetalG16G-B0",
+    "size" : 8880128,
+    "uuid" : "f763c26f-f4b8-3a78-858d-23e30c8e2485",
+    "path" : "\/System\/Library\/Extensions\/AGXMetalG16G_B0.bundle\/Contents\/MacOS\/AGXMetalG16G_B0",
+    "name" : "AGXMetalG16G_B0",
+    "CFBundleVersion" : "351.2"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 5058035712,
+    "size" : 32768,
+    "uuid" : "6d2ebfbf-1473-3faa-ab3c-298b5200c5e2",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/imageformats\/libqgif.dylib",
+    "name" : "libqgif.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 5058134016,
+    "size" : 32768,
+    "uuid" : "f999bf3f-c3a1-3c8d-aa6c-c6f8c9d4cb9c",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/imageformats\/libqwbmp.dylib",
+    "name" : "libqwbmp.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 5058232320,
+    "size" : 32768,
+    "uuid" : "3cc6d8c6-e10e-3e16-94ca-4d5fdb30c287",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/imageformats\/libqwebp.dylib",
+    "name" : "libqwebp.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 5232279552,
+    "size" : 32768,
+    "uuid" : "b9091aaf-bee9-3b56-ae68-14db9c6cacda",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/imageformats\/libqico.dylib",
+    "name" : "libqico.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 5435179008,
+    "size" : 32768,
+    "uuid" : "471f33c0-9375-3786-aa38-a07b5bbce09a",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/imageformats\/libqmacheif.dylib",
+    "name" : "libqmacheif.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 5435408384,
+    "size" : 49152,
+    "uuid" : "eafc884a-844c-3ddb-8474-ae8215cb953f",
+    "path" : "\/Applications\/VC3D.app\/Contents\/PlugIns\/imageformats\/libqjpeg.dylib",
+    "name" : "libqjpeg.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6615699456,
+    "size" : 250544,
+    "uuid" : "cc1cf985-bc65-3725-809f-4c1e36b8f4ba",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6615953408,
+    "size" : 52028,
+    "uuid" : "4f33683c-18c8-39a1-800b-2e3bd43bcc13",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6614466560,
+    "size" : 527776,
+    "uuid" : "694b7881-1bf3-3d0f-8f19-b50ae4e8ef8a",
+    "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+    "name" : "libsystem_c.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6615588864,
+    "size" : 108384,
+    "uuid" : "e482d257-e5a0-3816-bd97-7b39342958da",
+    "path" : "\/usr\/lib\/libc++abi.dylib",
+    "name" : "libc++abi.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6611369984,
+    "size" : 338764,
+    "uuid" : "ff1d8ae4-abef-35f1-a30a-1183b9cb414f",
+    "path" : "\/usr\/lib\/libobjc.A.dylib",
+    "name" : "libobjc.A.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6616240128,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 5628704,
+    "uuid" : "04e3598b-f226-3250-b3b2-ce938dd4db7e",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "5026.5.4"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6831874048,
+    "CFBundleShortVersionString" : "2.1.1",
+    "CFBundleIdentifier" : "com.apple.HIToolbox",
+    "size" : 3125536,
+    "uuid" : "8716490e-acc2-3688-8c2f-5ca42b4c9da9",
+    "path" : "\/System\/Library\/Frameworks\/Carbon.framework\/Versions\/A\/Frameworks\/HIToolbox.framework\/Versions\/A\/HIToolbox",
+    "name" : "HIToolbox"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6688010240,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 24260512,
+    "uuid" : "cf57a4fc-4be3-3d95-b543-d744e8718b26",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2685.60.104"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6611927040,
+    "size" : 680472,
+    "uuid" : "a237ef81-b68b-37ba-a165-92c965529534",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  }
+],
+  "sharedCache" : {
+  "base" : 6610796544,
+  "size" : 5990596608,
+  "uuid" : "46e0097f-f385-36c8-84a9-a40d315a32d1"
+},
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "logWritingSignature" : "8bfb245c206a159692d50969658487d0eb972ebd",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "trmStatus" : 1,
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "64628732bf2f5257dedc8988",
+      "factorPackIds" : [
+
+      ],
+      "deploymentId" : 240000001
+    },
+    {
+      "rolloutId" : "63508950b3714d3622fc77f7",
+      "factorPackIds" : [
+        "6526e111d0c9ce2f459b54a8"
+      ],
+      "deploymentId" : 240000015
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
