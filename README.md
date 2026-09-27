@@ -44,7 +44,9 @@ Of 23 readings: **21 unsure, 1 disagrees, 0 agree.**
 
 Full table: `table/orientation.md`. PHerc0813, the disagreement:
 
-![PHerc0813 crop, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png)
+| Traced (4 mm) | Untraced (12 mm) |
+|---|---|
+| ![PHerc0813 traced, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L0_4mm_traced.png) | ![PHerc0813, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png) |
 
 ## Findings
 
