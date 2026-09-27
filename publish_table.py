@@ -18,12 +18,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                       formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--readings-json", default="readings/readings.json")
     parser.add_argument("--out", default="table/orientation.md")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     records = json.loads(Path(args.readings_json).read_text())
 

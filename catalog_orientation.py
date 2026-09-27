@@ -148,6 +148,22 @@ def main() -> int:
     write_csv(rows, out_dir / "orientation.csv")
     write_markdown(rows, out_dir / "orientation.md", total_vols, covered_vols, etag, last_modified)
 
+    # If readings already exist, publish_table.py's richer table (CT reading,
+    # confidence, agree, reader disclosure) supersedes what was just written
+    # above. Re-run it now so this script's own "one-command proof" never
+    # leaves the published table downgraded to the catalog-only draft.
+    readings_path = Path("readings/readings.json")
+    if out_dir == Path("table") and readings_path.exists():
+        import publish_table
+        print(f"{readings_path} exists -- re-publishing the richer table "
+              f"(catalog-only draft above would otherwise stay in place)...",
+              file=sys.stderr)
+        if publish_table.main([]) != 0:
+            print("WARNING: re-publish failed (see above) -- "
+                  f"{out_dir / 'orientation.md'} is now the catalog-only draft, "
+                  "not the published table. Run publish_table.py once readings "
+                  "are complete.", file=sys.stderr)
+
     print(f"Fetching minified catalog from {args.minified_url} ...", file=sys.stderr)
     minified_raw, _, _ = fetch_raw(args.minified_url)
     minified_lacks_keys = prove_minified_catalog_lacks_keys(minified_raw)
