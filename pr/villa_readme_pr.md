@@ -5,11 +5,11 @@ human maintainer of this repo to review and file.
 -->
 
 **In one sentence:** Add a short note after the `spiral_outward_sense`
-fallback ("read off the CT data by a person in VC3D, or from an
-already-fitted spiral") warning that on the 2025/2026 First Letters
-eligible scrolls that fallback is often unreliable, fitting does not
-discriminate the two senses either, and the catalog data the fallback
-depends on is itself incomplete.
+fallbacks ("read off the CT data by a person in VC3D, or from an
+already-fitted spiral") stating that the second fallback is circular — a
+fitted spiral reports back the sense it was given — and that the catalog
+data this whole chain starts from is incomplete for 5 of the 23 First
+Letters eligible volumes.
 
 **One real example:** Starting with `PHerc0490A` (a First Letters eligible
 volume, `metadata.json`, fetched fresh from
@@ -28,16 +28,19 @@ required and is read off the CT data by a person in VC3D, or from an
 already-fitted spiral" — implying both fallbacks are dependable.
 
 **After this PR:** A short note directly under that bullet, stating
-plainly that (1) a blind single-slice human read was "unsure" on 21 of 23
-First Letters eligible volumes in an independent test, (2) fitting the
-spiral both ways and comparing satisfaction does not discriminate the two
-senses either, confirmed at 1,500 and again at 30,000 steps on two
-independent scrolls, and (3) the catalog properties this whole fallback
-chain starts from are null for 5 of the 23 eligible volumes in the full
-catalog and absent entirely from the minified catalog — so anyone working
-from `metadata.min.json` should know before they start that
-`spiral_outward_sense` cannot be derived from it for any First Letters
-eligible volume.
+plainly that (1) a static single-crop read by an AI reader (Claude, from
+the 12 mm/4 mm umbilicus crops, blind to the predicted sense; not
+reviewed by a person) was inconclusive on 21 of 23 First Letters eligible
+volumes in an independent test — this crop read did not exercise villa's
+documented person-in-VC3D fallback, so this PR makes no claim about that
+fallback's reliability, (2) fitting the spiral both ways and comparing
+satisfaction does not discriminate the two senses either, confirmed at
+1,500 and again at 30,000 steps on two independent scrolls, and (3) the
+catalog properties this whole fallback chain starts from are null for 5
+of the 23 eligible volumes in the full catalog and absent entirely from
+the minified catalog — so anyone working from `metadata.min.json` should
+know before they start that `spiral_outward_sense` cannot be derived from
+it for any First Letters eligible volume.
 
 **Proof:** `table/orientation.md` (all 23 volumes, catalog sense vs. CT
 reading, reader disclosure) and `analysis/pherc0826/README.md` (four
@@ -45,19 +48,16 @@ equal-step fits, 1,500 and 30,000 steps, two scrolls, tie at every
 checkpoint, with overlay images and the raw per-checkpoint numbers) at
 `millerandmuller/sense-check`.
 
-**Why / where this is useful:** Anyone fitting a First Letters eligible
-scroll without an already-known sense hits this exact fallback chain. The
-note tells them up front, before they spend a read-and-fit cycle finding
-out the hard way, that both suggested fallbacks are weaker than the
-current wording implies for this scroll generation specifically, and to
-check the full catalog rather than the minified one.
+**Why / where this is useful:**
+<!-- Lutfiya writes this paragraph herself before filing (CONTRIBUTING.md: human-written motivation) -->
 
-- [x] I personally verified that the example and proof above were
+- [ ] I personally verified that the example and proof above were
   produced by this PR on the stated data: `metadata.json` and
   `metadata.min.json` fetched directly from the S3 bucket and checked
   against all 23 eligible volumes' catalog records; the reading and
-  fitting results are this session's own work, committed and reproducible
-  in `millerandmuller/sense-check`.
+  fitting results are committed and reproducible in
+  `millerandmuller/sense-check`.
+  <!-- Lutfiya ticks this after running the example herself -->
 
 ## Details
 
@@ -76,17 +76,11 @@ itself PR #1899):
 **Proposed addition**, immediately after that bullet:
 
 ```markdown
-  > On the 2025/2026 First Letters eligible scrolls, be aware that both of
-  > the above fallbacks have known limits: a blind single-slice human read
-  > was "unsure" for 21 of 23 eligible volumes in an independent test
-  > (millerandmuller/sense-check, `table/orientation.md`), and re-fitting
-  > the spiral both ways does not reliably discriminate the two senses
-  > either — four fits (two scrolls, both senses) at 1,500 and again at
-  > 30,000 steps tied at every checkpoint (`analysis/pherc0826/README.md`
-  > in the same repo). Also note that `metadata.min.json` omits
-  > `z_direction_is_top_to_bottom` and `left_handed_coordinates` entirely
-  > for every sample; use the full `metadata.json` if you need these
-  > fields.
+  > A fitted spiral carries the sense it was fitted with; fitting both
+  > senses and comparing `satisfied_tracks_fraction` did not discriminate
+  > them in the tested configuration (tracks-only, two scrolls, 1,500 and
+  > 30,000 steps). Five eligible First Letters volumes have no catalog
+  > z-direction and need a person in VC3D.
 ```
 
 **Scope note:** this is a documentation-only change — a caution added

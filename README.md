@@ -4,10 +4,14 @@
 for the 23 First Letters eligible volumes in the Vesuvius Challenge open
 data?**
 
+**A fitted spiral reports back the sense it was given — villa's
+"already-fitted spiral" fallback is circular.** Tested on two scrolls,
+tracks-only (patches and outer shell disabled), 1.5k and 30k steps; the
+two senses' point clouds sit close but not identical, ~15 voxels apart.
+
 ## The 23 volumes
 
-18 of 23 have a catalog-derivable sense; 5 don't. Of 23 readings: **21
-unsure, 1 disagrees, 0 agree.**
+Of 23 readings: **21 unsure, 1 disagrees, 0 agree.**
 
 | Sample | Catalog | CT reading | Agree |
 |---|---|---|---|
@@ -35,26 +39,28 @@ unsure, 1 disagrees, 0 agree.**
 | PHerc1545 | ACW | unsure | n/a |
 | PHerc0846B | CW | unsure | n/a |
 
-> Reader: Claude (review session), from umbilicus crops, blind to the
-> predicted sense; every row reviewed by Lutfiya Miller. "unsure" is a
-> result, not a gap.
+> Reader: Claude, from the umbilicus crops only, blind to the predicted
+> sense. Not reviewed by a person. "unsure" is a result, not a gap.
 
-Full table, z-levels, confidence, umbilicus source: `table/orientation.md`.
-PHerc0813, the one disagreement, at the z-level read:
+Full table: `table/orientation.md`. PHerc0813, the disagreement:
 
 ![PHerc0813 crop, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png)
 
-## Five findings
+## Findings
 
-**(a) The catalog is incomplete; the minified catalog is worse.** 5 of 23
-volumes lack the fields sense needs (18/23 eligible, 41/71 total).
-`metadata.min.json` omits both fields for **all 23** — proof:
-`python3 catalog_orientation.py`.
+**(i) 5 of 23 eligible volumes have no z-direction in the catalog.**
+18/23 eligible (41/71 total) have both catalog fields sense needs; 5
+don't — proof: `python3 catalog_orientation.py`. `metadata.min.json` is
+the scrollprize.org Atlas's field subset of `metadata.json`
+(`scrollprize.org/src/components/atlas/useAtlasData.js`), with no volume
+properties; use `metadata.json` instead.
 
-**(b) A single slice rarely settles it.** 21 of 23 blind reads: unsure
-(table above; `analysis/readme_pr_findings.md` Finding D).
+**(ii) A static single-crop AI read (not reviewed by a person) was
+inconclusive on 21 of 23** (`analysis/readme_pr_findings.md` Finding D) —
+not a test of the person-in-VC3D fallback.
 
-**(c) Fitting both ways doesn't settle it either.**
+**(iii) The equal-step retest retracts the August CW conclusion for
+PHerc0826** (`analysis/pherc0826/README.md`).
 
 | Fit | 1,500 steps | 30,000 steps |
 |---|---|---|
@@ -64,24 +70,24 @@ volumes lack the fields sense needs (18/23 eligible, 41/71 total).
 | 0813 contradicting (ACW) | 0.16561 | 0.16207 |
 
 Both scrolls tie at every checkpoint; the gap flips sign between 1.5k and
-30k steps on both — noise, not signal.
+30k steps — noise, not signal.
 
-**(d) PHerc0826's catalog-vs-community disagreement stays unresolved.**
-Catalog says ACW; an August fit said CW off an unequal (30k-vs-1.5k)
-comparison. Retested at equal steps, geometry, and a real render: still
-unresolved, and unresolvable by fitting this way. Full writeup, with the
-overlay images: `analysis/pherc0826/README.md`.
+### Found on the way
 
-**(e) Two VC3D bugs.** `stable` (`fc25b4d`) crashes opening a sample
-whose lasagna representation triggers `resolveLasagnaForVolume`; fixed on
-main (PR #1225) and in `latest`, not yet in a cut `stable` release.
-Separately, re-opening an already-opened sample renders blank, no error:
+Two VC3D bugs. `stable` (`fc25b4d`) crashes opening a sample whose
+lasagna representation triggers `resolveLasagnaForVolume`; fixed (PR
+#1225) in `latest`, not yet in `stable`. Separately, re-opening a sample
+renders blank, no error:
 
 ![Re-opening PHerc0826 renders blank](analysis/vc3d-crash/reopen-blank-evidence/PHerc0826_reopened_blank_scale0.05.png)
 
 Details: `analysis/vc3d-crash/README.md`, `pr/villa_issue.md`.
 
 ## Writing a scroll spec
+
+villa's README says the two keys are copied verbatim by hand ("not
+covered by scrollprize.org/tutorial_spiral"); this script does that, and
+refuses when it can't.
 
 ```
 python3 write_scroll_spec.py <scroll> <volume>
@@ -94,15 +100,14 @@ UNDERIVABLE ones.
 ## Filed upstream
 
 Draft PR (`pr/villa_readme_pr.md`) and issue (`pr/villa_issue.md`) — not
-yet opened against `ScrollPrize/villa`.
+yet opened.
 
 ## Limitations
 
-- One AI reader, reviewed by Lutfiya Miller — not a second human reader.
+- One AI reader, not reviewed by a person.
 - Renders sample the CT in Python (`render_flattened_tifxyz.py`), not
   villa's `vc_render_tifxyz` (needs Qt6, unavailable here).
-- Not tested: what sense affects downstream — normal direction,
-  recto/verso.
+- Not tested: what sense affects downstream (normal direction, recto/verso).
 
 ## Cost
 
@@ -111,7 +116,7 @@ yet opened against `ScrollPrize/villa`.
 ## AI-use disclosure
 
 Readings, code, fits, and this document were produced with AI assistance,
-directed and reviewed by Lutfiya Miller.
+directed by Lutfiya Miller. The readings were not reviewed by a person.
 
 ## License
 

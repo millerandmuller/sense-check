@@ -9,10 +9,11 @@ the codebase) by the human maintainer of this repo.
 
 **In one sentence:** For the 23 First Letters eligible volumes, the catalog
 is missing the fields `spiral_outward_sense` is derived from on 5 of them
-(and on all of them via the minified catalog), a blind single-slice human
-read cannot determine it on 21 of 23, and fitting the spiral both ways and
-comparing satisfaction does not discriminate it either, on the two scrolls
-tested.
+(and on all of them via the minified catalog); a static single-crop AI
+read, not reviewed by a person, was inconclusive on 21 of 23; and fitting
+the spiral both ways and comparing satisfaction does not discriminate it
+either, on the two scrolls tested — a fitted spiral reports back the
+sense it was given, not an independent signal.
 
 **I was trying to:** Determine `spiral_outward_sense` for all 23 First
 Letters eligible volumes, to write correct `spiral-scroll.json` files for
@@ -37,8 +38,8 @@ each (tracks-only, patches and outer-shell disabled, RTX 3090).
    sample's volume properties, for all 23, not just those 5 — anyone
    working from the minified catalog alone cannot derive sense for any
    First Letters eligible volume.
-2. **Reading:** a blind single-slice read (12mm/4mm umbilicus crops, one
-   reader, disclosed and reviewed) came back "unsure" for 21 of the 23
+2. **Reading:** a static single-crop read (12mm/4mm umbilicus crops, one
+   AI reader, not reviewed by a person) came back "unsure" for 21 of the 23
    volumes; the two that got a definite reading were `PHerc1203` (ACW,
    catalog-underivable, so uncorroborated) and `PHerc0813` (ACW, low
    confidence, disagreeing with the catalog's derived CW). Umbilicus crops
@@ -69,8 +70,9 @@ each (tracks-only, patches and outer-shell disabled, RTX 3090).
 **What I expected or needed:** Some reliable way to determine sense for a
 First Letters eligible volume when the catalog's own two fields are
 absent, given the README's stated fallbacks ("read off the CT data by a
-person in VC3D, or from an already-fitted spiral"). Neither fallback held
-up on this scroll generation in this test.
+person in VC3D, or from an already-fitted spiral"). The already-fitted-
+spiral fallback did not hold up in this test; the person-in-VC3D fallback
+was not tested here.
 
 **Evidence / reproduction:** `table/orientation.md` (all 23 volumes,
 catalog sense vs. CT reading, reader disclosure) and
@@ -187,8 +189,9 @@ open-many-samples-in-one-session read workflow: a fixed `resolveLasagnaForVolume
 in the release channel actually being distributed, and re-opening a
 sample to either work or fail loudly rather than silently render nothing.
 
-**Evidence / reproduction:** Full crash reports (`.ips`, unredacted) and
-the reopen-blank screenshots: `analysis/vc3d-crash/` at
+**Evidence / reproduction:** Full crash reports (`.ips`, redacted: device
+identifiers zeroed, local process/coalition name replaced) and the
+reopen-blank screenshots: `analysis/vc3d-crash/` at
 `millerandmuller/sense-check`, including `README.md` there with the full
 investigation timeline.
 
