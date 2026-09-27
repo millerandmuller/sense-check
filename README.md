@@ -40,18 +40,16 @@ unsure, 1 disagrees, 0 agree.**
 > result, not a gap.
 
 Full table, z-levels, confidence, umbilicus source: `table/orientation.md`.
+PHerc0813, the one disagreement, at the z-level read:
 
-The one disagreement, PHerc0813 (catalog CW, read ACW), at the z-level
-read:
-
-![PHerc0813 umbilicus crop, z=12745, catalog CW / read ACW](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png)
+![PHerc0813 crop, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png)
 
 ## Five findings
 
 **(a) The catalog is incomplete; the minified catalog is worse.** 5 of 23
-volumes lack the fields sense needs (18/23 eligible, 41/71 total). The
-minified catalog (`metadata.min.json`) omits both fields for **all 23**.
-One-command proof: `python3 catalog_orientation.py`.
+volumes lack the fields sense needs (18/23 eligible, 41/71 total).
+`metadata.min.json` omits both fields for **all 23** — proof:
+`python3 catalog_orientation.py`.
 
 **(b) A single slice rarely settles it.** 21 of 23 blind reads: unsure
 (table above; `analysis/readme_pr_findings.md` Finding D).
@@ -95,10 +93,8 @@ UNDERIVABLE ones.
 
 ## Filed upstream
 
-- README PR draft: `pr/villa_readme_pr.md`.
-- Issue draft (five readings, PHerc0826 disagreement): `pr/villa_issue.md`.
-
-Not yet opened against `ScrollPrize/villa` — both ready for filing.
+Draft PR (`pr/villa_readme_pr.md`) and issue (`pr/villa_issue.md`) — not
+yet opened against `ScrollPrize/villa`.
 
 ## Limitations
 
