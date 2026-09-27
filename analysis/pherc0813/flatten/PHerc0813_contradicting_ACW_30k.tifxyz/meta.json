@@ -1,0 +1,406 @@
+{
+  "uuid": "flattened.tifxyz",
+  "name": "flattened.tifxyz",
+  "type": "seg",
+  "format": "tifxyz",
+  "scale": [
+    0.05,
+    0.05
+  ],
+  "bbox": [
+    [
+      2046.9871826171875,
+      1912.369873046875,
+      12031.4501953125
+    ],
+    [
+      4641.19873046875,
+      5419.38916015625,
+      13461.646484375
+    ]
+  ],
+  "area_vx2": 456930000.0,
+  "area_cm2": 400.48563814920004,
+  "model_source": "/workspace/flatten_out/.PHerc0813_contradicting_ACW_30k.tifxyz.flatten-ev_jff_y/flatten-model.pt",
+  "fit_config": {
+    "args": {
+      "model-init": "flatten",
+      "flatten_solver": "forward",
+      "flatten_initial_inversion": false,
+      "flatten_output_step": 20.0,
+      "flatten_output_margin": 0.0,
+      "flatten_edge_step_global_scale": 100.0,
+      "model-output": "/workspace/flatten_out/.PHerc0813_contradicting_ACW_30k.tifxyz.flatten-ev_jff_y/flatten-model.pt",
+      "input": null,
+      "init-shell-dir": null,
+      "device": "cuda",
+      "downscale": 4.0,
+      "crop": null,
+      "seed": null,
+      "model-w": null,
+      "model-w-unit": "voxels",
+      "model-h": null,
+      "winding-volume": null,
+      "cuda-gridsample": 1,
+      "erode-valid-mask": 0,
+      "sparse-prefetch-backend": "tensorstore",
+      "corr-point-roi": false,
+      "corr-point-roi-init-margin": 80,
+      "corr-point-roi-output-radius": 20,
+      "mesh-step": 100,
+      "winding-step": 25,
+      "subsample-mesh": 4,
+      "subsample-winding": 4,
+      "depth": 3,
+      "mesh-h": 32,
+      "mesh-w": 32,
+      "init-mode": "cylinder_seed",
+      "z-center": 0.0,
+      "pyramid-d": true,
+      "model-input": null,
+      "snapshot-interval": 1000,
+      "normal-mask-zero": 0,
+      "out-dir": null,
+      "tifxyz-init": null,
+      "self-map-init": "off",
+      "flatten-solver": "forward",
+      "approval-inpaint": false,
+      "approval-inpaint-corr-spacing": null,
+      "approval-inpaint-padding-frac": 0.25,
+      "approval-inpaint-output-mask": false,
+      "approval-inpaint-output-mask-dilate": 3,
+      "approval-inpaint-tifxyz": null,
+      "tifxyz-flow-gate-channels": false,
+      "progress": false
+    },
+    "base": {
+      "flatten_sdir": 1.0,
+      "flatten_edge_step": 1.0,
+      "flatten_avg_offset": 1.0,
+      "flatten_orient": 2.0
+    },
+    "stages": [
+      {
+        "name": "flatten",
+        "steps": 4500,
+        "lr": 0.01,
+        "params": [
+          "map_flatten_ms"
+        ],
+        "min_scaledown": 0,
+        "args": {
+          "compile_flatten": true,
+          "compile_flatten_combined": true,
+          "flatten_diagnostics": false,
+          "fused_flatten_adam_clamp": true,
+          "flatten_support": true,
+          "flatten_support_radius": 1,
+          "flatten_orient_min_det": 0.01,
+          "flatten_filter_source_angles": false,
+          "flatten_max_update": 0.1,
+          "flatten_sdir_eps": 1e-08,
+          "status_interval": 100,
+          "auto_steps_window": 2000,
+          "auto_steps_max": 100000,
+          "auto_steps_rel_threshold": 1e-05,
+          "flatten_renorm_interval": 500
+        }
+      },
+      {
+        "name": "flatten",
+        "steps": 1000,
+        "lr": 0.001,
+        "params": [
+          "map_flatten_ms"
+        ],
+        "min_scaledown": 0,
+        "args": {
+          "compile_flatten": true,
+          "compile_flatten_combined": true,
+          "flatten_diagnostics": false,
+          "fused_flatten_adam_clamp": true,
+          "flatten_support": true,
+          "flatten_support_radius": 1,
+          "flatten_orient_min_det": 0.01,
+          "flatten_filter_source_angles": false,
+          "flatten_max_update": 0.1,
+          "flatten_sdir_eps": 1e-08,
+          "status_interval": 100,
+          "auto_steps_window": 2000,
+          "auto_steps_max": 100000,
+          "auto_steps_rel_threshold": 1e-05
+        }
+      },
+      {
+        "name": "flatten",
+        "steps": 1000,
+        "lr": 0.0001,
+        "params": [
+          "map_flatten_ms"
+        ],
+        "min_scaledown": 0,
+        "args": {
+          "compile_flatten": true,
+          "compile_flatten_combined": true,
+          "flatten_diagnostics": false,
+          "fused_flatten_adam_clamp": true,
+          "flatten_support": true,
+          "flatten_support_radius": 1,
+          "flatten_orient_min_det": 0.01,
+          "flatten_filter_source_angles": false,
+          "flatten_max_update": 0.1,
+          "flatten_sdir_eps": 1e-08,
+          "status_interval": 100,
+          "auto_steps_window": 2000,
+          "auto_steps_max": 100000,
+          "auto_steps_rel_threshold": 1e-05
+        }
+      }
+    ],
+    "external_surfaces": [
+      {
+        "type": "tifxyz_segment",
+        "name": "spiral-checkpoint.tifxyz",
+        "hash": "md5:5c83c0527505431b7730512b6f46baa8",
+        "path": "/workspace/flatten_out/.PHerc0813_contradicting_ACW_30k.tifxyz.flatten-ev_jff_y/objects/tifxyz_segment/5c83c0527505431b7730512b6f46baa8/spiral-checkpoint.tifxyz/segment"
+      }
+    ],
+    "voxel_size_um": 9.362
+  },
+  "lasagna_job": {
+    "model": null,
+    "atlas": null,
+    "linked_surfaces": [
+      {
+        "type": "tifxyz_segment",
+        "name": "spiral-checkpoint.tifxyz",
+        "hash": "md5:5c83c0527505431b7730512b6f46baa8"
+      }
+    ],
+    "config": {
+      "args": {
+        "model-init": "flatten",
+        "flatten_solver": "forward",
+        "flatten_initial_inversion": false,
+        "flatten_output_step": 20.0,
+        "flatten_output_margin": 0.0,
+        "flatten_edge_step_global_scale": 100.0
+      },
+      "base": {
+        "flatten_sdir": 1.0,
+        "flatten_edge_step": 1.0,
+        "flatten_avg_offset": 1.0,
+        "flatten_orient": 2.0
+      },
+      "stages": [
+        {
+          "name": "flatten",
+          "steps": 4500,
+          "lr": 0.01,
+          "params": [
+            "map_flatten_ms"
+          ],
+          "min_scaledown": 0,
+          "args": {
+            "compile_flatten": true,
+            "compile_flatten_combined": true,
+            "flatten_diagnostics": false,
+            "fused_flatten_adam_clamp": true,
+            "flatten_support": true,
+            "flatten_support_radius": 1,
+            "flatten_orient_min_det": 0.01,
+            "flatten_filter_source_angles": false,
+            "flatten_max_update": 0.1,
+            "flatten_sdir_eps": 1e-08,
+            "status_interval": 100,
+            "auto_steps_window": 2000,
+            "auto_steps_max": 100000,
+            "auto_steps_rel_threshold": 1e-05,
+            "flatten_renorm_interval": 500
+          }
+        },
+        {
+          "name": "flatten",
+          "steps": 1000,
+          "lr": 0.001,
+          "params": [
+            "map_flatten_ms"
+          ],
+          "min_scaledown": 0,
+          "args": {
+            "compile_flatten": true,
+            "compile_flatten_combined": true,
+            "flatten_diagnostics": false,
+            "fused_flatten_adam_clamp": true,
+            "flatten_support": true,
+            "flatten_support_radius": 1,
+            "flatten_orient_min_det": 0.01,
+            "flatten_filter_source_angles": false,
+            "flatten_max_update": 0.1,
+            "flatten_sdir_eps": 1e-08,
+            "status_interval": 100,
+            "auto_steps_window": 2000,
+            "auto_steps_max": 100000,
+            "auto_steps_rel_threshold": 1e-05
+          }
+        },
+        {
+          "name": "flatten",
+          "steps": 1000,
+          "lr": 0.0001,
+          "params": [
+            "map_flatten_ms"
+          ],
+          "min_scaledown": 0,
+          "args": {
+            "compile_flatten": true,
+            "compile_flatten_combined": true,
+            "flatten_diagnostics": false,
+            "fused_flatten_adam_clamp": true,
+            "flatten_support": true,
+            "flatten_support_radius": 1,
+            "flatten_orient_min_det": 0.01,
+            "flatten_filter_source_angles": false,
+            "flatten_max_update": 0.1,
+            "flatten_sdir_eps": 1e-08,
+            "status_interval": 100,
+            "auto_steps_window": 2000,
+            "auto_steps_max": 100000,
+            "auto_steps_rel_threshold": 1e-05
+          }
+        }
+      ],
+      "external_surfaces": [
+        {
+          "type": "tifxyz_segment",
+          "name": "spiral-checkpoint.tifxyz",
+          "hash": "md5:5c83c0527505431b7730512b6f46baa8"
+        }
+      ],
+      "voxel_size_um": 9.362
+    }
+  },
+  "object_refs": {
+    "version": 1,
+    "objects": [
+      {
+        "type": "tifxyz_segment",
+        "name": "spiral-checkpoint.tifxyz",
+        "hash": "md5:5c83c0527505431b7730512b6f46baa8"
+      }
+    ],
+    "job_spec": {
+      "model": null,
+      "atlas": null,
+      "linked_surfaces": [
+        {
+          "type": "tifxyz_segment",
+          "name": "spiral-checkpoint.tifxyz",
+          "hash": "md5:5c83c0527505431b7730512b6f46baa8"
+        }
+      ],
+      "config": {
+        "args": {
+          "model-init": "flatten",
+          "flatten_solver": "forward",
+          "flatten_initial_inversion": false,
+          "flatten_output_step": 20.0,
+          "flatten_output_margin": 0.0,
+          "flatten_edge_step_global_scale": 100.0
+        },
+        "base": {
+          "flatten_sdir": 1.0,
+          "flatten_edge_step": 1.0,
+          "flatten_avg_offset": 1.0,
+          "flatten_orient": 2.0
+        },
+        "stages": [
+          {
+            "name": "flatten",
+            "steps": 4500,
+            "lr": 0.01,
+            "params": [
+              "map_flatten_ms"
+            ],
+            "min_scaledown": 0,
+            "args": {
+              "compile_flatten": true,
+              "compile_flatten_combined": true,
+              "flatten_diagnostics": false,
+              "fused_flatten_adam_clamp": true,
+              "flatten_support": true,
+              "flatten_support_radius": 1,
+              "flatten_orient_min_det": 0.01,
+              "flatten_filter_source_angles": false,
+              "flatten_max_update": 0.1,
+              "flatten_sdir_eps": 1e-08,
+              "status_interval": 100,
+              "auto_steps_window": 2000,
+              "auto_steps_max": 100000,
+              "auto_steps_rel_threshold": 1e-05,
+              "flatten_renorm_interval": 500
+            }
+          },
+          {
+            "name": "flatten",
+            "steps": 1000,
+            "lr": 0.001,
+            "params": [
+              "map_flatten_ms"
+            ],
+            "min_scaledown": 0,
+            "args": {
+              "compile_flatten": true,
+              "compile_flatten_combined": true,
+              "flatten_diagnostics": false,
+              "fused_flatten_adam_clamp": true,
+              "flatten_support": true,
+              "flatten_support_radius": 1,
+              "flatten_orient_min_det": 0.01,
+              "flatten_filter_source_angles": false,
+              "flatten_max_update": 0.1,
+              "flatten_sdir_eps": 1e-08,
+              "status_interval": 100,
+              "auto_steps_window": 2000,
+              "auto_steps_max": 100000,
+              "auto_steps_rel_threshold": 1e-05
+            }
+          },
+          {
+            "name": "flatten",
+            "steps": 1000,
+            "lr": 0.0001,
+            "params": [
+              "map_flatten_ms"
+            ],
+            "min_scaledown": 0,
+            "args": {
+              "compile_flatten": true,
+              "compile_flatten_combined": true,
+              "flatten_diagnostics": false,
+              "fused_flatten_adam_clamp": true,
+              "flatten_support": true,
+              "flatten_support_radius": 1,
+              "flatten_orient_min_det": 0.01,
+              "flatten_filter_source_angles": false,
+              "flatten_max_update": 0.1,
+              "flatten_sdir_eps": 1e-08,
+              "status_interval": 100,
+              "auto_steps_window": 2000,
+              "auto_steps_max": 100000,
+              "auto_steps_rel_threshold": 1e-05
+            }
+          }
+        ],
+        "external_surfaces": [
+          {
+            "type": "tifxyz_segment",
+            "name": "spiral-checkpoint.tifxyz",
+            "hash": "md5:5c83c0527505431b7730512b6f46baa8"
+          }
+        ],
+        "voxel_size_um": 9.362
+      }
+    }
+  }
+}

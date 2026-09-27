@@ -1,0 +1,16 @@
+{
+  "mesh_step": 20,
+  "winding_step": 25,
+  "subsample_mesh": 4,
+  "subsample_winding": 4,
+  "scaledown": 1.0,
+  "z_step_eff": 1,
+  "volume_extent": null,
+  "pyramid_d": false,
+  "model_w": 301360.0,
+  "model_h": 2160.0,
+  "depth_windings": [
+    0
+  ],
+  "flatten_output_step": 20.0
+}
