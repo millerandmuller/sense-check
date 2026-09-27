@@ -16,11 +16,7 @@ volume, `metadata.json`, fetched fresh from
 `vesuvius-challenge-open-data.s3.amazonaws.com`), I looked up its catalog
 entry and found `z_direction_is_top_to_bottom: null`, `left_handed_coordinates:
 false` — `spiral_outward_sense` cannot be derived per the README's own
-rule, exactly the case this note is about — and it produced the same
-result the minified catalog (`metadata.min.json`) produces for all 23
-eligible volumes: neither key is present at all in the minified file, so
-nothing about sense can be derived from it for any of them, not just the
-5 with a null field in the full catalog.
+rule, exactly the case this note is about.
 
 **Before:** The scroll-specification section says, without qualification,
 that when the two catalog properties are absent `spiral_outward_sense` "is
@@ -37,10 +33,9 @@ fallback's reliability, (2) fitting the spiral both ways and comparing
 satisfaction does not discriminate the two senses either, confirmed at
 1,500 and again at 30,000 steps on two independent scrolls, and (3) the
 catalog properties this whole fallback chain starts from are null for 5
-of the 23 eligible volumes in the full catalog and absent entirely from
-the minified catalog — so anyone working from `metadata.min.json` should
-know before they start that `spiral_outward_sense` cannot be derived from
-it for any First Letters eligible volume.
+of the 23 eligible volumes in the full catalog (`metadata.min.json` omits
+both for all 23, by design — it's the scrollprize.org Atlas's field
+subset, not a bug).
 
 **Proof:** `table/orientation.md` (all 23 volumes, catalog sense vs. CT
 reading, reader disclosure) and `analysis/pherc0826/README.md` (four
@@ -82,17 +77,6 @@ itself PR #1899):
   > 30,000 steps). Five eligible First Letters volumes have no catalog
   > z-direction and need a person in VC3D.
 ```
-
-**Scope note:** this is a documentation-only change — a caution added
-next to existing guidance, not a claim that the guidance itself, or
-villa's rule for deriving `spiral_outward_sense`, is wrong. The evidence
-behind it (readings, fits, catalog fetch) is committed at
-`millerandmuller/sense-check`, a separate, private-until-submission repo
-for this month's Vesuvius Challenge Progress Prize entry; the PR itself
-would carry no reference to that repo's internal process, only to the
-public findings a maintainer can verify independently (the open-data
-catalog is public; the reading and fitting methodology is described
-plainly enough to reproduce).
 
 **Not proposed here:** any change to `surface_orientation.py`'s derivation
 rule, to `fit_spiral.py`, or to the catalog data itself — see the

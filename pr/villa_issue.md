@@ -45,11 +45,11 @@ each (tracks-only, patches and outer-shell disabled, RTX 3090).
    confidence, disagreeing with the catalog's derived CW). Umbilicus crops
    for the 5 catalog-UNDERIVABLE volumes, the ones this issue is mainly
    about:
-   [`PHerc0125`](../readings/renders/PHerc0125_z11462_umbilicus_L1_12mm.png) ·
-   [`PHerc0490A`](../readings/renders/PHerc0490A_z8774_umbilicus_L1_12mm.png) ·
-   [`PHerc0490B`](../readings/renders/PHerc0490B_z7986_umbilicus_L1_12mm.png) ·
-   [`PHerc0846A`](../readings/renders/PHerc0846A_z10514_umbilicus_L1_12mm.png) ·
-   [`PHerc1203`](../readings/renders/PHerc1203_z10437_umbilicus_L1_12mm.png)
+   [`PHerc0125`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0125_z11462_umbilicus_L1_12mm.png) ·
+   [`PHerc0490A`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0490A_z8774_umbilicus_L1_12mm.png) ·
+   [`PHerc0490B`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0490B_z7986_umbilicus_L1_12mm.png) ·
+   [`PHerc0846A`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0846A_z10514_umbilicus_L1_12mm.png) ·
+   [`PHerc1203`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc1203_z10437_umbilicus_L1_12mm.png)
    (full set, all z-levels, both crop sizes, in `readings/renders/` at
    `millerandmuller/sense-check`).
 3. **Fitting:** re-fit both senses of PHerc0826 (catalog ACW vs. explicit
