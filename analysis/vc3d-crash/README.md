@@ -11,8 +11,8 @@ from `~/Library/Logs/DiagnosticReports/`.
   backtrace:
   `vc3d::opendata::resolveLasagnaForVolume(VolumePkg const&, std::string const&)`.
 - `parentProc: Python` (pid 8680) -- this is the `vc3d-mcp` bridge process
-  that launches VC3D with `--agent-bridge`; `coalitionName:
-  com.example.build-session` -- the build session's process group.
+  that launches VC3D with `--agent-bridge`, running inside this build
+  session's own process group.
 - `procRole: Background` at the time of the crash.
 
 ## What this session can and cannot confirm about the trigger
