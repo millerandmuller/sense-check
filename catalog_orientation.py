@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -94,6 +95,18 @@ def prove_minified_catalog_lacks_keys(minified_raw: bytes) -> bool:
     return "z_direction_is_top_to_bottom" not in text and "left_handed_coordinates" not in text
 
 
+def write_provenance(path: Path, catalog_url: str, etag: str, last_modified: str,
+                      fetched_at: str) -> None:
+    """Record the real catalog fetch (not the publish time) so publish_table.py
+    can print it instead of mislabelling its own publish time as 'Fetched'."""
+    path.write_text(json.dumps({
+        "catalog_url": catalog_url,
+        "etag": etag,
+        "last_modified": last_modified,
+        "fetched_at": fetched_at,
+    }, indent=2) + "\n")
+
+
 def write_csv(rows: list[Row], path: Path) -> None:
     with path.open("w", newline="") as f:
         w = csv.writer(f)
@@ -105,14 +118,14 @@ def write_csv(rows: list[Row], path: Path) -> None:
 
 
 def write_markdown(rows: list[Row], path: Path, total_vols: int, covered_vols: int,
-                    etag: str, last_modified: str) -> None:
+                    etag: str, last_modified: str, fetched_at: str) -> None:
     derivable = sum(1 for r in rows if r.derived_sense is not None)
     underivable = len(rows) - derivable
     lines = [
         "# Catalog orientation — 23 First Letters eligible volumes",
         "",
         f"Catalog: `metadata.json`, ETag `{etag}`, Last-Modified `{last_modified}`, "
-        f"fetched {datetime.now(timezone.utc).isoformat(timespec='seconds')}.",
+        f"fetched {fetched_at}.",
         "",
         f"Coverage across the full catalog: **{covered_vols} of {total_vols}** volumes carry both "
         "orientation keys. Within the 23 eligible: "
@@ -141,12 +154,16 @@ def main() -> int:
 
     print(f"Fetching full catalog from {args.catalog_url} ...", file=sys.stderr)
     catalog, etag, last_modified = fetch_catalog(args.catalog_url)
+    fetched_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     rows = build_rows(catalog)
     total_vols, covered_vols = full_catalog_coverage(catalog)
 
+    write_provenance(out_dir / "catalog_provenance.json", args.catalog_url, etag,
+                      last_modified, fetched_at)
     write_csv(rows, out_dir / "orientation.csv")
-    write_markdown(rows, out_dir / "orientation.md", total_vols, covered_vols, etag, last_modified)
+    write_markdown(rows, out_dir / "orientation.md", total_vols, covered_vols, etag,
+                    last_modified, fetched_at)
 
     # If readings already exist, publish_table.py's richer table (CT reading,
     # confidence, agree, reader disclosure) supersedes what was just written

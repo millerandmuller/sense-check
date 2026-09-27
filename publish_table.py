@@ -23,7 +23,18 @@ def main(argv: list[str] | None = None) -> int:
                                       formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--readings-json", default="readings/readings.json")
     parser.add_argument("--out", default="table/orientation.md")
+    parser.add_argument("--provenance", default=None,
+                         help="catalog_provenance.json written by catalog_orientation.py "
+                              "(default: catalog_provenance.json next to --out)")
     args = parser.parse_args(argv)
+
+    out_path = Path(args.out)
+    provenance_path = Path(args.provenance) if args.provenance else out_path.parent / "catalog_provenance.json"
+    if not provenance_path.exists():
+        print(f"REFUSING TO PUBLISH: {provenance_path} is missing -- "
+              "run catalog_orientation.py first.")
+        return 1
+    provenance = json.loads(provenance_path.read_text())
 
     records = json.loads(Path(args.readings_json).read_text())
 
@@ -47,12 +58,16 @@ def main(argv: list[str] | None = None) -> int:
     agree = [r for r in records if r["agree"] is True]
     disagree = [r for r in records if r["agree"] is False]
 
+    catalog_name = Path(provenance["catalog_url"]).name
     lines = [
         "# Catalog orientation vs. CT reading -- 23 First Letters eligible volumes",
         "",
         f"> **Reader:** {reader}",
         "",
-        f"Fetched {datetime.now(timezone.utc).isoformat(timespec='seconds')}. "
+        f"Catalog: `{catalog_name}`, ETag `{provenance['etag']}`, "
+        f"Last-Modified `{provenance['last_modified']}`, fetched {provenance['fetched_at']}.",
+        f"Published {datetime.now(timezone.utc).isoformat(timespec='seconds')}.",
+        "",
         f"{len(derivable)} volumes derivable from the catalog, {len(underivable)} UNDERIVABLE. "
         f"Of the 23 readings: {len(unsure)} unsure, {len(agree)} agree with the catalog's "
         f"predicted visual sense, {len(disagree)} disagree.",
@@ -81,7 +96,6 @@ def main(argv: list[str] | None = None) -> int:
                           f"{r['catalog']['predicted_visual_sense']}, read as {r['ct_reading']['sense']} "
                           f"(confidence {r['ct_reading']['confidence']}). {r['note']}")
 
-    out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text("\n".join(lines) + "\n")
     print(f"Published {out_path}: {len(records)} rows, {len(agree)} agree, {len(disagree)} disagree, "

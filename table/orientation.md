@@ -1,8 +1,11 @@
 # Catalog orientation vs. CT reading -- 23 First Letters eligible volumes
 
-> **Reader:** Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
+> **Reader:** Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
 
-Fetched 2026-09-26T21:06:55+00:00. 18 volumes derivable from the catalog, 5 UNDERIVABLE. Of the 23 readings: 21 unsure, 0 agree with the catalog's predicted visual sense, 1 disagree.
+Catalog: `metadata.json`, ETag `7b86f3272d4ffa1085fafb4e3e6383bf`, Last-Modified `Wed, 23 Sep 2026 15:22:11 GMT`, fetched 2026-09-27T17:24:36+00:00.
+Published 2026-09-27T17:25:19+00:00.
+
+18 volumes derivable from the catalog, 5 UNDERIVABLE. Of the 23 readings: 21 unsure, 0 agree with the catalog's predicted visual sense, 1 disagree.
 
 | Sample | Volume | µm | Catalog sense | CT reading | Confidence | Agree | Umbilicus | Note |
 |---|---|---|---|---|---|---|---|---|

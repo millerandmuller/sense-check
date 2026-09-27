@@ -6,7 +6,7 @@ The catalog's predicted sense is deliberately not shown here -- it lives
 only in readings.json, so this reading isn't anchored by it.
 
 
-> **Reader:** Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
+> **Reader:** Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
 
 Order: the 5 volumes the catalog cannot derive a sense for (no cross-check
 available for these) come first, then the 18 derivable volumes.

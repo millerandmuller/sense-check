@@ -13,7 +13,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         7294,
         11462,
@@ -58,7 +58,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         6642,
         6643,
@@ -106,7 +106,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         6796,
         10679,
@@ -151,7 +151,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         6605,
         10380,
@@ -196,7 +196,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5192,
         5194,
@@ -244,7 +244,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5160,
         8109,
@@ -289,7 +289,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         8504,
         8506,
@@ -337,7 +337,7 @@
     "ct_reading": {
       "sense": "ACW",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5948,
         5949,
@@ -385,7 +385,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5922,
         9306,
@@ -430,7 +430,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         4462,
         4463,
@@ -478,7 +478,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5564,
         5566,
@@ -526,7 +526,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5564,
         5566,
@@ -574,7 +574,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         6299,
         6300,
@@ -622,7 +622,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         5564,
         5566,
@@ -670,7 +670,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         4158,
         6534,
@@ -715,7 +715,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         4094,
         4096,
@@ -763,7 +763,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         3727,
         5856,
@@ -808,7 +808,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         4907,
         7710,
@@ -855,7 +855,7 @@
     "ct_reading": {
       "sense": "ACW",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         6642,
         6643,
@@ -903,7 +903,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         8136,
         8137,
@@ -950,7 +950,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         8504,
         8505,
@@ -998,7 +998,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": "low",
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         7336,
         7337,
@@ -1046,7 +1046,7 @@
     "ct_reading": {
       "sense": "unsure",
       "confidence": null,
-      "reader": "Claude (review session, 2026-09-26), from the crops only, blind to the predicted sense; every row to be reviewed by Lutfiya Miller before publication. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
+      "reader": "Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. \"unsure\" is a result, not a gap.",
       "z_levels": [
         4874,
         4875,
