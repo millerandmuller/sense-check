@@ -130,13 +130,13 @@ finding, not a gap to explain away.
 ## Four hypotheses
 
 1. **The single-slice reading was wrong.** Plausible but not
-   specifically about PHerc0826: a blind single-slice read was unreliable
-   across the eligible set generally (21 of 23 "unsure" — see the root
-   README, Finding D), so a wrong read here would not be a surprising,
-   isolated failure. Neither confirmed nor ruled out by this build; not
-   falsified. **Falsified by:** a second independent reader, blind to the
-   first read and to the catalog value, reaching the same "unsure" or the
-   opposite confident answer on the same slices.
+   specifically about PHerc0826: a blind single-slice read settled none of
+   the 23 eligible volumes (see the root README, Finding D), so a wrong
+   read here would not be a surprising, isolated failure. Neither
+   confirmed nor ruled out by this build; not falsified. **Falsified by:**
+   a second independent reader, blind to the first read and to the
+   catalog value, reaching the same "unsure" or the opposite confident
+   answer on the same slices.
 2. **The catalog flag is wrong for PHerc0826 specifically.** No evidence
    either way — this build did not check the acquisition record against
    the catalog's recorded `z_direction_is_top_to_bottom` /

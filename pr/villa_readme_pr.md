@@ -25,17 +25,17 @@ already-fitted spiral" — implying both fallbacks are dependable.
 
 **After this PR:** A short note directly under that bullet, stating
 plainly that (1) a static single-crop read by an AI reader (Claude, from
-the 12 mm/4 mm umbilicus crops, blind to the predicted sense; not
-reviewed by a person) was inconclusive on 21 of 23 First Letters eligible
-volumes in an independent test — this crop read did not exercise villa's
-documented person-in-VC3D fallback, so this PR makes no claim about that
-fallback's reliability, (2) fitting the spiral both ways and comparing
-satisfaction does not discriminate the two senses either, confirmed at
-1,500 and again at 30,000 steps on two independent scrolls, and (3) the
-catalog properties this whole fallback chain starts from are null for 5
-of the 23 eligible volumes in the full catalog (`metadata.min.json` omits
-both for all 23, by design — it's the scrollprize.org Atlas's field
-subset, not a bug).
+the 12 mm/4 mm umbilicus crops, blind to the predicted sense; descriptions
+checked against the images by Chris Müller) settled none of the 23 First
+Letters eligible volumes in an independent test — this crop read did not
+exercise villa's documented person-in-VC3D fallback, so this PR makes no
+claim about that fallback's reliability, (2) fitting the spiral both ways
+and comparing satisfaction does not discriminate the two senses either,
+confirmed at 1,500 and again at 30,000 steps on two independent scrolls,
+and (3) the catalog properties this whole fallback chain starts from are
+null for 5 of the 23 eligible volumes in the full catalog
+(`metadata.min.json` omits both for all 23, by design — it's the
+scrollprize.org Atlas's field subset, not a bug).
 
 **Proof:** `table/orientation.md` (all 23 volumes, catalog sense vs. CT
 reading, reader disclosure) and `analysis/pherc0826/README.md` (four

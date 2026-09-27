@@ -1,10 +1,11 @@
 **In one sentence:** For the 23 First Letters eligible volumes, the catalog
 is missing the fields `spiral_outward_sense` is derived from on 5 of them
 (and on all of them via the minified catalog); a static single-crop AI
-read, not reviewed by a person, was inconclusive on 21 of 23; and fitting
-the spiral both ways and comparing satisfaction does not discriminate it
-either, on the two scrolls tested — a fitted spiral reports back the
-sense it was given, not an independent signal.
+read — descriptions checked against the images by Chris Müller — settled
+none of the 23; and fitting the spiral both ways and comparing
+satisfaction does not discriminate it either, on the two scrolls tested —
+a fitted spiral reports back the sense it was given, not an independent
+signal.
 
 **I was trying to:** Determine `spiral_outward_sense` for all 23 First
 Letters eligible volumes, to write correct `spiral-scroll.json` files for
@@ -30,12 +31,9 @@ each (tracks-only, patches and outer-shell disabled, RTX 3090).
    working from the minified catalog alone cannot derive sense for any
    First Letters eligible volume.
 2. **Reading:** a static single-crop read (12mm/4mm umbilicus crops, one
-   AI reader, not reviewed by a person) came back "unsure" for 21 of the 23
-   volumes; the two that got a definite reading were `PHerc1203` (ACW,
-   catalog-underivable, so uncorroborated) and `PHerc0813` (ACW, low
-   confidence, disagreeing with the catalog's derived CW). Umbilicus crops
-   for the 5 catalog-UNDERIVABLE volumes, the ones this issue is mainly
-   about:
+   AI reader; descriptions checked against the images by Chris Müller)
+   settled none of the 23 volumes. Umbilicus crops for the 5
+   catalog-UNDERIVABLE volumes, the ones this issue is mainly about:
    [`PHerc0125`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0125_z11462_umbilicus_L1_12mm.png) ·
    [`PHerc0490A`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0490A_z8774_umbilicus_L1_12mm.png) ·
    [`PHerc0490B`](https://github.com/millerandmuller/sense-check/blob/main/readings/renders/PHerc0490B_z7986_umbilicus_L1_12mm.png) ·

@@ -98,15 +98,12 @@ these three, or what in the sheet-mask geometry predicts it.
 
 **Observed:** Of the 23 volumes read (one reader, blind to the catalog
 prediction, from the 12mm/4mm umbilicus crops only -- see `readings/READING_SHEET.md`
-disclosure and `table/orientation.md`), 21 came back "unsure." The common
-reasons, by volume: the core is filled with debris rather than showing a
-free inner terminus (e.g. PHerc0826, PHerc1218, PHerc1545), the innermost
-material is crumpled fragments rather than one continuous wrap (PHerc0191,
-PHerc0257, PHerc0358), or no core is visible at all near the umbilicus
-(most of the 12 estimated-umbilicus volumes; see Finding C). Only 2 volumes
-got a sense: `PHerc1203` (ACW, its only evidence, since the catalog cannot
-derive one) and `PHerc0813` (ACW, low confidence) -- which disagrees with
-PHerc0813's catalog-derived prediction of CW.
+disclosure and `table/orientation.md`), the reading settled none of the 23.
+The common reasons, by volume: the core is filled with debris rather than
+showing a free inner terminus (e.g. PHerc0826, PHerc1218, PHerc1545), the
+innermost material is crumpled fragments rather than one continuous wrap
+(PHerc0191, PHerc0257, PHerc0358), or no core is visible at all near the
+umbilicus (most of the 12 estimated-umbilicus volumes; see Finding C).
 
 **Update after running the comparison (A1/A1b, see `analysis/pherc0826/` and
 `analysis/pherc0813/`):** a single-slice visual read clearly does not
@@ -152,5 +149,5 @@ comparison and evidence.
 
 **Not established:** whether a different reader, a different z-level
 choice, or VC3D's own interactive rotation (rather than a fixed axial
-slice) would resolve more of the 21 unsure cases; this build only tested
+slice) would resolve any of the 23 unsure cases; this build only tested
 fixed-axial-slice, single-reader reading.

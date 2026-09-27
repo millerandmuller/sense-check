@@ -11,7 +11,7 @@ two senses' point clouds sit ~15 voxels apart, not identical.
 
 ## The 23 volumes
 
-Of 23 readings: **21 unsure, 1 disagrees, 0 agree.**
+Of 23 readings: **23 unsure, 0 disagree, 0 agree.**
 
 | Sample | Catalog | CT reading | Agree |
 |---|---|---|---|
@@ -22,7 +22,7 @@ Of 23 readings: **21 unsure, 1 disagrees, 0 agree.**
 | PHerc0268 | CW | unsure | n/a |
 | PHerc0358 | ACW | unsure | n/a |
 | PHerc0800 | CW | unsure | n/a |
-| PHerc0813 | CW | **ACW** | ❌ |
+| PHerc0813 | CW | unsure | n/a |
 | PHerc0826 | ACW | unsure | n/a |
 | PHerc0175A | ACW | unsure | n/a |
 | PHerc0175B | ACW | unsure | n/a |
@@ -33,20 +33,18 @@ Of 23 readings: **21 unsure, 1 disagrees, 0 agree.**
 | PHerc0490A | UNDERIVABLE | unsure | n/a |
 | PHerc0490B | UNDERIVABLE | unsure | n/a |
 | PHerc0846A | UNDERIVABLE | unsure | n/a |
-| PHerc1203 | UNDERIVABLE | **ACW** | n/a |
+| PHerc1203 | UNDERIVABLE | unsure | n/a |
 | PHerc1218 | CW | unsure | n/a |
 | PHerc1447 | ACW | unsure | n/a |
 | PHerc1545 | ACW | unsure | n/a |
 | PHerc0846B | CW | unsure | n/a |
 
-> Reader: Claude, from the umbilicus crops, blind to the predicted
-> sense. Not reviewed by a person. "unsure" is a result, not a gap.
+> Reader: Readings by one AI reader (Claude), blind to the catalog's
+> predicted sense; Chris Müller checked each row's description against
+> its image, and the two direction claims that did not hold up were
+> withdrawn.
 
-Full table: `table/orientation.md`. PHerc0813, the disagreement:
-
-| Traced (4 mm) | Untraced (12 mm) |
-|---|---|
-| ![PHerc0813 traced, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L0_4mm_traced.png) | ![PHerc0813, z=12745](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png) |
+Full table: `table/orientation.md`.
 
 ## Findings
 
@@ -57,9 +55,8 @@ the scrollprize.org Atlas's field subset of `metadata.json`
 (`scrollprize.org/src/components/atlas/useAtlasData.js`), with no volume
 properties; use `metadata.json`.
 
-**(ii) A static single-crop AI read (not reviewed by a person) was
-inconclusive on 21 of 23** (`analysis/readme_pr_findings.md` Finding D) —
-not a person-in-VC3D test.
+**(ii) A static single-crop AI read settled none of the 23**
+(`analysis/readme_pr_findings.md` Finding D) — not a person-in-VC3D test.
 
 **(iii) The equal-step retest retracts the August CW conclusion for
 PHerc0826** (`analysis/pherc0826/README.md`).
@@ -106,7 +103,8 @@ yet opened.
 
 ## Limitations
 
-- One AI reader, not reviewed by a person.
+- Readings by one AI reader; descriptions checked against the images by
+  Chris Müller.
 - Renders sample the CT in Python (`render_flattened_tifxyz.py`), not
   villa's `vc_render_tifxyz` (Qt6 unavailable).
 - Not tested: what sense affects downstream (normal direction, recto/verso).
@@ -119,8 +117,9 @@ yet opened.
 
 ## AI-use disclosure
 
-Readings, code, fits, and this document were produced with AI assistance,
-directed by Lutfiya Miller. The readings were not reviewed by a person.
+Code, fits, and this document were produced with AI assistance, directed
+by Lutfiya Miller and Chris Müller. Readings by one AI reader;
+descriptions checked against the images by Chris Müller.
 
 ## License
 

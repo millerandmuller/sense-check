@@ -1,11 +1,11 @@
 # Catalog orientation vs. CT reading -- 23 First Letters eligible volumes
 
-> **Reader:** Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
+> **Reader:** Readings by one AI reader (Claude), blind to the catalog's predicted sense; Chris Müller checked each row's description against its image, and the two direction claims that did not hold up were withdrawn.
 
 Catalog: `metadata.json`, ETag `7b86f3272d4ffa1085fafb4e3e6383bf`, Last-Modified `Wed, 23 Sep 2026 15:22:11 GMT`, fetched 2026-09-27T17:24:36+00:00.
-Published 2026-09-27T17:25:19+00:00.
+Published 2026-09-27T21:05:25+00:00.
 
-18 volumes derivable from the catalog, 5 UNDERIVABLE. Of the 23 readings: 21 unsure, 0 agree with the catalog's predicted visual sense, 1 disagree.
+18 volumes derivable from the catalog, 5 UNDERIVABLE. Of the 23 readings: 23 unsure, 0 agree with the catalog's predicted visual sense, 0 disagree.
 
 | Sample | Volume | µm | Catalog sense | CT reading | Confidence | Agree | Umbilicus | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -16,7 +16,7 @@ Published 2026-09-27T17:25:19+00:00.
 | PHerc0268 | 20251110183117 | 8.64 | CW | unsure | - | n/a | measured | Measured umbilicus; z=5192 crushed pack with a dark seam, z=8158 a small crumpled cavity right of... |
 | PHerc0358 | 20250821151737 | 9.362 | ACW | unsure | low | n/a | measured | Measured umbilicus on target: z=11058 shows a debris-filled core cavity enclosed by the innermost... |
 | PHerc0800 | 20250521135224 | 8.64 | CW | unsure | - | n/a | measured | Measured umbilicus; z=8504 and z=13364 are dense curved stacks with no cavity, z=18224 a crumpled... |
-| PHerc0813 | 20250821151723 | 9.362 | CW | **ACW** | low | ❌ **disagree** | measured | Measured umbilicus on target: z=12745 is the clearest core in the set, an elongated teardrop of c... |
+| PHerc0813 | 20250821151723 | 9.362 | CW | unsure | - | n/a | measured | Measured umbilicus on target: z=12745 is the clearest core in the set, an elongated teardrop of c... |
 | PHerc0826 | 20250821151701 | 9.362 | ACW | unsure | low | n/a | measured | Measured umbilicus on target: z=5922 and z=9306 show a debris-filled core cavity with a void open... |
 | PHerc0175A | 20250521115057 | 8.64 | ACW | unsure | low | n/a | estimated | Estimated core OFF-TARGET by ~2.5 mm: a clear spiral centre is visible at ~(190,260) in the z=446... |
 | PHerc0175B | 20250521125822 | 8.64 | ACW | unsure | - | n/a | estimated | Estimated core in a sheet pack (z=5564), a blurred fold (z=8743), a fractured block (z=11923). No... |
@@ -27,12 +27,8 @@ Published 2026-09-27T17:25:19+00:00.
 | PHerc0490A | 20250521151210 | 8.64 | UNDERIVABLE | unsure | - | n/a | estimated | Estimated core sits in a compressed sheet pack at all three z (4094, 6434, 8774); z=6434 is a blu... |
 | PHerc0490B | 20250521151215 | 8.64 | UNDERIVABLE | unsure | - | n/a | estimated | Estimated core lies at a fold/crease between sheet packs (z=3727 a dark gap between two packs, z=... |
 | PHerc0846A | 20250728152254 | 9.362 | UNDERIVABLE | unsure | - | n/a | estimated | Estimated core lies inside a sheet pack (z=4907 oblique stack, z=7710 a fold apex, z=10514 a frac... |
-| PHerc1203 | 20250820131727 | 9.362 | UNDERIVABLE | **ACW** | low | n/a | measured | Core cavity visible only at z=14233 (measured umbilicus). Innermost sheet tail enters the cavity ... |
+| PHerc1203 | 20250820131727 | 9.362 | UNDERIVABLE | unsure | - | n/a | measured | Core cavity visible only at z=14233 (measured umbilicus). Innermost sheet tail enters the cavity ... |
 | PHerc1218 | 20250521120456 | 8.64 | CW | unsure | low | n/a | measured | Measured umbilicus on target: z=17435 shows a debris-filled cavity enclosed by concentric wraps w... |
 | PHerc1447 | 20250521151220 | 8.64 | ACW | unsure | low | n/a | measured | Measured umbilicus; z=13363 shows a clear spiral core with a hooked innermost sheet at ~(200,420)... |
 | PHerc1545 | 20250821151648 | 9.362 | ACW | unsure | low | n/a | measured | Measured umbilicus on target: z=7336 shows concentric wraps around the mark with a curled innermo... |
 | PHerc0846B | 20250804142305 | 9.362 | CW | unsure | - | n/a | estimated | Estimated core in a pack; a large crumpled swirl is visible at upper-right (~450,200) in z=4874, ... |
-
-## Disagreements (catalog vs. CT reading)
-
-- **PHerc0813**: catalog predicts CW, read as ACW (confidence low). Measured umbilicus on target: z=12745 is the clearest core in the set, an elongated teardrop of concentric wraps with the mark inside the innermost loop (4 mm crop). z=5948 a dark triangular void with converging sheets, z=9346 vertical sheets. Reading: following what appears to be the innermost free tail (right side of the loop, x~345 y~300 in the 4 mm crop) up, then left across the top, then down the left side gives anticlockwise on screen. Low confidence: the tail may be a fragment. BEST candidate for the overlay-fit discriminator: clean core, measured umbilicus, tracks published, catalog-derivable.

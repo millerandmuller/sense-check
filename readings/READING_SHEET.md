@@ -6,7 +6,7 @@ The catalog's predicted sense is deliberately not shown here -- it lives
 only in readings.json, so this reading isn't anchored by it.
 
 
-> **Reader:** Claude, from the umbilicus crops only, blind to the predicted sense. Not reviewed by a person. Convention of every reading: the crop's own pixel axes (x right, y down, viewed along +z), as printed in the image margin. "unsure" is a result, not a gap.
+> **Reader:** Readings by one AI reader (Claude), blind to the catalog's predicted sense; Chris Müller checked each row's description against its image, and the two direction claims that did not hold up were withdrawn.
 
 Order: the 5 volumes the catalog cannot derive a sense for (no cross-check
 available for these) come first, then the 18 derivable volumes.
@@ -72,10 +72,10 @@ z=14233
 
 </details>
 
-**Sense (CW / ACW / unsure):** ACW
-**Confidence (high / medium / low):** low
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
 **Z-level trusted:** 14233
-**Note:** Core cavity visible only at z=14233 (measured umbilicus). Innermost sheet tail enters the cavity from the right (y~350) and ends left of the mark; followed outward it runs right, up, left, down on screen = anticlockwise in the crop convention. z=6642 and z=10437 show a flattened, elongated core with no readable turn. Low confidence: the inner termination is ambiguous against loose fragments in the cavity.
+**Note:** Core cavity visible only at z=14233 (measured umbilicus). Innermost sheet tail enters the cavity from the right (y~350) and ends left of the mark; followed outward it runs right, up, left, down on screen = anticlockwise in the crop convention. z=6642 and z=10437 show a flattened, elongated core with no readable turn. Low confidence: the inner termination is ambiguous against loose fragments in the cavity. Direction claim withdrawn after human review (2026-09-27): the described entering line could not be confirmed in the image.
 
 ---
 
@@ -412,10 +412,10 @@ z=12745
 
 </details>
 
-**Sense (CW / ACW / unsure):** ACW
-**Confidence (high / medium / low):** low
+**Sense (CW / ACW / unsure):** unsure
+**Confidence (high / medium / low):** n/a
 **Z-level trusted:** 12745
-**Note:** Measured umbilicus on target: z=12745 is the clearest core in the set, an elongated teardrop of concentric wraps with the mark inside the innermost loop (4 mm crop). z=5948 a dark triangular void with converging sheets, z=9346 vertical sheets. Reading: following what appears to be the innermost free tail (right side of the loop, x~345 y~300 in the 4 mm crop) up, then left across the top, then down the left side gives anticlockwise on screen. Low confidence: the tail may be a fragment. BEST candidate for the overlay-fit discriminator: clean core, measured umbilicus, tracks published, catalog-derivable.
+**Note:** Measured umbilicus on target: z=12745 is the clearest core in the set, an elongated teardrop of concentric wraps with the mark inside the innermost loop (4 mm crop). z=5948 a dark triangular void with converging sheets, z=9346 vertical sheets. Reading: following what appears to be the innermost free tail (right side of the loop, x~345 y~300 in the 4 mm crop) up, then left across the top, then down the left side gives anticlockwise on screen. Low confidence: the tail may be a fragment. BEST candidate for the overlay-fit discriminator: clean core, measured umbilicus, tracks published, catalog-derivable. Direction claim withdrawn after human review (2026-09-27): the traced start could not be confirmed in the image.
 
 ---
 
