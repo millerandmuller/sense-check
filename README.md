@@ -98,8 +98,11 @@ UNDERIVABLE ones.
 
 ## Filed upstream
 
-Drafts: `pr/villa_readme_pr.md` (PR), `pr/villa_issue.md` (issue) — not
-yet opened.
+- README note: [ScrollPrize/villa#1911](https://github.com/ScrollPrize/villa/pull/1911)
+- Sense findings and the five volumes' images: [#1909](https://github.com/ScrollPrize/villa/issues/1909)
+- Two VC3D bugs: [#1910](https://github.com/ScrollPrize/villa/issues/1910)
+
+The texts as drafted are in `pr/`.
 
 ## Limitations
 
