@@ -103,13 +103,16 @@ yet opened.
 
 ## Limitations
 
-- Readings by one AI reader; descriptions checked against the images by
-  Chris Müller.
 - Renders sample the CT in Python (`render_flattened_tifxyz.py`), not
   villa's `vc_render_tifxyz` (Qt6 unavailable).
 - Not tested: what sense affects downstream (normal direction, recto/verso).
 - PHerc0125 has a published umbilicus (used in villa #1837); our crops
   used an estimated one.
+- A different fit setup can separate the senses:
+  [claudepro1515/first-letters-fit-audit](https://github.com/claudepro1515/first-letters-fit-audit)
+  (2026-09-27) reports that on PHerc0211 an anticlockwise refit with
+  CT-snapped crossings and a phase term fits better, matching the
+  catalog's ACW. Our result covers tracks-only fits without a phase term.
 
 ## Cost
 
