@@ -1,11 +1,18 @@
-# PHerc0826: catalog ACW vs. August CW
+# PHerc0826 and PHerc0813: the fit does not know the sense
+
+1. Equal-step fits tie at 1,500 and 30,000 steps on both scrolls; the
+   gap flips sign between them.
+2. The fit's winding direction follows the given sense; the two senses'
+   point clouds sit ~15 voxels apart, not identical.
+3. So an already-fitted spiral returns the sense it was given — the
+   August CW conclusion for PHerc0826 is retracted.
 
 The open-data catalog derives **ACW** for PHerc0826 (`z_direction_is_top_to_bottom:
 true`, `left_handed_coordinates: false`, villa's rule `"ACW" if z_direction_is_top_to_bottom
 != left_handed_coordinates else "CW"`, `surface_orientation.py` at f4570bf). The
 August entry settled on **CW** by fitting the spiral both ways and comparing.
-Those two conclusions disagree. This dossier lays out what four weeks of not
-looking at it, then three separate tests, did and did not settle.
+Those two conclusions disagree; the rest of this dossier lays out what
+three separate tests did and did not settle.
 
 ## August's comparison was not a fair fight
 
