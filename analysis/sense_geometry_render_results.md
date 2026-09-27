@@ -3,7 +3,8 @@
 Testing whether `spiral_outward_sense` changes only the export
 parametrization (winding/U direction) rather than the fitted surface
 itself, on both scrolls' 30,000-step catalog-vs-contradicting fit pairs.
-See the project notes for the full writeup; this file is the raw numbers.
+See `pherc0826/README.md` (hypothesis 4) for the full writeup; this file
+is the raw numbers.
 
 ## Geometry (compare_mesh_geometry.py)
 
@@ -21,8 +22,8 @@ Both 30k checkpoints per scroll flattened via villa's own
 `flatten_spiral_checkpoint.py` (real Lasagna flatten optimization), then
 rendered by sampling the real CT volume at each flattened grid point
 (villa's `vc_render_tifxyz` could not be built here -- see script
-docstring and the project notes for why -- this is a documented Python
-substitute, not the original tool).
+docstring and `pherc0826/README.md`, "What this dossier is not," for why
+-- this is a documented Python substitute, not the original tool).
 
 | Scroll | NCC as-is | NCC horizontal-flip | NCC vertical-flip | Mirrored? |
 |---|---|---|---|---|

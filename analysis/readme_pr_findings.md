@@ -122,10 +122,9 @@ contradicting sense wins on PHerc0813 by 0.22pp, the opposite direction).
 (`transforms.py`), so this is not a no-op config value; a single
 from-scratch reduced fit over one z-window per hypothesis appears to be
 under-constrained to separate the two senses either geometrically or by
-this metric. See the project notes 2026-09-26 for the full comparison and
-the options being weighed (longer fits, re-enabling outer-shell/patches
-terms, a wider z-window) before either scroll's sense can be claimed
-resolved by this method.
+this metric. See `pherc0826/README.md` for the full equal-step
+re-test and the four hypotheses this build carried forward before either
+scroll's sense could be claimed resolved by this method.
 
 **Second update, equal-step re-test:** the leading hypothesis for why the
 1,500-step comparison looked tied was that it was too short -- villa's own
@@ -148,7 +147,7 @@ senses -- but the dip's physical (x, y) location coincides almost exactly
 regardless of which sense was assumed, which argues it reflects the
 scroll's documented debris-filled core cavity rather than a
 handedness-dependent artifact; PHerc0813 showed no comparable dip on
-either sense. See the project notes 2026-09-27 for the full four-fit
+either sense. See `pherc0826/README.md` for the full four-fit
 comparison and evidence.
 
 **Not established:** whether a different reader, a different z-level

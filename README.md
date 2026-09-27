@@ -6,10 +6,6 @@ data?**
 
 ## The 23 volumes
 
-> Reader: Claude (review session), from umbilicus crops, blind to the
-> predicted sense; every row reviewed by Lutfiya Miller. "unsure" is a
-> result, not a gap.
-
 18 of 23 have a catalog-derivable sense; 5 don't. Of 23 readings: **21
 unsure, 1 disagrees, 0 agree.**
 
@@ -39,13 +35,23 @@ unsure, 1 disagrees, 0 agree.**
 | PHerc1545 | ACW | unsure | n/a |
 | PHerc0846B | CW | unsure | n/a |
 
+> Reader: Claude (review session), from umbilicus crops, blind to the
+> predicted sense; every row reviewed by Lutfiya Miller. "unsure" is a
+> result, not a gap.
+
 Full table, z-levels, confidence, umbilicus source: `table/orientation.md`.
+
+The one disagreement, PHerc0813 (catalog CW, read ACW), at the z-level
+read:
+
+![PHerc0813 umbilicus crop, z=12745, catalog CW / read ACW](readings/renders/PHerc0813_z12745_umbilicus_L1_12mm.png)
 
 ## Five findings
 
 **(a) The catalog is incomplete; the minified catalog is worse.** 5 of 23
-volumes lack the fields sense needs. The minified catalog
-(`metadata.min.json`) omits both fields for **all 23**.
+volumes lack the fields sense needs (18/23 eligible, 41/71 total). The
+minified catalog (`metadata.min.json`) omits both fields for **all 23**.
+One-command proof: `python3 catalog_orientation.py`.
 
 **(b) A single slice rarely settles it.** 21 of 23 blind reads: unsure
 (table above; `analysis/readme_pr_findings.md` Finding D).
@@ -55,9 +61,9 @@ volumes lack the fields sense needs. The minified catalog
 | Fit | 1,500 steps | 30,000 steps |
 |---|---|---|
 | 0826 catalog (ACW) | 0.09691 | 0.09684 |
-| 0826 contradicting (CW) | 0.09623 | 0.09790 |
-| 0813 catalog (CW) | 0.16338 | 0.163187 |
-| 0813 contradicting (ACW) | 0.16561 | 0.162074 |
+| 0826 contradicting (CW) | 0.09623 | 0.09791 |
+| 0813 catalog (CW) | 0.16338 | 0.16317 |
+| 0813 contradicting (ACW) | 0.16561 | 0.16207 |
 
 Both scrolls tie at every checkpoint; the gap flips sign between 1.5k and
 30k steps on both — noise, not signal.
@@ -65,8 +71,8 @@ Both scrolls tie at every checkpoint; the gap flips sign between 1.5k and
 **(d) PHerc0826's catalog-vs-community disagreement stays unresolved.**
 Catalog says ACW; an August fit said CW off an unequal (30k-vs-1.5k)
 comparison. Retested at equal steps, geometry, and a real render: still
-unresolved, and unresolvable by fitting this way. Full writeup:
-`analysis/pherc0826/README.md`.
+unresolved, and unresolvable by fitting this way. Full writeup, with the
+overlay images: `analysis/pherc0826/README.md`.
 
 **(e) Two VC3D bugs.** `stable` (`fc25b4d`) crashes opening a sample
 whose lasagna representation triggers `resolveLasagnaForVolume`; fixed on
@@ -86,6 +92,13 @@ python3 write_scroll_spec.py <scroll> <volume> --sense CW|ACW --reading-ref "<ho
 
 First form: the 18 derivable volumes. Second: required for the 5
 UNDERIVABLE ones.
+
+## Filed upstream
+
+- README PR draft: `pr/villa_readme_pr.md`.
+- Issue draft (five readings, PHerc0826 disagreement): `pr/villa_issue.md`.
+
+Not yet opened against `ScrollPrize/villa` — both ready for filing.
 
 ## Limitations
 

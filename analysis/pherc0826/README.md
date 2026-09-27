@@ -25,13 +25,24 @@ through at every stage, not restarted:
 | Fit | 1,500 steps | 30,000 steps |
 |---|---|---|
 | PHerc0826 catalog (ACW) | 0.09691 | 0.09684 |
-| PHerc0826 contradicting (CW) | 0.09623 | 0.09790 |
-| PHerc0813 catalog (CW) | 0.16338 | 0.163187 |
-| PHerc0813 contradicting (ACW) | 0.16561 | 0.162074 |
+| PHerc0826 contradicting (CW) | 0.09623 | 0.09791 |
+| PHerc0813 catalog (CW) | 0.16338 | 0.16317 |
+| PHerc0813 contradicting (ACW) | 0.16561 | 0.16207 |
 
 (`satisfied_tracks_fraction` — the share of tracked points the fitted
 surface actually explains. Full per-checkpoint numbers, configs, and
-commands: `../pherc0826/`, `../pherc0813/`, the project notes 2026-09-27.)
+commands: this directory and `../pherc0813/` — see Evidence below.)
+
+Same fit, both senses, at 30,000 steps, mesh overlaid on the slice at
+z=5922:
+
+| Catalog sense (ACW) | Contradicting sense (CW) |
+|---|---|
+| ![PHerc0826 catalog ACW overlay, 30k steps](PHerc0826_z5922_catalog_ACW_30k.png) | ![PHerc0826 contradicting CW overlay, 30k steps](PHerc0826_z5922_contradicting_CW_30k.png) |
+
+Both are coherent mesh fits on the same slice. Neither is visibly worse
+than the other — that agreement with the numbers above is the point: the
+fit does not pick a side.
 
 Both scrolls tie at every checkpoint, 1,500 through 30,000 steps. And on
 both scrolls the gap between the two senses **flips direction** between
@@ -116,11 +127,15 @@ finding, not a gap to explain away.
    across the eligible set generally (21 of 23 "unsure" — see the root
    README, Finding D), so a wrong read here would not be a surprising,
    isolated failure. Neither confirmed nor ruled out by this build; not
-   falsified.
+   falsified. **Falsified by:** a second independent reader, blind to the
+   first read and to the catalog value, reaching the same "unsure" or the
+   opposite confident answer on the same slices.
 2. **The catalog flag is wrong for PHerc0826 specifically.** No evidence
    either way — this build did not check the acquisition record against
    the catalog's recorded `z_direction_is_top_to_bottom` /
-   `left_handed_coordinates` values. Untested.
+   `left_handed_coordinates` values. Untested. **Falsified by:** the
+   scan's acquisition/session metadata (outside this build's scope)
+   showing those two fields were recorded correctly for this volume.
 3. **The rule convention itself is wrong** (villa's `"ACW" if
    z_direction_is_top_to_bottom != left_handed_coordinates else "CW"`
    maps the catalog's fields to the wrong physical sense). A separate,
@@ -133,6 +148,10 @@ finding, not a gap to explain away.
    being noisy on a partial sheet mask, which is a documented limitation
    of that tool. Neither confirmed nor falsified (see
    `../readme_pr_findings.md` Finding B for the full comparison).
+   **Falsified by:** the same estimator agreeing with the rule's
+   prediction at all three z-levels on a volume with a known ground truth,
+   showing the tool's disagreement here is noise rather than a real
+   rule error.
 4. **The sense parameter changes only the export parametrization, not
    the fitted geometry.** Half-confirmed: the winding U-direction
    reverses cleanly and consistently with sense, on both scrolls, measured
@@ -141,7 +160,12 @@ finding, not a gap to explain away.
    small real geometric difference remains unexplained by pure
    relabeling; and the flattened render's failure to mirror is better
    explained by villa's own catalog-driven export normalization (#1899)
-   than by treating it as independent evidence either way.
+   than by treating it as independent evidence either way. **Falsified
+   by:** the ~15-voxel point-cloud offset failing to shrink toward zero
+   as training steps increase (it would mean the two optimizations are
+   genuinely diverging, not just resuming with fresh optimizer state) —
+   untested here, since only the 1.5k/30k checkpoints were compared
+   directly.
 
 ## What this dossier is not
 
@@ -171,13 +195,14 @@ structure, but it is not the original tool's output.
   `PHerc0826_z5922_catalog_ACW.png`, `PHerc0826_z5922_catalog_ACW_30k.png`,
   `PHerc0826_z5922_contradicting_CW.png`,
   `PHerc0826_z5922_contradicting_CW_30k.png`.
-- Point-cloud and U-direction comparison: `../compare_mesh_geometry.py`,
+- Point-cloud and U-direction comparison: `../../compare_mesh_geometry.py`,
   `../sense_geometry_render_results.md`.
 - Flattened tifxyz and rendered pages, both senses:
   `flatten/PHerc0826_catalog_ACW_30k.tifxyz`,
   `flatten/PHerc0826_contradicting_CW_30k.tifxyz`,
   `flatten/PHerc0826_catalog_ACW_30k_render.png`,
   `flatten/PHerc0826_contradicting_CW_30k_render.png`,
-  `../render_flattened_tifxyz.py`.
-- Full decision history: the project notes, 2026-09-26 and 2026-09-27
-  entries.
+  `../../render_flattened_tifxyz.py`.
+- Every fit, config, checkpoint, and number cited above is committed in
+  this directory and `../pherc0813/` — nothing in this dossier depends on
+  anything outside this repository.

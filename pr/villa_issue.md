@@ -41,7 +41,16 @@ each (tracks-only, patches and outer-shell disabled, RTX 3090).
    reader, disclosed and reviewed) came back "unsure" for 21 of the 23
    volumes; the two that got a definite reading were `PHerc1203` (ACW,
    catalog-underivable, so uncorroborated) and `PHerc0813` (ACW, low
-   confidence, disagreeing with the catalog's derived CW).
+   confidence, disagreeing with the catalog's derived CW). Umbilicus crops
+   for the 5 catalog-UNDERIVABLE volumes, the ones this issue is mainly
+   about:
+   [`PHerc0125`](../readings/renders/PHerc0125_z11462_umbilicus_L1_12mm.png) ·
+   [`PHerc0490A`](../readings/renders/PHerc0490A_z8774_umbilicus_L1_12mm.png) ·
+   [`PHerc0490B`](../readings/renders/PHerc0490B_z7986_umbilicus_L1_12mm.png) ·
+   [`PHerc0846A`](../readings/renders/PHerc0846A_z10514_umbilicus_L1_12mm.png) ·
+   [`PHerc1203`](../readings/renders/PHerc1203_z10437_umbilicus_L1_12mm.png)
+   (full set, all z-levels, both crop sizes, in `readings/renders/` at
+   `millerandmuller/sense-check`).
 3. **Fitting:** re-fit both senses of PHerc0826 (catalog ACW vs. explicit
    CW) and PHerc0813 (catalog CW vs. explicit ACW) at 1,500 steps, then
    again at 30,000 steps via staged checkpoint-resume (same optimizer/LR
@@ -64,12 +73,12 @@ person in VC3D, or from an already-fitted spiral"). Neither fallback held
 up on this scroll generation in this test.
 
 **Evidence / reproduction:** `table/orientation.md` (all 23 volumes,
-catalog sense vs. CT reading, reader disclosure), `analysis/pherc0826/README.md`
-and the project notes (the PHerc0826 case in full: four equal-step fits,
-geometry and render comparison), all at `millerandmuller/sense-check`
-(this month's independent submission repo; public data and reproducible
-methodology, cited here rather than embedded, since the repo itself is
-project-specific).
+catalog sense vs. CT reading, reader disclosure) and
+`analysis/pherc0826/README.md` (the PHerc0826 case in full: four
+equal-step fits, geometry and render comparison, with overlay images),
+both at `millerandmuller/sense-check` (this month's independent
+submission repo; public data and reproducible methodology, cited here
+rather than embedded, since the repo itself is project-specific).
 
 - [x] I personally encountered or reproduced this using the version and
   data stated above.

@@ -9,3 +9,9 @@ venv/
 # Downloaded catalog (fetched by catalog_orientation.py, not committed)
 catalog/metadata.json
 catalog/metadata.json.gz
+
+# Optimizer state from flatten_spiral_checkpoint.py (75-80MB each, exceeds
+# GitHub's comfortable size and is not evidence -- only the mesh output
+# (.tifxyz minus model.pt) and the rendered PNGs are committed, per
+# analysis/pherc0826/README.md's Evidence section.
+**/*.tifxyz/model.pt

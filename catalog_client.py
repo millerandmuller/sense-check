@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import gzip
 import json
+import urllib.error
 import urllib.request
 from typing import Any, Optional
 
@@ -58,10 +59,17 @@ def spiral_outward_sense_for(z_direction_is_top_to_bottom: Optional[bool],
 
 def fetch_raw(url: str) -> tuple[bytes, str, str]:
     """Fetch a URL and gunzip it if needed. Returns (bytes, etag, last_modified)."""
-    with urllib.request.urlopen(url) as resp:  # noqa: S310 - fixed https S3 URL
-        raw = resp.read()
-        etag = resp.headers.get("ETag", "").strip('"')
-        last_modified = resp.headers.get("Last-Modified", "")
+    try:
+        with urllib.request.urlopen(url) as resp:  # noqa: S310 - fixed https S3 URL
+            raw = resp.read()
+            etag = resp.headers.get("ETag", "").strip('"')
+            last_modified = resp.headers.get("Last-Modified", "")
+    except (urllib.error.URLError, OSError) as e:
+        # SystemExit, not RuntimeError, to match this codebase's error-handling
+        # convention (see catalog_orientation.py / write_scroll_spec.py): a
+        # clean one-line message, no raw traceback, exit code 1.
+        raise SystemExit(f"error: could not reach {url} ({e}). Check network "
+                          f"connectivity and try again.") from e
     try:
         raw = gzip.decompress(raw)
     except OSError:

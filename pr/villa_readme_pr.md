@@ -40,9 +40,10 @@ from `metadata.min.json` should know before they start that
 eligible volume.
 
 **Proof:** `table/orientation.md` (all 23 volumes, catalog sense vs. CT
-reading, reader disclosure) and the project notes 2026-09-26/27 (four
+reading, reader disclosure) and `analysis/pherc0826/README.md` (four
 equal-step fits, 1,500 and 30,000 steps, two scrolls, tie at every
-checkpoint) at `millerandmuller/sense-check`.
+checkpoint, with overlay images and the raw per-checkpoint numbers) at
+`millerandmuller/sense-check`.
 
 **Why / where this is useful:** Anyone fitting a First Letters eligible
 scroll without an already-known sense hits this exact fallback chain. The
@@ -55,8 +56,8 @@ check the full catalog rather than the minified one.
   produced by this PR on the stated data: `metadata.json` and
   `metadata.min.json` fetched directly from the S3 bucket and checked
   against all 23 eligible volumes' catalog records; the reading and
-  fitting results are this session's own work, committed at the commits
-  cited in the project notes.
+  fitting results are this session's own work, committed and reproducible
+  in `millerandmuller/sense-check`.
 
 ## Details
 
@@ -81,8 +82,8 @@ itself PR #1899):
   > (millerandmuller/sense-check, `table/orientation.md`), and re-fitting
   > the spiral both ways does not reliably discriminate the two senses
   > either — four fits (two scrolls, both senses) at 1,500 and again at
-  > 30,000 steps tied at every checkpoint (the project notes in the same
-  > repo). Also note that `metadata.min.json` omits
+  > 30,000 steps tied at every checkpoint (`analysis/pherc0826/README.md`
+  > in the same repo). Also note that `metadata.min.json` omits
   > `z_direction_is_top_to_bottom` and `left_handed_coordinates` entirely
   > for every sample; use the full `metadata.json` if you need these
   > fields.
