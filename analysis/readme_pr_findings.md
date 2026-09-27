@@ -127,6 +127,30 @@ the options being weighed (longer fits, re-enabling outer-shell/patches
 terms, a wider z-window) before either scroll's sense can be claimed
 resolved by this method.
 
+**Second update, equal-step re-test:** the leading hypothesis for why the
+1,500-step comparison looked tied was that it was too short -- villa's own
+August entry had settled PHerc0826 as CW by comparing a 30,000-step CW fit
+to a 1,500-step ACW fit, an unequal comparison, since a wrong-handed
+spiral only pays for itself once per turn at a sheet jump, which 1,500
+steps may not resolve. All four (scroll, sense) fits were re-run to
+30,000 steps each via staged checkpoint-resume (same optimizer/LR-schedule
+state carried through at each stage, not restarted). Result: the tie
+holds at 30,000 steps too, on both scrolls -- and on both scrolls the
+1.5k-vs-30k gap **flips direction** (PHerc0826: ACW led by 0.07pp at 1.5k,
+CW leads by 0.11pp at 30k; PHerc0813: ACW led by 0.22pp at 1.5k, CW leads
+by 0.11pp at 30k). A gap that flips sign with more training is stronger
+evidence against a real discriminator than a small, stable gap would be.
+A companion geometric check (`normal_alignment_check.py`: sample the
+fitted surface's local normal against the real lasagna nx/ny field along
+one winding at the window's middle z, looking for the periodic dip a
+sheet jump would leave) found a real, localized dip on PHerc0826 in both
+senses -- but the dip's physical (x, y) location coincides almost exactly
+regardless of which sense was assumed, which argues it reflects the
+scroll's documented debris-filled core cavity rather than a
+handedness-dependent artifact; PHerc0813 showed no comparable dip on
+either sense. See the project notes 2026-09-27 for the full four-fit
+comparison and evidence.
+
 **Not established:** whether a different reader, a different z-level
 choice, or VC3D's own interactive rotation (rather than a fixed axial
 slice) would resolve more of the 21 unsure cases; this build only tested
