@@ -7,7 +7,7 @@ data?**
 **A fitted spiral reports back the sense it was given — villa's
 "already-fitted spiral" fallback is circular.** Tested on two scrolls,
 tracks-only (patches and outer shell disabled), 1.5k and 30k steps; the
-two senses' point clouds sit close but not identical, ~15 voxels apart.
+two senses' point clouds sit ~15 voxels apart, not identical.
 
 ## The 23 volumes
 
@@ -39,7 +39,7 @@ Of 23 readings: **21 unsure, 1 disagrees, 0 agree.**
 | PHerc1545 | ACW | unsure | n/a |
 | PHerc0846B | CW | unsure | n/a |
 
-> Reader: Claude, from the umbilicus crops only, blind to the predicted
+> Reader: Claude, from the umbilicus crops, blind to the predicted
 > sense. Not reviewed by a person. "unsure" is a result, not a gap.
 
 Full table: `table/orientation.md`. PHerc0813, the disagreement:
@@ -55,11 +55,11 @@ Full table: `table/orientation.md`. PHerc0813, the disagreement:
 don't — proof: `python3 catalog_orientation.py`. `metadata.min.json` is
 the scrollprize.org Atlas's field subset of `metadata.json`
 (`scrollprize.org/src/components/atlas/useAtlasData.js`), with no volume
-properties; use `metadata.json` instead.
+properties; use `metadata.json`.
 
 **(ii) A static single-crop AI read (not reviewed by a person) was
 inconclusive on 21 of 23** (`analysis/readme_pr_findings.md` Finding D) —
-not a test of the person-in-VC3D fallback.
+not a person-in-VC3D test.
 
 **(iii) The equal-step retest retracts the August CW conclusion for
 PHerc0826** (`analysis/pherc0826/README.md`).
@@ -72,14 +72,14 @@ PHerc0826** (`analysis/pherc0826/README.md`).
 | 0813 contradicting (ACW) | 0.16561 | 0.16207 |
 
 Both scrolls tie at every checkpoint; the gap flips sign between 1.5k and
-30k steps — noise, not signal.
+30k — noise, not signal.
 
 ### Found on the way
 
 Two VC3D bugs. `stable` (`fc25b4d`) crashes opening a sample whose
 lasagna representation triggers `resolveLasagnaForVolume`; fixed (PR
 #1225) in `latest`, not yet in `stable`. Separately, re-opening a sample
-renders blank, no error:
+renders blank:
 
 ![Re-opening PHerc0826 renders blank](analysis/vc3d-crash/reopen-blank-evidence/PHerc0826_reopened_blank_scale0.05.png)
 
@@ -87,9 +87,9 @@ Details: `analysis/vc3d-crash/README.md`, `pr/villa_issue.md`.
 
 ## Writing a scroll spec
 
-villa's README says the two keys are copied verbatim by hand ("not
-covered by scrollprize.org/tutorial_spiral"); this script does that, and
-refuses when it can't.
+villa's README says the two keys are hand-copied ("not covered by
+scrollprize.org/tutorial_spiral"); this script does that and refuses when
+it can't.
 
 ```
 python3 write_scroll_spec.py <scroll> <volume>
@@ -101,15 +101,17 @@ UNDERIVABLE ones.
 
 ## Filed upstream
 
-Draft PR (`pr/villa_readme_pr.md`) and issue (`pr/villa_issue.md`) — not
+Drafts: `pr/villa_readme_pr.md` (PR), `pr/villa_issue.md` (issue) — not
 yet opened.
 
 ## Limitations
 
 - One AI reader, not reviewed by a person.
 - Renders sample the CT in Python (`render_flattened_tifxyz.py`), not
-  villa's `vc_render_tifxyz` (needs Qt6, unavailable here).
+  villa's `vc_render_tifxyz` (Qt6 unavailable).
 - Not tested: what sense affects downstream (normal direction, recto/verso).
+- PHerc0125 has a published umbilicus (used in villa #1837); our crops
+  used an estimated one.
 
 ## Cost
 

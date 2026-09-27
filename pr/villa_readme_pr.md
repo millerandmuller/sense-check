@@ -83,3 +83,6 @@ rule, to `fit_spiral.py`, or to the catalog data itself — see the
 companion issue draft (`villa_issue.md`) for the underlying findings this
 note summarizes, including the two VC3D bugs encountered while gathering
 this evidence.
+
+Complements #1837 (gmDevi, tracks-only recipe), which does not touch this
+bullet.
